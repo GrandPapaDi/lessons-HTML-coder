@@ -1,0 +1,53 @@
+@import url("reset.css");
+/** {
+  color: blueviolet;
+}
+
+p {
+  color: #000;
+}
+li {
+  color: green;
+}*/
+
+#oseledec {
+  color: aqua;
+}
+div.texty {
+  color: chartreuse;
+}
+.linki {
+  color: red;
+}
+.text.othertext {
+  color: blue;
+}
+a.text {
+  color: red;
+}
+.title,
+h3,
+.foot {
+  color: blueviolet;
+}
+.text a {
+  color: red;
+}
+.othertext .orange {
+  color: orangered;
+}
+.text * {
+  color: green;
+}
+.text > p {
+  color: brown;
+}
+.text ~ p {
+  color: blue;
+}
+.text + p {
+  color: black;
+}
+[class*="__container"] {
+  color: red;
+}
