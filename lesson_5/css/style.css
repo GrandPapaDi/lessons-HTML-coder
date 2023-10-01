@@ -1,0 +1,115 @@
+@import url("fonts.css");
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* -------- Text figma ------------ */
+
+body {
+  color: #7d7d7d;
+  font-size: 18px;
+  font-family: "Inter", serif;
+  line-height: 1.27;
+}
+.title-figma1,
+.title-figma,
+.sub-title-figma {
+  font-family: "Poppins", sans-serif;
+}
+.title-figma {
+  color: #37393f;
+  font-size: 30px;
+  font-weight: 600;
+}
+.sub-title-figma {
+  color: #6b77e5;
+  font-size: 20px;
+  font-weight: 600;
+}
+.title-figma1 {
+  color: #37393f;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* -------- Моя стаття ------------ */
+
+.caption {
+  color: rgb(16, 14, 16);
+  font-family: "Inconsolata", serif;
+}
+.title {
+  color: #10a493;
+  font-family: "CORE", sans-serif;
+}
+.sub-title {
+  color: rgb(203, 11, 11);
+  font-family: "VeganStylePersonalUse";
+}
+.text-development {
+  color: rgba(0, 0, 255, 0.758);
+  font-family: "Merriweather+Sans";
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+}
+.sub-title-1 {
+  font-family: "HoneybeePersonalUse";
+}
+.text-biker {
+  text-align: left;
+}
+.text-analiz {
+  color: rgba(187, 62, 17, 0.873);
+  font-family: normal;
+  font-size: 50px;
+}
+.sub-title-2 {
+  text-decoration: underline;
+}
+.text-hacker {
+  font-size: 25px;
+  text-shadow: 5px 5px 3px rgba(219, 52, 18, 0.647);
+}
+.sub-title-3 {
+  font-family: "VeganStylePersonalUse";
+  font-size: 30px;
+  text-shadow: 4px 4px 6px rgba(149, 242, 146, 0.916),
+    6px -3px 10px rgba(137, 43, 226, 0.903);
+}
+.text-hacked {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+span {
+  font-size: 26px;
+  font-style: oblique;
+  font-weight: 900;
+  text-shadow: 6px 6px 8px #000;
+}
+.text-rules {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.28;
+}
+.text-virus {
+  text-indent: 25px;
+}
+.text-info {
+  text-align: left;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+}
+.text-subculture {
+  white-space: nowrap;
+}
+.text-problem {
+  word-spacing: 25px;
+}
+.block {
+  color: rgba(12, 32, 187, 0.889);
+}
+a {
+  color: rgba(244, 16, 16, 0.696);
+}

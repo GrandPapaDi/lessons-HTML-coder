@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:300,regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:regular,600,300italic&display=swap");
+@font-face {
+  font-family: "CORE";
+  src: url("../fonts/CORE.woff2") format("woff2"),
+    url("../fonts/CORE.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "VeganStylePersonalUse";
+  src: url("../fonts/VeganStylePersonalUse.woff2") format("woff2"),
+    url("../fonts/VeganStylePersonalUse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HoneybeePersonalUse";
+  src: url("../fonts/HoneybeePersonalUse.woff2") format("woff2"),
+    url("../fonts/HoneybeePersonalUse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
