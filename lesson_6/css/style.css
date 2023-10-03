@@ -1,0 +1,124 @@
+@import url("fonts.css");
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* -------- Text figma 1------------ */
+
+body {
+  color: #7d7d7d;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+.block-figma {
+  max-width: 692px;
+  margin: 0 auto;
+}
+.pic {
+  margin-bottom: 37px;
+}
+.pic,
+.pic-comp {
+  max-width: 100%;
+}
+
+.title-figma-first,
+.title-figma-second,
+.title-figma-third,
+.title-list-figma {
+  font-family: "Poppins", sans-serif;
+}
+
+.title-figma-first {
+  color: #37393f;
+  font-size: 30px;
+  line-height: 1.27;
+  margin-bottom: 12.5px;
+  font-weight: 600;
+}
+.text-figma {
+  line-height: 1.46;
+  margin-bottom: 40px;
+}
+.text-figma p {
+  margin-bottom: 15px;
+}
+.title-figma-second {
+  color: #6b77e5;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 12px;
+}
+.title-list {
+  font-size: 0;
+}
+.pic-comp {
+  width: 331px;
+  margin-right: 29px;
+}
+.content-list {
+  display: inline-block;
+  width: 332px;
+  font-size: 18px;
+}
+
+.title-figma-third {
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 15px;
+}
+.title-list-figma {
+  color: #40ddb6;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 23.5px;
+}
+.list-figma li {
+  margin-bottom: 35px;
+}
+
+/* -------- Text figma 1------------ */
+
+.block-figma-2 {
+  max-width: 1169px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.text {
+  padding-top: 21px;
+  display: inline-block;
+  margin-right: 38px;
+  max-width: 563px;
+}
+.heading {
+  color: #d06b00;
+  font-size: 28px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+.subheading {
+  color: #0e333d;
+  font-family: DM Serif Text;
+  font-size: 59px;
+  line-height: 1.47; /* 86.435px */
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.par {
+  color: #474747;
+  font-size: 20px;
+  line-height: 1.8; /* 36px */
+}
+.imgboth {
+  max-width: 568px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.subimg {
+  margin-right: 22px;
+}
