@@ -1,0 +1,307 @@
+@import url("fonts.css");
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* -------- Text figma 1------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+.block {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 150px 15px;
+}
+.title {
+  max-width: 296px;
+  margin: 0 auto;
+  text-align: center;
+}
+.squard {
+  background-color: #40ddb6;
+  display: inline-block;
+  margin-right: 6px;
+  width: 12px;
+  height: 12px;
+}
+.title-information {
+  display: inline-block;
+  color: #37393f;
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: normal;
+}
+.title-licencing {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.21; /* 72.6px */
+  margin-bottom: 70px;
+}
+.title-graphics {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  margin-bottom: 11px;
+}
+.text-graphics {
+  line-height: 1.46; /* 26.314px */
+  margin-bottom: 32px;
+}
+.title-icons {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  line-height: normal;
+}
+.title-icons span {
+  color: #40ddb6;
+  font-weight: 400;
+}
+
+.title-fotography {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  margin-bottom: 11px;
+}
+.text-fotography {
+  line-height: 1.46; /* 26.314px */
+  margin-bottom: 24px;
+}
+.title-pexels {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.title-pexels span {
+  color: #40ddb6;
+  font-weight: 400;
+}
+.text-pexels {
+  color: #40ddb6;
+  line-height: 1.46; /* 26.314px */
+  margin-bottom: 24px;
+}
+.title-unsplash {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.title-unsplash span {
+  color: #40ddb6;
+  font-weight: 400;
+}
+.text-unsplash {
+  color: #40ddb6;
+  line-height: 1.46; /* 26.314px */
+  margin-bottom: 100px;
+}
+.title-fonts {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  margin-bottom: 11px;
+}
+
+.text-fonts {
+  line-height: 1.46; /* 26.314px */
+}
+.text-fonts span {
+  color: #40ddb6;
+  font-weight: 500;
+}
+
+/* -------- Text figma 2------------ */
+
+.project {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 150px 15px;
+}
+.title-project {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27; /* 50.8px */
+  margin-bottom: 13px;
+}
+.text {
+  line-height: 1.46; /* 26.314px */
+  margin-bottom: 35px;
+}
+.text * {
+  margin-bottom: 35px;
+}
+.list {
+  font-weight: 500;
+  line-height: 1.46;
+  padding-left: 16px;
+  margin-bottom: 35px;
+}
+.sub-text {
+  line-height: 1.46;
+  margin-bottom: 35px;
+}
+.sub-list {
+  font-weight: 500;
+  line-height: 1.46;
+  padding-left: 16px;
+  margin-bottom: 35px;
+}
+.text-last {
+  line-height: 1.46; /* 26.314px */
+}
+
+/* -------- Text figma 3------------ */
+
+.block-clothing {
+  color: #807d7e;
+  margin: 0 auto;
+  max-width: 1249px;
+  padding: 150px 15px;
+  font-family: "Causten", sans-serif;
+}
+.riska {
+  background-color: #8a33fd;
+  display: inline-block;
+  margin: 0px 15px -4px -20px;
+  width: 6px;
+  height: 28px;
+  border-radius: 10px;
+}
+.title-clothing {
+  color: #3c4242;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2; /* 119.643% */
+  letter-spacing: 0.56px;
+  display: inline-block;
+}
+.title-india {
+  margin-bottom: 30px;
+}
+.title-collection {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+  line-height: 1.68; /* 167.5% */
+  margin-bottom: 25px;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+}
+.text-clothing {
+  line-height: 1.68; /* 167.5% */
+  margin-bottom: 25px;
+}
+span {
+  font-weight: 700;
+  line-height: 1.68;
+}
+.text-clothing * {
+  margin-bottom: 20px;
+}
+.title-shop {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+  line-height: 1.68; /* 167.5% */
+  margin-bottom: 25px;
+}
+.subtext-clothing {
+  line-height: 1.68; /* 167.5% */
+}
+.subtext-clothing * {
+  margin-bottom: 20px;
+}
+.title-more {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+  line-height: 1.68; /* 167.5% */
+}
+
+/* -------- Text figma 4------------ */
+
+.block-develop {
+  padding: 150px 15px;
+  max-width: 1133px;
+  margin: 0 auto;
+  font-family: "Cormorant Infant";
+  font-size: 0;
+  font-weight: 700;
+}
+.text-todo {
+  max-width: 503px;
+  margin-right: 75px;
+  display: inline-block;
+  font-size: 16px;
+  padding-top: 60px;
+}
+.text-title {
+  color: #d58417;
+  line-height: 1; /* 20px */
+  font-size: 20px;
+  margin-bottom: 27px;
+  text-transform: uppercase;
+}
+.develop {
+  color: #000;
+  font-size: 64px;
+  line-height: 1; /* 64px */
+  margin-bottom: 31px;
+  text-transform: capitalize;
+}
+.text-develop {
+  color: #606060;
+  font-size: 30px;
+  line-height: 1.4;
+}
+.dwe-baby {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0;
+}
+.border {
+  border: 1px solid #502203;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 235px;
+}
+.border img {
+  border-radius: 235px;
+}
+.baba-left {
+  margin-right: 30px;
+  width: 177px;
+  height: 336px;
+}
+.baba-left img {
+  padding-top: 14px;
+  margin-left: -10px;
+}
+
+.baba-right {
+  width: 307px;
+  height: 500px;
+}
+.baba-right img {
+  padding-top: 19px;
+  margin-left: -11px;
+}
