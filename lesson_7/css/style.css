@@ -192,7 +192,7 @@ body {
 }
 .title-clothing {
   color: #3c4242;
-  font-family: "Core Sans C", sans-serif;
+  font-family: "coresansc", sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2; /* 119.643% */
@@ -203,7 +203,7 @@ body {
   margin-bottom: 30px;
 }
 .title-collection {
-  font-family: "Core Sans C", sans-serif;
+  font-family: "coresansc", sans-serif;
   font-weight: 600;
   line-height: 1.68; /* 167.5% */
   margin-bottom: 25px;
@@ -220,7 +220,7 @@ span {
   margin-bottom: 20px;
 }
 .title-shop {
-  font-family: "Core Sans C", sans-serif;
+  font-family: "coresansc", sans-serif;
   font-weight: 600;
   line-height: 1.68; /* 167.5% */
   margin-bottom: 25px;
@@ -232,7 +232,7 @@ span {
   margin-bottom: 20px;
 }
 .title-more {
-  font-family: "Core Sans C", sans-serif;
+  font-family: "coresansc", sans-serif;
   font-weight: 600;
   line-height: 1.68; /* 167.5% */
 }
