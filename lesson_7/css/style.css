@@ -278,13 +278,11 @@ span {
   display: inline-block;
   font-size: 0;
 }
-.border {
+.baba-left,
+.baba-right {
   border: 1px solid #502203;
   display: inline-block;
   vertical-align: middle;
-  border-radius: 235px;
-}
-.border img {
   border-radius: 235px;
 }
 .baba-left {
@@ -296,7 +294,6 @@ span {
   padding-top: 14px;
   margin-left: -10px;
 }
-
 .baba-right {
   width: 307px;
   height: 500px;
