@@ -438,11 +438,13 @@ span {
 }
 .subtext-clothing {
   line-height: 1.68; /* 167.5% */
+  margin-bottom: 20px;
 }
 .subtext-clothing * {
   margin-bottom: 20px;
 }
 .title-more {
+  display: inline-block;
   font-family: "coresansc", sans-serif;
   font-weight: 600;
   line-height: 1.68; /* 167.5% */
@@ -489,7 +491,7 @@ span {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  display: inline-flex;
+  display: inline-block;
   padding: 12px 44px;
   justify-content: center;
   align-items: center;
