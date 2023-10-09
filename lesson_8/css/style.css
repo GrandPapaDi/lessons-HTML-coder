@@ -1,0 +1,498 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* PRACTICA */
+
+.main-content {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 150px 15px;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+}
+.title-sposob {
+  font-size: 85px;
+  font-weight: 700;
+  color: rgba(245, 10, 10, 1);
+  background-image: url("../img/euro.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  max-height: 450px;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 550px;
+}
+.potencial {
+  background-image: url("../img/velo.jpeg");
+  margin-bottom: 45px;
+}
+.title-diving {
+  text-align: center;
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+.money-01 {
+  max-width: 1250px;
+  margin-bottom: 45px;
+}
+.text-diving {
+  background-image: linear-gradient(55.95deg, #3aff3a 0%, #cf05f7 100%);
+  margin-bottom: 45px;
+}
+.title-freelance {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-freelance {
+  background-image: url("../img/euro-small.jpg");
+  background-repeat: repeat-x;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.title-kurse {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-kurse {
+  background-image: url("../img/velo.jpeg");
+  background-repeat: repeat-y;
+  margin-bottom: 45px;
+}
+.title-marketing {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-marketing {
+  background-image: url("../img/euro.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.title-product {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.real-tovar {
+  margin-bottom: 45px;
+}
+.text-product {
+  background-image: url("../img/euro.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 45px;
+  background-attachment: fixed;
+}
+.title-offer {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-offer {
+  margin-bottom: 45px;
+  background-image: url("../img/euro.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 45px;
+  background-attachment: fixed;
+}
+.title-requirements {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-requirements {
+  margin-bottom: 45px;
+  background-image: url("../img/euro.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 45px;
+  background-attachment: fixed;
+  background-size: contain;
+}
+.title-reviews {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-reviews {
+  margin-bottom: 45px;
+  margin-bottom: 45px;
+  background-image: url("../img/euro.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 45px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.title-transparency {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.text-transparency {
+  text-align: center;
+  margin-bottom: 45px;
+  background: url("../img/euro-small.jpg") no-repeat 50% 50% / 200px,
+    linear-gradient(
+      55.95deg,
+      rgba(226, 142, 59, 0.3) 0%,
+      rgba(7, 113, 170, 0.3) 100%
+    ),
+    url("../img/velo.jpeg") no-repeat right bottom / 800px;
+  margin-bottom: 45px;
+}
+
+/* -------- Text figma 1------------ */
+
+.content-figma {
+  color: #7d7d7d;
+  margin: 0 auto;
+  padding: 50px 15px;
+  max-width: 703px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-bottom: 145px;
+}
+.squard {
+  display: flex;
+}
+.square {
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+  margin-top: 4px;
+}
+.title-figma {
+  color: #37393f;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.title-plan {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.text-plan {
+  line-height: 1.46; /* 26.314px */
+  margin-bottom: 20px;
+}
+.text-plan * {
+  margin-bottom: 15px;
+}
+.list {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.list .caplist {
+  padding-left: 35px;
+  margin-bottom: 43px;
+  background: url("../img/li.svg") 0 2px no-repeat;
+}
+.list * {
+  margin-bottom: 23px;
+}
+.diplom-block {
+  display: inline-block;
+  margin-bottom: 37px;
+  border: 1px solid #e3e3e3;
+  max-width: 295px;
+  margin-right: 10px;
+  padding: 31px 32px 32px 32px;
+}
+.expirience {
+  background: url("../img/Icon.svg") 0 0 no-repeat;
+  padding-left: 58px;
+}
+.title-expirience {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.text-expirience {
+  font-size: 16px;
+  line-height: 1.35; /* 21.63px */
+}
+.awards {
+  padding-left: 58px;
+  background: url("../img/Icon\ \(1\).svg") 0 0 no-repeat;
+}
+.bottom {
+  max-width: 184px;
+  max-height: 65px;
+  display: inline-block;
+  padding: 21px 27px 22px 27px;
+  color: #fff;
+  background: #6b77e5;
+  text-align: center;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* -------- Text figma 2------------ */
+
+.content-figma-next {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.text-cont {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.last {
+  color: #37393f;
+  display: inline-block;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+.client {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  margin-bottom: 14px;
+}
+.text-strategy {
+  color: #7d7d7d;
+  text-align: center;
+  line-height: 1.46; /* 26.314px */
+  max-width: 852px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+}
+
+/* -------- Text figma 2------------ */
+/* -------- Text figma 2------------ */
+/* -------- Text figma 2------------ */
+
+.fon {
+  max-width: 1250px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+
+.monik,
+.tip,
+.truba {
+  background-repeat: no-repeat;
+  padding-top: 501px;
+  margin-bottom: 24px;
+}
+.monik {
+  background-image: url("../img/monik.png");
+  width: 384px;
+  background-position: left 0px top 0px;
+}
+.tip {
+  background-image: url("../img/tip.png");
+  width: 384px;
+  background-position: left 34px top 0px;
+}
+.truba {
+  background-image: url("../img/truba.png");
+  width: 384px;
+  background-position: left 34px top 0px;
+}
+
+.title-fon {
+  color: #37393f;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.27; /* 25.4px */
+}
+.date {
+  background: url("../img/Group\ 22.svg") 0 0 no-repeat;
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.46;
+  padding-left: 27px;
+  margin-bottom: 58px;
+}
+
+/* -------- Text figma 2------------ */
+/* -------- Text figma 2------------ */
+/* -------- Text figma 2------------ */
+.tyotka,
+.plan,
+.nout {
+  background-repeat: no-repeat;
+  padding-top: 501px;
+  margin-bottom: 24px;
+}
+.tyotka {
+  background-image: url("../img/tyotka.png");
+  width: 384px;
+  background-position: left 0px top 0px;
+}
+.plan {
+  background-image: url("../img/plan.png");
+  width: 384px;
+  background-position: left 34px top 0px;
+}
+.nout {
+  background-image: url("../img/nout.png");
+  width: 384px;
+  background-position: left 34px top 0px;
+}
+.block-monik-content-1 {
+  padding-left: 34px;
+}
+.block-monik-content-2 {
+  padding-left: 34px;
+}
+
+.three-text-1 {
+  display: flex;
+}
+.three-text-2 {
+  display: flex;
+}
+
+/* -------- Text figma 3------------ */
+.block-clothing {
+  color: #807d7e;
+  margin: 0 auto;
+  max-width: 1249px;
+  padding: 150px 15px;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  font-family: "Causten", sans-serif;
+  margin-bottom: 100px;
+}
+.riska {
+  background-color: #8a33fd;
+  display: inline-block;
+  margin: 0px 15px -4px -20px;
+  width: 6px;
+  height: 28px;
+  border-radius: 10px;
+}
+.title-clothing {
+  color: #3c4242;
+  font-family: "coresansc", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2; /* 119.643% */
+  letter-spacing: 0.56px;
+  display: inline-block;
+}
+.title-india {
+  margin-bottom: 30px;
+}
+.title-collection {
+  font-family: "coresansc", sans-serif;
+  font-weight: 600;
+  line-height: 1.68; /* 167.5% */
+  margin-bottom: 25px;
+}
+.text-clothing {
+  line-height: 1.68; /* 167.5% */
+  margin-bottom: 25px;
+}
+span {
+  font-weight: 700;
+  line-height: 1.68;
+}
+.text-clothing * {
+  margin-bottom: 20px;
+}
+.title-shop {
+  font-family: "coresansc", sans-serif;
+  font-weight: 600;
+  line-height: 1.68; /* 167.5% */
+  margin-bottom: 25px;
+}
+.subtext-clothing {
+  line-height: 1.68; /* 167.5% */
+}
+.subtext-clothing * {
+  margin-bottom: 20px;
+}
+.title-more {
+  font-family: "coresansc", sans-serif;
+  font-weight: 600;
+  line-height: 1.68; /* 167.5% */
+}
+/* -------- Text figma 4------------ */
+
+.figma-maket-3 {
+  max-width: 1240px;
+  background-image: url("../img/ficus.png"), url("../img/tolpa.png");
+  background-repeat: no-repeat;
+  background-position: left, right;
+  margin: 0 auto;
+  padding-left: 74px;
+  margin-bottom: 100px;
+}
+.img-fashion {
+  max-width: 466px;
+  padding: 183px 0px 175px 0px;
+}
+
+.title-fashion {
+  color: #fff;
+  font-family: "coresansc", sans-serif;
+  font-size: 33px;
+  font-weight: 800;
+  line-height: 50px; /* 147.059% */
+  letter-spacing: 0.208px;
+  margin-bottom: 30px;
+}
+.text-fashion {
+  color: #fff;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.botton-fashion {
+  color: #3c4242;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+  padding: 12px 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+}
