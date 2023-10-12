@@ -1,0 +1,189 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* PRACTICA */
+
+body {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell";
+}
+
+.all__cards {
+  max-width: 100%;
+  padding: 50px 15px;
+  margin: 0 auto;
+  font-size: 0;
+  background: url(../img/repeat.jpg);
+  text-align: center;
+  max-height: 1500px;
+  margin-bottom: 50px;
+}
+.title {
+  font-size: 70px;
+  font-style: "Cantarell", sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+.cards-third {
+  margin-bottom: 50px;
+}
+.cards-sixth {
+  margin-bottom: 50px;
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+  max-width: 412px;
+}
+.picture {
+  min-height: 501px;
+  max-width: 100%;
+}
+
+.card__title {
+  line-height: 1.2;
+  font-size: 24px;
+  color: rgba(65, 231, 56, 0.93);
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.card__title:hover {
+  text-decoration: underline;
+}
+.card__button {
+  border-radius: 8px;
+  padding: 12px 44px;
+  background-color: #d61a1aef;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3c4242;
+  display: inline-block;
+  font-family: "Oxygen", sans-serif;
+}
+.card__button:active {
+  color: rgb(238, 238, 241);
+}
+a:visited {
+  color: rgba(172, 255, 47, 0.934);
+}
+.card__button:focus {
+  outline: 2px solid rgba(243, 239, 239, 0.938);
+}
+.card-first .picture {
+  background: url(../img/last_of_us.jpg) center/ cover no-repeat;
+  margin-right: 25px;
+}
+.card-second .picture {
+  background: url(../img/quantum.jpg) center/ cover no-repeat;
+  margin-right: 25px;
+}
+.card-third .picture {
+  background: url(../img/spell_forse.jpg) center/ cover no-repeat;
+}
+.card-fourth .picture {
+  background: url(../img/survuvor.jpg) center/ cover no-repeat;
+  margin-right: 25px;
+}
+.card-fifth .picture {
+  background: url(../img/texas_chain_saw.jpg) center/ cover no-repeat;
+  margin-right: 25px;
+}
+.card-sixth .picture {
+  background: url(../img/walking_dead.jpg) center/ cover no-repeat;
+}
+.card__inner:hover {
+  text-decoration: underline;
+  color: rgba(65, 231, 56, 0.93);
+}
+
+/* PRACTICA THE END*/
+
+/* Game 
+.game-conteiner {
+  max-width: 1250px;
+  text-align: center;
+  font-size: 0;
+  margin: 0 auto;
+}
+.game {
+  min-height: 850px;
+}
+.line {
+  border-color: rgba(210, 105, 30, 0.962);
+}
+.line-1 {
+  width: 50px;
+  height: 50px;
+}
+.line-2 {
+  width: 50px;
+  height: 50px;
+}
+.line-1:hover + .line-2,
+.line-2:hover {
+  width: 100%;
+}
+.line-3 {
+  width: 1200px;
+  height: 50px;
+  display: inline-block;
+}
+.line-4 {
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+}
+.line-2:hover ~ .line-3,
+.line-3:hover {
+  display: inline-block;
+  visibility: visible;
+}
+.game__line-3-1:hover {
+  height: 100px;
+}
+.line-5 {
+}
+
+.line-start {
+}
+
+.line-start {
+  background-color: rebeccapurple;
+  width: 50px;
+  height: 50px;
+}
+
+.line-start {
+}
+.line-start:hover {
+}
+.line-start:hover {
+}
+
+/*.game {
+}
+.line-start {
+}
+.line-1 {
+}
+.line-2 {
+}
+.line-3 {
+}
+.line-4 {
+}
+.line-5 {
+}
+.line-6 {
+}
+.line-7 {
+}
+.line-8 {
+}
+.line-9 {
+}
+.line-10 {
+}*/
