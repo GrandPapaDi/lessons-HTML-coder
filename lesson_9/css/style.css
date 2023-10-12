@@ -22,7 +22,7 @@ body {
 }
 .title {
   font-size: 70px;
-  font-style: "Cantarell", sans-serif;
+  font-family: "Cantarell", sans-serif;
   color: white;
   margin-bottom: 50px;
 }
