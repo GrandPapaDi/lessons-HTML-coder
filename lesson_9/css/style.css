@@ -7,7 +7,14 @@
 /* PRACTICA */
 
 body {
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell";
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+h2,
+h3 {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
 }
 
 .all__cards {
@@ -17,8 +24,10 @@ body {
   font-size: 0;
   background: url(../img/repeat.jpg);
   text-align: center;
-  max-height: 1500px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+}
+.all__cards > *:last-child {
+  margin-bottom: 0;
 }
 .title {
   font-size: 70px;
@@ -59,18 +68,24 @@ body {
   background-color: #d61a1aef;
   font-weight: 600;
   font-size: 18px;
-  color: #3c4242;
+  color: #16dede;
   display: inline-block;
   font-family: "Oxygen", sans-serif;
 }
 .card__button:active {
   color: rgb(238, 238, 241);
 }
-a:visited {
+/*a:visited {
   color: rgba(172, 255, 47, 0.934);
-}
+}*/
 .card__button:focus {
   outline: 2px solid rgba(243, 239, 239, 0.938);
+}
+.card__button:hover {
+  background-color: #abaece;
+}
+.card__button:active {
+  background-color: #1f4505;
 }
 .card-first .picture {
   background: url(../img/last_of_us.jpg) center/ cover no-repeat;
@@ -100,90 +115,556 @@ a:visited {
 }
 
 /* PRACTICA THE END*/
+/* PRACTICA THE END*/
+/* PRACTICA THE END*/
+/* PRACTICA THE END*/
 
-/* Game 
-.game-conteiner {
+/* jewellery collection */
+/* jewellery collection */
+/* jewellery collection */
+/* jewellery collection */
+/* jewellery collection */
+/* jewellery collection */
+.general {
+  margin-bottom: 150px;
+}
+.general__low {
+  max-width: 1245px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.general__lower > *:last-child {
+  margin-right: 0;
+}
+.general__lower {
+  font-size: 0;
+}
+.general__lower h2,
+.general__lower h4,
+.general__lower h3,
+.figma-title-price {
+  font-weight: 700;
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+}
+/*Перед H2*/
+.figma-card__title {
+  margin-top: 118px;
+  margin-right: 24px;
+  vertical-align: middle;
+  max-width: 460px;
+  display: inline-block;
+}
+/*Заголовок 1*/
+.title-jew-first {
+  font-size: 60px;
+  font-style: normal;
+  line-height: 1.15; /* 69px */
+  text-transform: capitalize;
+  max-width: 488px;
+}
+/*Полоса*/
+.title-jew-first::after {
+  background-color: #78473b;
+  content: "";
+  width: 66%;
+  height: 3px;
+  display: block;
+  margin-top: 13px;
+}
+/*Заголовок 2*/
+
+.title-jew-second {
+  font-size: 46px;
+  font-style: normal;
+  line-height: 1.13; /* 51.98px */
+}
+
+.figma-card {
+  display: inline-block;
+  margin-right: 55px;
+  vertical-align: top;
+  max-width: 334px;
+}
+
+.figma-card-img {
+  border: 1px solid #000;
+  margin-bottom: 34px;
+}
+.figma-card-img img {
+  margin: 9px -10px -9px 10px;
+  width: 100%;
+}
+.figma-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4; /* 33.6px */
+}
+
+/*riska*/
+.figma-title:hover {
+  text-decoration: underline;
+}
+.figma-title-link:not(:last-child) {
+  margin-bottom: 4px;
+}
+.figma-card-subtitle {
+  font-size: 46px;
+  font-style: normal;
+  line-height: 1.13; /* 33.6px */
+  margin: -32px 0 31px;
+}
+
+.figma-title-price {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4; /* 33.6px */
+}
+
+/*След макет*/
+/*След макет*/
+/*След макет*/
+/*След макет*/
+/*След макет*/
+/*------We Care About Your Business Plan-----*/
+/*------We Care About Your Business Plan-----*/
+/*------We Care About Your Business Plan-----*/
+/*------We Care About Your Business Plan-----*/
+.care-all {
+  margin-bottom: 150px;
+}
+.cont-care {
+  max-width: 705px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.cont-care > *:not(:last-child) {
+  margin-bottom: 48px;
+}
+/*Общий стиль текста*/
+
+.title-care h4 {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.deco-squrd::before {
+  background-color: #40ddb6;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  content: "";
+  display: inline-block;
+  margin-right: 6px;
+}
+.title-care h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  max-width: 415px;
+}
+.text-care {
+  line-height: 1.46; /* 26.314px */
+}
+.first-p {
+  margin-bottom: 16px;
+}
+
+.body-care > *:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.care-cont {
+  border: 1px solid #e3e3e3;
+  max-width: 675px;
+  padding: 28px 41px 28px 84px;
+}
+.cadr-care h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.cadr-care h3::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-left: -48px;
+  margin-right: 19px;
+  vertical-align: -6px;
+  background: url("../img/li.svg") 0px 0px no-repeat;
+}
+.link-care-all {
+  background-color: #6b77e5;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 21px 35px 22px 35px;
+  display: inline-block;
+}
+
+.link-care-all:hover {
+  background-color: #979cdbf7;
+}
+
+.link-care-all:active {
+  background-color: rgba(139, 48, 195, 0.971);
+}
+
+/*------International Business Management Consulting-----*/
+/*------International Business Management Consulting-----*/
+/*------International Business Management Consulting-----*/
+/*------International Business Management Consulting-----*/
+/*------International Business Management Consulting-----*/
+.management-maket {
+  margin-bottom: 0;
+}
+.management-maket {
+  margin-bottom: 150px;
+}
+.management-cont {
+  margin: 0 auto;
+  max-width: 722px;
+  padding: 0 15px;
+}
+.management-sub-cont {
+  margin-bottom: 42px;
+}
+.management-sub-cont > *:last-child {
+  margin-bottom: 0 auto;
+}
+.management-img {
+  margin-bottom: 37px;
+  width: 100%;
+}
+.management-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27; /* 38.1px */
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.management-text {
+  line-height: 1.46; /* 26.314px */
+}
+
+.management-collaboration > *:last-child {
+  margin-bottom: 0 auto;
+}
+.management-collaboration {
+  margin-bottom: 50px;
+}
+
+.collaboration-sub-cont > *:last-child {
+  margin-bottom: 0 auto;
+}
+.collaboration-sub-cont {
+  font-size: 0;
+}
+.collaboration-header {
+  margin-bottom: 40px;
+}
+.collaboration-title {
+  color: #6b77e5;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27; /* 25.4px */
+  margin-bottom: 12px;
+}
+.collaboration-text {
+  line-height: 1.46; /* 26.314px */
+}
+
+.collaboration-img {
+  width: 47.835%;
+  margin-right: 29px;
+}
+.collaboration-sidebar {
+  display: inline-block;
+  max-width: 332px;
+  vertical-align: top;
+}
+
+.sidebar-title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27; /* 31.75px */
+  margin-bottom: 15px;
+}
+.sidebar-sub-title {
+  color: #40ddb6;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27; /* 25.4px */
+  margin-bottom: 23.5px;
+}
+.sidebar-item {
+  font-size: 18px;
+}
+.sidebar-item li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.sidebar-item li {
+  min-height: 27px;
+  padding-top: 5px;
+  padding-left: 35px;
+  background: url("../img/li.svg") no-repeat;
+}
+.collaboration-asced h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27; /* 38.1px */
+  margin-bottom: 8px;
+}
+.collaboration-text {
+  line-height: 1.46; /* 26.314px */
+}
+
+/*------How We Work-----*/
+/*------How We Work-----*/
+/*------How We Work-----*/
+/*------How We Work-----*/
+/*------How We Work-----*/
+
+.how-work {
+  margin: 0 auto;
+  padding: 0 15px 50px 15px;
   max-width: 1250px;
+}
+.how-work {
+  margin-bottom: 100px;
+}
+.how-work-head-title {
+  max-width: 906px;
+}
+.how-work-head-title h4::before {
+  background: #40ddb6;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  display: inline-block;
+  content: "";
+  margin-right: 6px;
+}
+.how-work-head-title h4 {
+  font-weight: 500;
+  line-height: 1.21;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #37393f;
+}
+.how-work-head-title h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+}
+.how-work-text {
+  text-align: center;
+  line-height: 1.46; /* 26.314px */
+  display: inline-block;
+}
+.how-work-head-title > *:last-child {
+  margin-bottom: 0;
+}
+.how-work-head-title {
+  margin: 0 auto 72px;
+  text-align: center;
+}
+.how-work-cards {
+  font-size: 0;
+}
+.how-work-cards > *:not(:last-child) {
+  margin-right: 31px;
+}
+.how-work-cards h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27; /* 31.75px */
+  margin-bottom: 16px;
+}
+.how-work-card {
+  background-color: #f4f4f4;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 58px 43px;
+  width: 386px;
+}
+.how-work-card > *:last-child {
+  margin-bottom: 0;
+}
+
+.how-work-img {
+  margin: -94px auto 22px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #40ddb6;
+}
+.how-work-img:hover {
+  background-color: #b9efe2ee;
+}
+.how-work-img:active {
+  background-color: #0c8265ee;
+}
+
+.how-work-text {
+  text-align: center;
+  font-size: 18px;
+  max-width: 300px;
+  line-height: 1.46;
+  margin-bottom: 37px;
+}
+.how-work-link {
+  color: #6b77e5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.how-work-link:hover {
+  text-decoration: underline;
+}
+.how-work-link:hover {
+  background-color: #b9efe2ee;
+}
+.how-work-link:active {
+  background-color: #0c8265ee;
+}
+
+/* Game */
+.game-conteiner {
+  max-width: 1110px;
   text-align: center;
   font-size: 0;
   margin: 0 auto;
+  padding: 50px 15px;
+}
+.game-conteiner__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
 }
 .game {
-  min-height: 850px;
+  min-height: 700px;
+  display: block;
 }
 .line {
-  border-color: rgba(210, 105, 30, 0.962);
+  background-color: rgba(201, 22, 214, 0.917);
+}
+.line-start {
+  width: 40px;
+  height: 30px;
 }
 .line-1 {
-  width: 50px;
-  height: 50px;
+  width: 19%;
+  height: 40px;
+  visibility: hidden;
 }
 .line-2 {
-  width: 50px;
-  height: 50px;
-}
-.line-1:hover + .line-2,
-.line-2:hover {
-  width: 100%;
-}
-.line-3 {
-  width: 1200px;
-  height: 50px;
+  width: 20px;
+  height: 190px;
   display: inline-block;
-}
-.line-4 {
   visibility: hidden;
-  width: 50px;
-  height: 50px;
 }
-.line-2:hover ~ .line-3,
-.line-3:hover {
-  display: inline-block;
+.line-start:hover ~ .line-1,
+.line-1:hover {
   visibility: visible;
 }
-.game__line-3-1:hover {
-  height: 100px;
-}
-.line-5 {
-}
-
-.line-start {
-}
-
-.line-start {
-  background-color: rebeccapurple;
-  width: 50px;
-  height: 50px;
-}
-
-.line-start {
-}
-.line-start:hover {
-}
-.line-start:hover {
-}
-
-/*.game {
-}
-.line-start {
-}
-.line-1 {
-}
-.line-2 {
+.line-1:hover ~ .line-2 {
+  visibility: visible;
 }
 .line-3 {
+  visibility: hidden;
+  width: 40%;
+  height: 20px;
+  display: inline-block;
 }
+.line-1:hover ~ .line-2,
+.line-2:hover {
+  visibility: visible;
+}
+
 .line-4 {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
+
+.line-2:hover ~ .line-3,
+.line-3:hover {
+  visibility: visible;
+}
+.line-3:hover ~ .line-4 {
+  visibility: visible;
+}
+
 .line-5 {
+  width: 20px;
+  height: 90px;
+  display: inline-block;
+  visibility: hidden;
+}
+.line-3:hover ~ .line-4,
+.line-4:hover {
+  visibility: visible;
+}
+.line-4:hover ~ .line-5 {
+  visibility: visible;
 }
 .line-6 {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  visibility: hidden;
+  padding-top: 90px;
 }
+.line-4:hover ~ .line-5,
+.line-5:hover {
+  visibility: visible;
+}
+.line-5:hover ~ .line-6 {
+  visibility: visible;
+}
+
 .line-7 {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  visibility: hidden;
+  background-color: #1f4505;
 }
-.line-8 {
+.line-5:hover ~ .line-6,
+.line-6:hover ~ .line-7,
+.line-6:hover,
+.line-7:hover {
+  visibility: visible;
 }
-.line-9 {
+.line-6:hover ~ .line-7 {
+  visibility: visible;
 }
-.line-10 {
-}*/
+
+.game__image {
+  visibility: hidden;
+  margin: 0 auto;
+  max-width: 320px;
+  margin-bottom: 30px;
+}
+.game-text {
+  visibility: hidden;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+.line-7:hover ~ .game__image,
+.line-7:hover ~ .game-text {
+  visibility: visible;
+}
