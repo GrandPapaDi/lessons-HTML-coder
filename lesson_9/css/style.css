@@ -119,93 +119,6 @@ h3 {
 /* PRACTICA THE END*/
 /* PRACTICA THE END*/
 
-/* Game 
-.game-conteiner {
-  max-width: 1250px;
-  text-align: center;
-  font-size: 0;
-  margin: 0 auto;
-}
-.game {
-  min-height: 850px;
-}
-.line {
-  border-color: rgba(210, 105, 30, 0.962);
-}
-.line-1 {
-  width: 50px;
-  height: 50px;
-}
-.line-2 {
-  width: 50px;
-  height: 50px;
-}
-.line-1:hover + .line-2,
-.line-2:hover {
-  width: 100%;
-}
-.line-3 {
-  width: 1200px;
-  height: 50px;
-  display: inline-block;
-}
-.line-4 {
-  visibility: hidden;
-  width: 50px;
-  height: 50px;
-}
-.line-2:hover ~ .line-3,
-.line-3:hover {
-  display: inline-block;
-  visibility: visible;
-}
-.game__line-3-1:hover {
-  height: 100px;
-}
-.line-5 {
-}
-
-.line-start {
-}
-
-.line-start {
-  background-color: rebeccapurple;
-  width: 50px;
-  height: 50px;
-}
-
-.line-start {
-}
-.line-start:hover {
-}
-.line-start:hover {
-}
-
-/*.game {
-}
-.line-start {
-}
-.line-1 {
-}
-.line-2 {
-}
-.line-3 {
-}
-.line-4 {
-}
-.line-5 {
-}
-.line-6 {
-}
-.line-7 {
-}
-.line-8 {
-}
-.line-9 {
-}
-.line-10 {
-}*/
-
 /* jewellery collection */
 /* jewellery collection */
 /* jewellery collection */
@@ -422,9 +335,7 @@ h3 {
 .management-sub-cont {
   margin-bottom: 42px;
 }
-.management-sub-cont > *:last-child {
-  margin-bottom: 0 auto;
-}
+
 .management-img {
   margin-bottom: 37px;
   width: 100%;
@@ -440,16 +351,10 @@ h3 {
   line-height: 1.46; /* 26.314px */
 }
 
-.management-collaboration > *:last-child {
-  margin-bottom: 0 auto;
-}
 .management-collaboration {
   margin-bottom: 50px;
 }
 
-.collaboration-sub-cont > *:last-child {
-  margin-bottom: 0 auto;
-}
 .collaboration-sub-cont {
   font-size: 0;
 }
@@ -461,7 +366,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.27; /* 25.4px */
-  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
 }
 .collaboration-text {
   line-height: 1.46; /* 26.314px */
@@ -475,7 +380,6 @@ h3 {
   display: inline-block;
   max-width: 332px;
   vertical-align: top;
-  margin-bottom: 0 auto;
   font-size: 0;
 }
 
@@ -491,6 +395,7 @@ h3 {
   font-weight: 600;
   line-height: 1.27; /* 25.4px */
   margin-bottom: 23.5px;
+  font-family: "Poppins", sans-serif;
 }
 .sidebar-item {
   font-size: 18px;
