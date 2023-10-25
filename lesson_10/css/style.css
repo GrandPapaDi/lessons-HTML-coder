@@ -1,0 +1,28 @@
+@import url("fonts.css");
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* -------- Text figma ------------ */
+
+body {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  background-color: rgba(142, 131, 131, 0.961);
+  color: aliceblue;
+}
+
+.content {
+  padding: 50px 15px;
+}
+.content p:not(:last-child) {
+  margin-bottom: 50px;
+}
+.icon__vector {
+  margin-bottom: 70px;
+}
+.content__vector {
+  margin-bottom: 70px;
+}
