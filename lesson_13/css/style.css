@@ -212,7 +212,7 @@ body {
   border-radius: 50%;
   right: 45%;
   top: 60%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .circle__biohazard {
@@ -256,6 +256,15 @@ body {
   position: absolute;
   top: 51.5%;
   right: 50%;
+}
+.hood__logo {
+  position: absolute;
+  right: 48.5%;
+  top: 54%;
+  z-index: 2;
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
 }
 .hood__triangle {
   width: 8%;
