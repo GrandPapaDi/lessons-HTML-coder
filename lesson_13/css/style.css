@@ -74,68 +74,55 @@ body {
 /*============Translate=========== */
 .transforms__block:hover .transforms__item {
   transform: translate(20%, 20%);
-  transition: all 0.96s;
 }
 /*============Translate negative=========== */
 .transforms__block.transforms__block--negative:hover .transforms__item {
   transform: translate(-20%, -20%);
-  transition: all 0.96s;
 }
 /*============Rotate=========== */
 .transforms__block.transforms__block--rotates:hover .transforms__item {
   transform: rotate(20deg);
-  transition: all 0.96s;
 }
 /*============Rotate negative=========== */
 .transforms__block.transforms__block--rotates-negative:hover .transforms__item {
   transform: rotate(-20deg);
-  transition: all 0.96s;
 }
 /*============Scale=========== */
 .transforms__block.transforms__block--scale:hover .transforms__item {
   transform: scale(1.5, 1.5);
-  transition: all 0.96s;
 }
 /*============Scale negative=========== */
 .transforms__block.transforms__block--scale-negative:hover .transforms__item {
   transform: scale(0.5, 0.5);
-  transition: all 0.96s;
 }
 
 /*============ScaleX=========== */
 .transforms__block.transforms__block--scalex:hover .transforms__item {
   transform: scaleX(1.5);
-  transition: all 0.96s;
 }
 /*============ScaleY=========== */
 .transforms__block.transforms__block--scaley:hover .transforms__item {
   transform: scaleY(1.5);
-  transition: all 0.96s;
 }
 /*============Skew=========== */
 .transforms__block.transforms__block--skew:hover .transforms__item {
   transform: skew(20deg, 10deg);
-  transition: all 0.96s;
 }
 /*============Skew negative=========== */
 .transforms__block.transforms__block--skew-negative:hover .transforms__item {
   transform: skew(-20deg, -10deg);
-  transition: all 0.96s;
 }
 /*============SkewX=========== */
 .transforms__block.transforms__block--skewx:hover .transforms__item {
   transform: skewX(20deg);
-  transition: all 0.96s;
 }
 /*============SkewY=========== */
 .transforms__block.transforms__block--skewy:hover .transforms__item {
   transform: skewY(20deg);
-  transition: all 0.96s;
 }
 /*============Matrix=========== */
 .transforms__block.transforms__block--matrix:hover .transforms__item {
   transform: matrix(1, -0.3, 0, 1, 0, 0);
-  transition: all 0.96s;
 }
 
 /*============3D=========== */
@@ -152,20 +139,16 @@ body {
 /*============Translate3d=========== */
 .transforms__block.transforms__block--translate:hover .transforms__item {
   transform: translate3d(20px, 20px, -20px);
-  transition: all 0.96s;
 }
 /*============Rotate3d=========== */
 .transforms__block.transforms__block--rotate3d:hover .transforms__item {
   transform: rotate3d(100, 2, 20, -20deg);
-  transition: all 0.96s;
 }
 .transforms__block.transforms__block--rotate3d-down:hover .transforms__item {
   transform: rotate3d(80, 20, 2, 20deg);
-  transition: all 0.96s;
 }
 .transforms__block.transforms__block--rotate3d-up:hover .transforms__item {
   transform: rotate3d(50, 0, 0, 50deg);
-  transition: all 0.96s;
 }
 /*============Matrix3d=========== */
 .transforms__block.transforms__block--matrix3d:hover .transforms__item {
@@ -187,12 +170,10 @@ body {
     0.75,
     1
   );
-  transition: all 0.96s;
 }
 /*============Preserve3d=========== */
 .transforms__block.transforms__block--preserve3d:hover .transforms__item {
   transform: rotateY(540deg);
-  transition: all 0.96s;
 }
 .transforms__block--preserve3d {
   transform-style: preserve-3d;
@@ -271,7 +252,7 @@ body {
 .brick__stud {
   width: 15px;
   height: 15px;
-  background-color: #f70505; /* Цвет бугорка (студа) */
+  background-color: #f70505;
   position: absolute;
   top: 51.5%;
   right: 50%;
@@ -299,7 +280,7 @@ body {
 .hood__stud {
   width: 15px;
   height: 15px;
-  background-color: #f70505; /* Цвет бугорка (студа) */
+  background-color: #f70505;
   position: absolute;
   top: 53%;
   right: 68%;
@@ -315,7 +296,7 @@ body {
 .hood__bumper-stud {
   width: 15px;
   height: 15px;
-  background-color: #110101; /* Цвет бугорка (студа) */
+  background-color: #110101;
   position: absolute;
   top: 61.5%;
   right: 77%;
@@ -412,7 +393,7 @@ body {
 .back__thing {
   width: 20px;
   height: 67px;
-  background-color: #110101; /* Цвет бугорка (студа) */
+  background-color: #110101;
   position: absolute;
   top: 52%;
   right: 46%;
@@ -422,7 +403,7 @@ body {
 .back__spoller-binding {
   width: 25px;
   height: 60px;
-  background-color: #625f5f; /* Цвет бугорка (студа) */
+  background-color: #625f5f;
   position: absolute;
   top: 49%;
   right: 43%;
@@ -450,7 +431,7 @@ body {
 .back__exhaus {
   width: 15px;
   height: 55px;
-  background-color: #110101; /* Цвет бугорка (студа) */
+  background-color: #110101;
   position: absolute;
   top: 55%;
   right: 42%;
