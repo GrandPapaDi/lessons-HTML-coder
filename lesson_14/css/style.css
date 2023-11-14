@@ -676,7 +676,7 @@ span {
 }
 .footer__copy {
   left: 50%;
-  bottom: 10%;
+  bottom: 0.01%;
   position: absolute;
   text-align: center;
   color: #413e3e;
