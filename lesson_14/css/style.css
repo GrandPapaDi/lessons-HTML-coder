@@ -642,10 +642,10 @@ span {
   display: flex;
 }
 .lego__list {
-  font-family: verdana;
+  font-family: "Verdana";
+  font-weight: 700;
   color: #fff;
   font-size: 100px;
-  font-weight: bold;
   letter-spacing: 10px;
   filter: blur(1px);
 }
