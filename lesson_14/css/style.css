@@ -1,0 +1,636 @@
+@import url("fonts.css");
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* -------- Body------------ */
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/03.webp);
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+.main__box {
+  width: 1600px;
+  height: 800px;
+  top: 25%;
+  left: 10%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+/*=========Stars==========*/
+.stars {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+@keyframes shoot {
+  0% {
+    transform: rotate(-20deg) translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-20deg) translateX(-500%);
+    opacity: 0;
+  }
+}
+span {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  width: 150px;
+  height: 4px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.075) 20%
+  );
+  animation-name: shoot;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+span:nth-child(1) {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  animation-delay: 0.1s;
+  z-index: 1;
+}
+span::after:nth-child(2) {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  animation-delay: 0.5s;
+  z-index: 1;
+}
+span:nth-child(3) {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  animation-delay: 1s;
+  z-index: 1;
+}
+span:nth-child(4) {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  animation-delay: 1.5s;
+  z-index: 1;
+}
+span:nth-child(5) {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  animation-delay: 1.5s;
+  z-index: 1;
+}
+span:nth-child(6) {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  animation-delay: 2s;
+  z-index: 1;
+}
+span:nth-child(7) {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  animation-delay: 2.5s;
+  z-index: 1;
+}
+span:nth-child(8) {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  animation-delay: 2.5s;
+  z-index: 1;
+}
+span:nth-child(9) {
+  position: absolute;
+  top: 0%;
+  right: 30%;
+  animation-delay: 2.5s;
+  z-index: 1;
+}
+
+/* -------- Тучка ------------ */
+.cloud {
+  width: 20%;
+  height: 15%;
+  left: 99%;
+  animation: cloud 9s infinite linear;
+  position: relative;
+}
+.cloud .cloud__oval {
+  border-radius: 90px;
+  height: 60%;
+  width: 100%;
+  left: 10%;
+  bottom: -25%;
+  background-color: lightgray;
+  position: absolute;
+}
+.cloud .cloud__circle-left {
+  width: 50%;
+  height: 91%;
+  position: absolute;
+  background-color: lightgray;
+  border-radius: 50%;
+  z-index: -1;
+  left: 5%;
+  bottom: -20%;
+}
+.cloud .cloud__circle-right {
+  width: 66%;
+  height: 117%;
+  position: absolute;
+  background-color: lightgray;
+  border-radius: 50%;
+  z-index: -1;
+  right: -16%;
+  bottom: -18%;
+}
+@keyframes cloud {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+.main__ground-line {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 6px;
+}
+.line {
+  width: 3200px;
+  font-size: 0;
+  animation: roadLine 5s infinite linear;
+}
+.line div {
+  height: 6px;
+  display: inline-block;
+  background-color: #0c461b;
+  border-radius: 6px;
+  vertical-align: bottom;
+  margin-right: 30px;
+  position: relative;
+}
+.line__small {
+  width: 170px;
+}
+.line__big {
+  width: 1170px;
+}
+.line__mid {
+  width: 170px;
+}
+@keyframes roadLine {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1600px);
+  }
+}
+.main__tree {
+  position: absolute;
+  width: 11%;
+  height: 30%;
+  bottom: 1%;
+  right: -11%;
+  z-index: -1;
+  animation: tree 7s infinite linear;
+}
+.main__stem {
+  position: absolute;
+  width: 4%;
+  height: 71%;
+  left: 45%;
+  bottom: 0%;
+  border: 3px solid brown;
+  background-color: brown;
+  border-radius: 5px 5px 0 0;
+}
+.main__stem::after {
+  position: absolute;
+  width: 70%;
+  height: 30%;
+  border: 2px solid brown;
+  background-color: brown;
+  border-radius: 5px 5px 0 0;
+  bottom: 35%;
+  left: 9px;
+  transform: rotate(35deg);
+}
+.main__stem::before {
+  position: absolute;
+  width: 70%;
+  height: 30%;
+  border: 2px solid brown;
+  background-color: brown;
+  border-radius: 5px 5px 0 0;
+  bottom: 48%;
+  right: 9px;
+  transform: rotate(-35deg);
+}
+.main__branch {
+  position: absolute;
+  width: 70%;
+  height: 20%;
+  border: 2px solid brown;
+  background-color: brown;
+  border-radius: 5px 5px 0 0;
+  bottom: 75%;
+  left: 6px;
+  transform: rotate(35deg);
+}
+
+.main__leaves {
+  position: absolute;
+  width: 86%;
+  height: 46%;
+  border-radius: 50%;
+  border: 2px solid #10327c;
+  bottom: 17%;
+  left: 6.5%;
+  z-index: -1;
+  background-color: #12be12;
+}
+
+.main__leaves::before {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid #10327c;
+  border-bottom-color: transparent;
+  background-color: white;
+  top: -59%;
+  left: 10%;
+  z-index: -1;
+  background-color: #12be12;
+}
+@keyframes tree {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+
+/*============ Auto=========== */
+
+.page__auto {
+  width: 30%;
+  height: 30%;
+  top: 51%;
+  left: 18%;
+  position: relative;
+}
+.auto {
+  animation: body 3s infinite linear;
+}
+@keyframes body {
+  0%,
+  20%,
+  40%,
+  45%,
+  60%,
+  80%,
+  100% {
+    top: 52%;
+  }
+  50% {
+    top: 52.5%;
+  }
+  30%,
+  70% {
+    top: 53%;
+  }
+}
+
+.brick__triangle {
+  position: absolute;
+  width: 24%;
+  height: 2%;
+  border-width: 0px 35px 120px;
+  border-style: solid;
+  border-color: #f70505 transparent;
+  right: 0;
+  top: 58%;
+  transform: rotate(106deg);
+}
+.brick__quard {
+  position: absolute;
+  width: 20%;
+  height: 45%;
+  background-color: #f70505;
+  right: 20%;
+  top: 53%;
+  transform: rotate(1deg);
+  z-index: 2;
+}
+.brick__stud {
+  width: 5%;
+  height: 10%;
+  background-color: #f70505;
+  position: absolute;
+  top: 44%;
+  right: 27%;
+}
+.hood__logo {
+  position: absolute;
+  right: 60%;
+  top: 60%;
+  z-index: 4;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+.hood__triangle {
+  position: absolute;
+  width: 24%;
+  height: 2%;
+  border-width: 0px 35px 120px;
+  border-style: solid;
+  border-color: #f70505 transparent;
+  right: 38%;
+  top: 59%;
+  transform: rotate(106deg);
+}
+.hood__quard {
+  position: absolute;
+  width: 20%;
+  height: 45%;
+  background-color: #f70505;
+  right: 58%;
+  top: 54.7%;
+  z-index: 3;
+}
+.hood__stud {
+  width: 5%;
+  height: 10%;
+  background-color: #f70505;
+  position: absolute;
+  top: 47%;
+  right: 65%;
+  z-index: 2;
+}
+.hood__bumper {
+  width: 20%;
+  height: 8%;
+  background-color: #110101;
+  position: absolute;
+  top: 99%;
+  left: 88%;
+}
+.hood__bumper-stud {
+  width: 5%;
+  height: 10%;
+  background-color: #110101;
+  position: absolute;
+  top: 90%;
+  left: 95%;
+}
+.hood__whell-stock {
+  width: 2%;
+  height: 20%;
+  background-color: #110101;
+  position: absolute;
+  top: 45%;
+  right: 40%;
+  transform: rotate(130deg);
+}
+.hood__whell {
+  width: 2%;
+  height: 20%;
+  background-color: #110101;
+  position: absolute;
+  top: 40%;
+  right: 44%;
+  transform: rotate(180deg);
+}
+.hood__sits {
+  width: 5%;
+  height: 18%;
+  background-color: #f70505;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: rotate(180deg);
+}
+
+/*======Чувачок=====*/
+.man__body {
+  width: 8%;
+  height: 35%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 30%;
+  right: 60%;
+  transform: rotate(180deg);
+  border-radius: 20%;
+  border: 2px solid black;
+}
+
+.man__helm {
+  width: 12%;
+  height: 22%;
+  background-color: #f70505;
+  position: absolute;
+  top: 8%;
+  right: 57.5%;
+  border-radius: 29% 60% 44% 10% / 37% 75% 18% 10%;
+  border: 1px solid black;
+}
+.man__visor {
+  width: 8%;
+  height: 12%;
+  background-color: #110101;
+  position: absolute;
+  top: 11%;
+  right: 58%;
+  border-radius: 0% 100% 100% 0% / 0% 71% 32% 10%;
+  transform: rotate(175deg);
+}
+.man__shoulder {
+  width: 4%;
+  height: 25%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 30%;
+  right: 57%;
+  transform: rotate(125deg);
+  border-radius: 30%;
+}
+.man__hand {
+  width: 4%;
+  height: 20%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 39%;
+  right: 49%;
+  transform: rotate(100deg);
+  border-radius: 30%;
+  z-index: 1;
+}
+.man__finger {
+  width: 5%;
+  height: 10%;
+  background-color: rgb(255, 208, 0);
+  position: absolute;
+  top: 44%;
+  right: 45%;
+  border-radius: 30%;
+  border-radius: 0% 100% 100% 0% / 59% 49% 51% 41%;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+.back__thing {
+  width: 8%;
+  height: 40%;
+  background-color: #110101;
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  border-radius: 35% 31% 10% 10% / 75% 75% 0% 0%;
+  z-index: 1;
+}
+.back__spoller-binding {
+  width: 8%;
+  height: 40%;
+  background-color: #625f5f;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  border-radius: 50% 50% 10% 10% / 23% 24% 0% 0%;
+  border: 1px solid black;
+}
+.back__spoller-pin {
+  width: 3%;
+  height: 6%;
+  background-color: #110101;
+  position: absolute;
+  top: 39%;
+  left: 12.5%;
+  border-radius: 50%;
+}
+.back__spoller {
+  width: 8%;
+  height: 50%;
+  background-color: #110101;
+  position: absolute;
+  top: 6%;
+  left: 11%;
+  transform: rotate(90deg);
+  border-radius: 100% 0% 100% 0% / 99% 1% 100% 1%;
+}
+.back__exhaus {
+  width: 5%;
+  height: 40%;
+  background-color: #110101;
+  position: absolute;
+  top: 45%;
+  left: 6%;
+  border-radius: 35% 31% 10% 10% / 75% 75% 0% 0%;
+  transform: rotate(270deg);
+}
+.back__smoke::after {
+  content: "";
+  width: 75px;
+  height: 162px;
+  display: inline-block;
+  position: absolute;
+  bottom: 4%;
+  right: 99.99%;
+  background: url("../img/001.webp") 0 0 / contain no-repeat;
+  transform: rotate(90deg);
+  visibility: hidden;
+  animation: smoke 4s infinite linear;
+}
+
+@keyframes smoke {
+  0% {
+    visibility: visible;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/*=========Wheels=========*/
+.circle__bio-left {
+  position: absolute;
+  width: 6%;
+  height: 12%;
+  background: rgb(36, 39, 36);
+  border-radius: 50%;
+  right: 75%;
+  top: 87.5%;
+  z-index: 3;
+}
+.circle__bio-right {
+  position: absolute;
+  width: 6%;
+  height: 12%;
+  background: rgb(36, 39, 36);
+  border-radius: 50%;
+  right: 58%;
+  top: 87.5%;
+  z-index: 3;
+}
+
+.circle__biohazard {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 18.5%;
+  left: 18.5%;
+  border: 30px solid;
+  border-radius: 50%;
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: yellow;
+  border-right-color: yellow;
+  z-index: 2;
+  animation: wheel 0.4s infinite linear;
+}
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.footer__ground {
+  /* background: url(../img/05.webp);*/
+  border-top: 1px solid #000;
+}
+.footer-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
