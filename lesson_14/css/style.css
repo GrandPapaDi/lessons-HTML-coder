@@ -60,70 +60,69 @@ span {
   animation-iteration-count: infinite;
   opacity: 0;
 }
-span:nth-child(1) {
+.comet__one {
   position: absolute;
   top: 0%;
   left: 40%;
   animation-delay: 0.1s;
   z-index: 1;
 }
-span::after:nth-child(2) {
+.comet__two {
   position: absolute;
   top: 10%;
   right: 10%;
   animation-delay: 0.5s;
   z-index: 1;
 }
-span:nth-child(3) {
+.comet__three {
   position: absolute;
   top: 40%;
   right: 0%;
   animation-delay: 1s;
   z-index: 1;
 }
-span:nth-child(4) {
+.comet__four {
   position: absolute;
   top: 0%;
   right: 0%;
   animation-delay: 1.5s;
   z-index: 1;
 }
-span:nth-child(5) {
+.comet__five {
   position: absolute;
   top: 40%;
   right: 40%;
   animation-delay: 1.5s;
   z-index: 1;
 }
-span:nth-child(6) {
+.comet__six {
   position: absolute;
   top: 20%;
   right: 0%;
   animation-delay: 2s;
   z-index: 1;
 }
-span:nth-child(7) {
+.comet__six {
   position: absolute;
   top: 30%;
   right: 0%;
   animation-delay: 2.5s;
   z-index: 1;
 }
-span:nth-child(8) {
+.comet__eight {
   position: absolute;
   top: 10%;
   right: 50%;
   animation-delay: 2.5s;
   z-index: 1;
 }
-span:nth-child(9) {
+.comet__nine {
   position: absolute;
   top: 0%;
   right: 30%;
   animation-delay: 2.5s;
   z-index: 1;
 }
-
 /* -------- Тучка ------------ */
 .cloud {
   width: 20%;
@@ -307,6 +306,15 @@ span:nth-child(9) {
 .auto {
   animation: body 3s infinite linear;
 }
+.auto__logo {
+  position: absolute;
+  right: 60%;
+  top: 60%;
+  z-index: 4;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
 @keyframes body {
   0%,
   20%,
@@ -354,15 +362,6 @@ span:nth-child(9) {
   position: absolute;
   top: 44%;
   right: 27%;
-}
-.hood__logo {
-  position: absolute;
-  right: 60%;
-  top: 60%;
-  z-index: 4;
-  width: 80px;
-  height: 80px;
-  border: 1px solid black;
 }
 .hood__triangle {
   position: absolute;
@@ -553,7 +552,6 @@ span:nth-child(9) {
   transform: rotate(270deg);
 }
 .back__smoke::after {
-  content: "";
   width: 75px;
   height: 162px;
   display: inline-block;
@@ -600,7 +598,6 @@ span:nth-child(9) {
   top: 87.5%;
   z-index: 3;
 }
-
 .circle__biohazard {
   position: absolute;
   width: 0;
@@ -626,11 +623,62 @@ span:nth-child(9) {
 }
 
 .footer__ground {
-  /* background: url(../img/05.webp);*/
   border-top: 1px solid #000;
 }
 .footer-img {
   width: 100%;
   height: 100%;
   position: relative;
+}
+.main__lego {
+  position: absolute;
+  top: 55%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+.lego__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.lego__list {
+  font-family: verdana;
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  filter: blur(1px);
+}
+.lego__list:hover .lego__item {
+  animation: lego 2s linear forwards;
+}
+@keyframes lego {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(1px);
+  }
+}
+.lego__list .lego__item:nth-child(1) {
+  animation-delay: 0s;
+}
+.lego__list .lego__item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.lego__list .lego__item:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.lego__list .lego__item:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.footer__copy {
+  left: 50%;
+  bottom: 10%;
+  position: absolute;
+  text-align: center;
+  color: #413e3e;
+  font-size: 18px;
 }
