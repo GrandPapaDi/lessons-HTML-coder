@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__jhanvi jhanvi">
+				<div class="jhanvi__container">
+					<h2 class="jhanvi__title">My Info</h2>
+					<h3 class="jhanvi__sub-title">Add Address</h3>
+					<form id="userinfo" action="#" enctype="multipart/form-data" method="GET" class="jhanvi__form form-info">
+						<div class="form-info__body">
+							<div class="form-info__options">
+								<label class="form-info__item" for="first-name">First Name*</label>
+								<input class="form-info__input" id="first-name" autocomplete="off" name="name" placeholder="First Name"
+									type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="last-name">Last Name*</label>
+								<input class="form-info__input" id="last-name" autocomplete="off" name="name" placeholder="Last Name"
+									type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="region-name">Country / Region*</label>
+								<input class="form-info__input" id="region-name" autocomplete="off" name="name"
+									placeholder="Country / Region" type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="company-name">Company Name</label>
+								<input class="form-info__input" id="company-name" autocomplete="off" name="name"
+									placeholder="Company (optional)" type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="address-name">Street Address*</label>
+								<input class="form-info__input" id="address-name" autocomplete="off" name="name"
+									placeholder="House number and street name" type="text">
+							</div>
+
+							<div class="form-info__options">
+								<label class="form-info__item" for="apartment-name">Apt, suite, unit</label>
+								<input class="form-info__input" id="apartment-name" autocomplete="off" name="name"
+									placeholder="apartment, suite, unit, etc. (optional)" type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="city-name">City*</label>
+								<input class="form-info__input" id="city-name" autocomplete="off" name="name" placeholder="Town / City"
+									type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="state-name">State*</label>
+								<input class="form-info__input" id="state-name" autocomplete="off" name="name" placeholder="State"
+									type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="phone-name">Phone*</label>
+								<input class="form-info__input" id="phone-name" autocomplete="off" name="phone" type="tel"
+									placeholder="Phone" type="text">
+							</div>
+							<div class="form-info__options">
+								<label class="form-info__item" for="postal-name">Postal Code*</label>
+								<input class="form-info__input" id="postal-name" autocomplete="off" name="name"
+									placeholder="Postal Code*" type="text">
+							</div>
+							<div class="form-info__options form-info__options--textarea">
+								<label class="form-info__textarea-item" for="message">Delivery Instruction</label>
+								<textarea class="form-info__textarea-input" id="message" name="message"
+									placeholder="Delivery Instruction"></textarea>
+							</div>
+							<div class="form-info__checkbox checkbox">
+								<div class="checkbox__form">
+									<input class="checkbox__input" checked id="shipping-address" type="checkbox" name="shipping address">
+									<label class="checkbox__item" for="shipping-address">Set as default shipping address</label>
+								</div>
+								<div class="checkbox__form">
+									<input class="checkbox__input" checked id="billing-address" type="checkbox" name="billing address">
+									<label class="checkbox__item" for="billing-address">Set as default billing address</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-info__button button">
+							<button class="button__form">Save</button>
+							<button class="button__form button__form--white">Cancel</button>
+						</div>
+					</form>
+
+				</div>
+			</section>
+		</main>
+		<footer class=" footer"></footer>
+	</div>
+</body>
+
+</html>
