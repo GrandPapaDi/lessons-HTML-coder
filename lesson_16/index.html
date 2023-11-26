@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,7 +11,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header"></header>
+		<header class="header">Lesson 16</header>
 		<main class="page">
 			<section class="page__jhanvi jhanvi">
 				<div class="jhanvi__container">
@@ -21,81 +21,339 @@
 						<div class="form-info__body">
 							<div class="form-info__options">
 								<label class="form-info__item" for="first-name">First Name*</label>
-								<input class="form-info__input" id="first-name" autocomplete="off" name="name" placeholder="First Name"
-									type="text">
+								<input class="form-info__input" id="first-name" autocomplete="off" name="first-name"
+									placeholder="First Name" type="text" required>
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="last-name">Last Name*</label>
-								<input class="form-info__input" id="last-name" autocomplete="off" name="name" placeholder="Last Name"
-									type="text">
+								<input class="form-info__input" id="last-name" autocomplete="on" name="last-name"
+									placeholder="Last Name" type="text" required>
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="region-name">Country / Region*</label>
-								<input class="form-info__input" id="region-name" autocomplete="off" name="name"
-									placeholder="Country / Region" type="text">
+								<input class="form-info__input" id="region-name" autocomplete="on" name="region"
+									placeholder="Country / Region" type="text" required>
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="company-name">Company Name</label>
-								<input class="form-info__input" id="company-name" autocomplete="off" name="name"
+								<input class="form-info__input" id="company-name" autocomplete="on" name="company"
 									placeholder="Company (optional)" type="text">
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="address-name">Street Address*</label>
-								<input class="form-info__input" id="address-name" autocomplete="off" name="name"
-									placeholder="House number and street name" type="text">
+								<input class="form-info__input" id="address-name" autocomplete="on" name="address"
+									placeholder="House number and street name" type="text" required>
 							</div>
 
 							<div class="form-info__options">
 								<label class="form-info__item" for="apartment-name">Apt, suite, unit</label>
-								<input class="form-info__input" id="apartment-name" autocomplete="off" name="name"
+								<input class="form-info__input" id="apartment-name" autocomplete="on" name="apartment"
 									placeholder="apartment, suite, unit, etc. (optional)" type="text">
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="city-name">City*</label>
-								<input class="form-info__input" id="city-name" autocomplete="off" name="name" placeholder="Town / City"
-									type="text">
+								<input class="form-info__input" id="city-name" autocomplete="on" name="city" placeholder="Town / City"
+									type="text" required>
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="state-name">State*</label>
-								<input class="form-info__input" id="state-name" autocomplete="off" name="name" placeholder="State"
-									type="text">
+								<select class="form-info__input" name="state" id="state-name" required>
+									<option value="" disabled selected class="form-info__state">Please select a region
+									</option>
+									<option value="Alabama" class="form-info__state">Алабама - Alabama</option>
+									<option value="Alaska" class="form-info__state">Аляска - Alaska</option>
+									<option value="Arizona" class="form-info__state">Аризона - Arizona</option>
+									<option value="Arkansas" class="form-info__state">Арканзас - Arkansas</option>
+									<option value="California" class="form-info__state">Калифорния - California</option>
+									<option value="Colorado" class="form-info__state">Колорадо - Colorado</option>
+									<option value="Connecticut" class="form-info__state">Коннектикут - Connecticut</option>
+									<option value="Delaware" class="form-info__state">Делавэр - Delaware</option>
+									<option value="Florida" class="form-info__state">Флорида - Florida</option>
+									<option value="Georgia" class="form-info__state">Джорджия - Georgia</option>
+									<option value="Hawaii" class="form-info__state">Гавайи - Hawaii</option>
+									<option value="Idaho" class="form-info__state">Айдахо - Idaho</option>
+									<option value="Illinois" class="form-info__state">Иллинойс - Illinois</option>
+									<option value="Indiana" class="form-info__state">Индиана - Indiana</option>
+									<option value="Iowa" class="form-info__state">Айова - Iowa</option>
+									<option value="Kansas" class="form-info__state">Канзас - Kansas</option>
+									<option value="Kentucky" class="form-info__state">Кентукки - Kentucky</option>
+									<option value="Louisiana" class="form-info__state">Луизиана - Louisiana</option>
+									<option value="Maine" class="form-info__state">Мэн - Maine</option>
+									<option value="Maryland" class="form-info__state">Мэриленд - Maryland</option>
+									<option value="Massachusetts" class="form-info__state">Массачусетс - Massachusetts</option>
+									<option value="Michigan" class="form-info__state">Мичиган - Michigan</option>
+									<option value="Minnesota" class="form-info__state">Миннесота - Minnesota</option>
+									<option value="Mississippi" class="form-info__state">Миссисипи - Mississippi</option>
+									<option value="Missouri" class="form-info__state">Миссури - Missouri</option>
+									<option value="Montana" class="form-info__state">Монтана - Montana</option>
+									<option value="Nebraska" class="form-info__state">Небраска - Nebraska</option>
+									<option value="Nevada" class="form-info__state">Невада - Nevada</option>
+									<option value="New Hampshire" class="form-info__state">Нью-Гэмпшир - New Hampshire</option>
+									<option value="New Jersey" class="form-info__state">Нью-Джерси - New Jersey</option>
+									<option value="New Mexico" class="form-info__state">Нью-Мексико - New Mexico</option>
+									<option value="New York" class="form-info__state">Нью-Йорк - New York</option>
+									<option value="North Carolina" class="form-info__state">Северная Каролина - NorthCarolina</option>
+									<option value="North Dakota" class="form-info__state">Северная Дакота - North Dakota</option>
+									<option value="Ohio" class="form-info__state">Огайо - Ohio</option>
+									<option value="Oklahoma" class="form-info__state">Оклахома - Oklahoma</option>
+									<option value="Oregon" class="form-info__state">Орегон - Oregon</option>
+									<option value="Pennsylvania" class="form-info__state">Пенсильвания - Pennsylvania</option>
+									<option value="Rhode Island" class="form-info__state">Род-Айленд - Rhode Island</option>
+									<option value="South Carolina" class="form-info__state">Южная Каролина - South Carolina</option>
+									<option value="South Dakota" class="form-info__state">Южная Дакота - South Dakota</option>
+									<option value="Tennessee" class="form-info__state">Теннесси - Tennessee</option>
+									<option value="Texas" class="form-info__state">Техас - Texas</option>
+									<option value="Utah" class="form-info__state">Юта - Utah</option>
+									<option value="Vermont" class="form-info__state">Вермонт - Vermont</option>
+									<option value="Virginia" class="form-info__state">Виргиния - Virginia</option>
+									<option value="Washington" class="form-info__state">Вашингтон - Washington</option>
+									<option value="West Virginia" class="form-info__state">Западная Виргиния - West Virginia</option>
+									<option value="Wisconsin" class="form-info__state">Висконсин - Wisconsin</option>
+									<option value="Wyoming" class="form-info__state">Вайоминг - Wyoming</option>
+								</select>
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="phone-name">Phone*</label>
-								<input class="form-info__input" id="phone-name" autocomplete="off" name="phone" type="tel"
-									placeholder="Phone" type="text">
+								<input class="form-info__input" id="phone-name" autocomplete="on" name="phone" type="tel"
+									placeholder="Phone" required>
 							</div>
 							<div class="form-info__options">
 								<label class="form-info__item" for="postal-name">Postal Code*</label>
-								<input class="form-info__input" id="postal-name" autocomplete="off" name="name"
-									placeholder="Postal Code*" type="text">
+								<input class="form-info__input" id="postal-name" autocomplete="on" name="name"
+									placeholder="Postal Code*" type="text" required>
 							</div>
 							<div class="form-info__options form-info__options--textarea">
 								<label class="form-info__textarea-item" for="message">Delivery Instruction</label>
 								<textarea class="form-info__textarea-input" id="message" name="message"
 									placeholder="Delivery Instruction"></textarea>
 							</div>
-							<div class="form-info__checkbox checkbox">
-								<div class="checkbox__form">
-									<input class="checkbox__input" checked id="shipping-address" type="checkbox" name="shipping address">
-									<label class="checkbox__item" for="shipping-address">Set as default shipping address</label>
-								</div>
-								<div class="checkbox__form">
-									<input class="checkbox__input" checked id="billing-address" type="checkbox" name="billing address">
-									<label class="checkbox__item" for="billing-address">Set as default billing address</label>
-								</div>
+						</div>
+						<div class="form-info__checkbox checkbox">
+							<div class="checkbox__form">
+								<input class="checkbox__input" id="shipping-address" type="checkbox" name="shipping address">
+								<label class="checkbox__item" for="shipping-address">Set as default shipping address</label>
+							</div>
+							<div class="checkbox__form">
+								<input class="checkbox__input" id="billing-address" type="checkbox" name="billing address">
+								<label class="checkbox__item" for="billing-address">Set as default billing address</label>
 							</div>
 						</div>
 						<div class="form-info__button button">
-							<button class="button__form">Save</button>
-							<button class="button__form button__form--white">Cancel</button>
+							<button class="button__form" type="submit">Save</button>
+							<button class="button__form button__form--white" type="reset">Cancel</button>
 						</div>
 					</form>
+				</div>
+			</section>
+			<section class="page__check check">
+				<div class="check__container">
+					<div class="check__content">
+						<h2 class="check__title">Check Out</h2>
+						<h3 class="check__sub-title title">Billing Details</h3>
+						<form class="check__form form" id="check-out" action="#" enctype="multipart/form-data" method="GET">
+							<div class="form__body-details">
+								<div class="form__item">
+									<label class="form__label" for="f-name">First Name*</label>
+									<input class="form__input" type="text" id="f-name" placeholder="First Name" required>
+								</div>
+								<div class="form__item">
+									<label class="form__label" for="l-name">Last Name*</label>
+									<input class="form__input" type="text" id="l-name" required placeholder="Last Name">
+								</div>
+								<div class="form__item">
+									<label class="form__label" for="country">Country / Region*</label>
+									<input class="form__input" type="text" id="country" required placeholder="Country / Region">
+								</div>
+								<div class="form__item">
+									<label class="form__label" for="company">Company Name</label>
+									<input class="form__input" type="text" id="company" placeholder="Company (optional)">
+								</div>
+								<div class="form__item">
+									<label class="form__label" for="address">Street Address*</label>
+									<input class="form__input" type="text" id="address" required
+										placeholder="House number and street name">
+								</div>
+								<div class="form__item">
+									<label class="form__label" for="apartment">Apt, suite, unit</label>
+									<input class="form__input" type="text" id="apartment"
+										placeholder="apartment, suite, unit, etc. (optional)">
+								</div>
+							</div>
+							<div class="form__body-state">
+								<div class="form__item-state">
+									<label class="form__label" for="city">City*</label>
+									<input class="form__input" type="text" id="city" name="city" required placeholder="Town / City">
+								</div>
+								<div class="form__item-state">
+									<label class="form__label" for="state">State*</label>
+									<input class="form__input" type="text" id="state" name="state" required placeholder="State">
+								</div>
+								<div class="form__item-state">
+									<label class="form__label" for="postal-code">Postal Code*</label>
+									<input class="form__input" type="text" id="postal-code" name="postal-code" required
+										placeholder="Postal Code">
+								</div>
 
+							</div>
+							<div class="form__body-phone">
+								<div class="form__item-phone">
+									<label class="form__label" for="phone">Phone*</label>
+									<input class="form__input" type="tel" id="phone" name="phone" required placeholder="Phone">
+								</div>
+							</div>
+							<div class="form__submit">
+								<button class="form__button button">Continue to delivery</button>
+							</div>
+							<div class="form__checkbox checkbox-single">
+								<input type="checkbox" class="checkbox-single__input" id="save" name="save">
+								<label for="save" class="checkbox-single__item">Save my information for a faster checkout</label>
+							</div>
+							<div class="check__line"></div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__shipping shipping">
+				<div class="shipping__container">
+					<div class="shipping__content">
+						<form action="#" class="shipping__form form-shipping" id="shipping" enctype="multipart/form-data"
+							method="GET">
+							<div class="form-shipping__box box">
+								<h3 class="form-shipping__title title">Shipping Address</h3>
+								<h6 class="form-shipping__sub-title sub-title">Select the address that matches your card or payment
+									method.</h6>
+								<div class="form-shipping__radio radio">
+									<div class="radio__form">
+										<input class="radio__form-input" type="radio" name="shipping-address" id="billing" checked>
+										<label class="radio__form-label" for="billing">Same as Billing address</label>
+									</div>
+									<div class="radio__form">
+										<input class="radio__form-input" type="radio" name="shipping-address" id="different">
+										<label class="radio__form-label" for="different">Use a different shipping address</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-shipping__box box">
+								<h3 class="form-shipping__title title form-shipping__title--method">Shipping Method</h3>
+								<div class="form-shipping__delivery-block">
+									<div class="form-shipping__day">Arrives by Monday, June 7</div>
+									<div class="form-shipping__method">
+										<div class="form-shipping__delivery">
+											<div class="form-shipping__chargers">Delivery Charges</div>
+											<div class="form-shipping__apply">Additional fess may apply</div>
+										</div>
+										<div class="form-shipping__price">$5.00</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="shipping__payment payment">
+								<h3 class="payment__title title">Payment Method</h3>
+								<h6 class="payment__sub-title sub-title">All transactions are secure and encrypted.</h6>
+								<div class="payment__radio radio-payment">
+									<div class="radio-payment__box">
+										<div class="radio-payment__method">
+											<input class="radio-payment__input" name="card" id="method" value="method" type="radio">
+											<div class="radio-payment__text">
+												<label class="radio-payment__label" for="method">Credit Card</label>
+												<h6 class="radio-payment__sub-title sub-title">We accept all major credit cards.</h6>
+											</div>
+										</div>
+										<div class="radio-payment__cards">
+											<div class="radio-payment__card">
+												<img class="radio-payment__img" src="img/payment/01.svg" alt="Gpay">
+											</div>
+											<div class="radio-payment__card">
+												<img src="img/payment/02.svg" alt="Visa">
+											</div>
+											<div class="radio-payment__card">
+												<img src="img/payment/03.svg" alt="PayPal">
+											</div>
+											<div class="radio-payment__card">
+												<img src="img/payment/04.svg" alt="PayPass">
+											</div>
+										</div>
+										<div class="radio-payment__options">
+											<div class="radio-payment__items">
+												<input class="radio-payment__item" name="card-number" placeholder="Card number" type="tel"
+													required autocomplete="on">
+											</div>
+											<div class="radio-payment__items">
+												<input class="radio-payment__item" name="card-name" placeholder="Name of card" type="tel"
+													required autocomplete="on">
+											</div>
+											<div class="radio-payment__items">
+												<input class="radio-payment__item" name="date" placeholder="Expiration date (MM/YY)" type="tel"
+													required autocomplete="on">
+											</div>
+											<div class="radio-payment__items radio-payment__items--eye">
+												<input class="radio-payment__item" name="code" placeholder="Security Code" type="tel" required
+													autocomplete="on">
+											</div>
+										</div>
+
+										<div class="radio-payment__line"></div>
+									</div>
+									<div class="radio-payment__cash cash-payment">
+										<div class="cash-payment__method">
+											<input class="cash-payment__input" name="card" id="cash" value="cash" type="radio">
+											<div class="cash-payment__text">
+												<label class="cash-payment__label" for="cash">Cash on delivery</label>
+												<h6 class="cash-payment__sub-title sub-title">Pay with cash upon delivery.</h6>
+											</div>
+										</div>
+									</div>
+
+									<div class="radio-payment__line"></div>
+									<div class="radio-payment__paypol paypol-payment">
+										<div class="paypol-payment__method">
+											<input class="paypol-payment__input" name="card" id="paypol" value="paypol" type="radio">
+											<div class="paypol-payment__text">
+												<label class="paypol-payment__label" for="paypol">Paypol</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="form-shipping__button button" type="submit">Pay Now</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__request request">
+				<div class="request__container">
+					<h1 class="request__title">Contact Us</h1>
+					<h2 class="request__sub-title">Request A Call Back !</h2>
+					<form class="request__form form form-request" id="call-back-form" enctype="multipart/form-data" method="GET"
+						action="#">
+						<div class="form-request__body">
+							<div class="form-request__item">
+								<input class="form-request__input" autocomplete="on" name="name" placeholder="Your Name" type="text">
+							</div>
+							<div class="form-request__item">
+								<input class="form-request__input" name="mail" placeholder="Email Address" type="email">
+							</div>
+							<div class="form-request__item">
+								<input class="form-request__input" autocomplete="off" name="phone" placeholder="Phone Number"
+									type="tel">
+							</div>
+							<div class="form-request__item">
+								<input class="form-request__input" name="mail" placeholder="Subject" type="email">
+							</div>
+							<div class="form-request__item form-request__item--textarea">
+								<textarea class="form-request__textarea" name="Message..." placeholder="Message..."></textarea>
+							</div>
+						</div>
+						<button class="form-request__button" form="call-back-form" type="submit">submit</button>
+					</form>
 				</div>
 			</section>
 		</main>
-		<footer class=" footer"></footer>
+		<footer class=" footer">
+			<div class="footer__copy">© 26.11.2023</div>
+		</footer>
 	</div>
 </body>
 
