@@ -22,7 +22,7 @@ body {
   flex-grow: 1;
 }
 [class*="__container"] {
-  max-width: 1095px;
+  max-width: 925px;
   margin: 0 auto;
   padding: 0px 15px;
 }
@@ -33,7 +33,22 @@ footer {
   text-transform: uppercase;
   background-color: #f6f6f6;
 }
+textarea:focus,
+input:focus,
+button:focus,
+select:focus {
+  outline: 2px solid #04f510;
+}
+textarea:hover,
+input:hover,
+button:hover,
+select:hover {
+  outline: 1px solid #c4c4c4;
+}
 
+.form-info__input:hover {
+  outline: 1px solid #c4c4c4;
+}
 .page__jhanvi {
   text-align: start;
   padding: 50px 0;
@@ -97,25 +112,7 @@ select {
   border-radius: 8px;
   background: #f6f6f6;
 }
-textarea:focus,
-input:focus,
-button:focus {
-  outline: 2px solid #04f510;
-}
-textarea:hover,
-input:hover,
-button:hover {
-  outline: 1px solid #c4c4c4;
-}
-.form-info__input:focus-visible + .form-info__item {
-  outline: 2px solid #04f510;
-}
-.form-info__input:hover {
-  outline: 1px solid #c4c4c4;
-}
-.form-info__input:focus {
-  outline: 2px solid #04f510;
-}
+
 /*=============Textarea==============*/
 .form-info__options--textarea {
   flex: 1 1 auto;
@@ -159,6 +156,9 @@ button:hover {
 .checkbox__input:checked + .checkbox__item::before {
   background-color: #8a33fd;
 }
+.checkbox__input:focus-visible + .checkbox__item::before {
+  outline: 2px solid #04f510;
+}
 .checkbox__item {
   display: inline-flex;
   gap: 12px;
@@ -173,6 +173,7 @@ button:hover {
   border: 2px solid #5a5757;
   content: "";
 }
+
 .form-info__button {
   gap: 30px;
   display: flex;
@@ -201,7 +202,7 @@ button:hover {
 
 /*=================Page__check==================*/
 .check__container {
-  max-width: 1001px;
+  max-width: 832px;
 }
 .check__content {
   padding: 30px 0;
@@ -252,19 +253,23 @@ button:hover {
   padding: 0 19px;
   min-width: 316px;
 }
-.form__label:not(:last-child) {
+.form__label,
+.form__label-state:not(:last-child) {
   margin-bottom: 10px;
   display: inline-block;
 }
-.form__label {
+.form__label,
+.form__label-state {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.32px;
 }
-.form__input {
+.form__input,
+.form__input-state {
   color: #807d7e;
   font-size: 14px;
   font-weight: 400;
+  font-family: Causten;
 }
 .form__item input {
   width: 100%;
@@ -274,20 +279,17 @@ button:hover {
   border-radius: 8px;
   background: #f6f6f6;
 }
-.form__input:focus-visible + .form__label {
-  outline: 1px solid #fff;
-}
+
 /*============body-state============*/
 .form__body-state {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -16px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 .form__item-state {
-  flex: 1 1 33.333%;
+  flex: 0 1 33.333%;
   padding: 0 16px;
-  min-width: 316px;
 }
 .form__item-state input {
   width: 100%;
@@ -297,19 +299,20 @@ button:hover {
   border-radius: 8px;
   background: #f6f6f6;
 }
-.form__input:focus-visible + .form__label {
-  outline: 1px solid #fff;
+.form__input-state {
+  padding: 15px 20px;
 }
+.form__input-state:focus-visible + .form__label-state::before {
+  outline: 2px solid #04f510;
+}
+/*=============Body-phone===============*/
 .form__body-phone {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -16px;
   margin-bottom: 43px;
 }
 .form__item-phone {
   flex: 0 1 382px;
-  padding: 0 16px;
-  min-width: 316px;
 }
 .form__item-phone input {
   width: 100%;
