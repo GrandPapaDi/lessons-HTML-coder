@@ -596,6 +596,9 @@ select {
   color: #8a33fd;
 }
 /*========Request A Call Back !==========*/
+.request__container {
+  max-width: 1250px;
+}
 .page__request {
   text-align: center;
   padding: 50px 0;
