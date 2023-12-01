@@ -79,6 +79,9 @@ footer {
   padding: 0px 24px;
   flex: 1 1 33.333px;
 }
+.products-main__link {
+  width: 100%;
+}
 @media (max-width: 1100px) {
   .products-main__column {
     padding: 0 20px;
@@ -206,7 +209,7 @@ footer {
 }
 @media (max-width: 993px) {
   .carrings {
-    padding: 40px 0px 80px 0px;
+    padding: 60px 0px 80px 0px;
   }
 }
 
@@ -219,7 +222,7 @@ footer {
 }
 @media (max-width: 767px) {
   .carrings {
-    padding: 0px 0px 40px 0px;
+    padding: 60px 0px 80px 0px;
   }
   .carrings__block {
     margin-bottom: 40px;
@@ -258,6 +261,9 @@ footer {
   flex: 0 1 25%;
   margin: 0px 0px 88px 0px;
 }
+.carrings__link {
+  width: 100%;
+}
 @media (max-width: 1040px) {
   .carrings__column {
     flex: 0 1 50%;
@@ -269,7 +275,6 @@ footer {
 @media (max-width: 630px) {
   .carrings__column {
     flex: 0 1 100%;
-    padding: 0 75px;
   }
 }
 @media (max-width: 490px) {
