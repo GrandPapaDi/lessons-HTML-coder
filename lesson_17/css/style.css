@@ -1,0 +1,892 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+header,
+footer {
+  text-align: center;
+  padding: 30px 0;
+  text-transform: uppercase;
+  background-color: #f6f6f6;
+}
+/*================PAGE=============*/
+.page__main {
+}
+.page__carrings {
+}
+.page__diamond {
+}
+.page__business {
+}
+/*================CONTENT=============*/
+
+.main {
+  padding: 125px 0 80px 0;
+  background-color: #fefaf4;
+}
+@media (min-width: 1450px) {
+  .main {
+    background: url(../img/product/decor.png) right 110% / 185px 375px no-repeat;
+    background-color: #fefaf4;
+  }
+}
+.products-main__top:not(:last-child) {
+  margin-bottom: 63px;
+}
+.products-main__title {
+  font-family: "DM Serif Text";
+  font-size: 58px;
+  line-height: 0.58; /* 58px */
+  letter-spacing: 0.5px;
+}
+.products-main__title:not(:last-child) {
+  margin-bottom: 27px;
+}
+.products-main__sub-title-sub {
+  color: #606060;
+  font-size: 20px;
+  line-height: 1.8; /* 180% */
+}
+.products-main__body {
+  margin: 0px -24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-main__column {
+  padding: 0px 24px;
+  flex: 1 1 33.333px;
+}
+@media (max-width: 1100px) {
+  .products-main__column {
+    padding: 0 20px;
+  }
+  .products-main__column:not(:last-child) {
+    margin: 0px 0px 40px 0px;
+  }
+  .main {
+    padding: 75px 0 80px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .products-main__column {
+    flex: 0 1 50%;
+  }
+  .products-main__column:nth-child(3) {
+    flex: 0 1 100%;
+    padding: 0 107px;
+  }
+  .products-main__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .products-main__column:not(:last-child) {
+    margin: 0px 0px 80px 0px;
+  }
+}
+@media (max-width: 760px) {
+  .products-main__column {
+    flex: 0 1 100%;
+    padding: 0 40px;
+  }
+  .products-main__column:nth-child(3) {
+    flex: 0 1 100%;
+    padding: 0 40px;
+  }
+  .products-main__column:not(:last-child) {
+    margin: 0px 0px 80px 0px;
+  }
+}
+@media (max-width: 613.98px) {
+  .products-main__title {
+    line-height: 0.9;
+  }
+  .products-main__top:not(:last-child) {
+    margin-bottom: 33px;
+  }
+}
+@media (max-width: 490px) {
+  .products-main__column {
+    flex: 0 1 100%;
+    padding: 0 30px;
+  }
+  .products-main__column:nth-child(3) {
+    flex: 1 1 100%;
+    padding: 0 30px;
+  }
+  .products-main__column:not(:last-child) {
+    margin: 0px 0px 60px 0px;
+  }
+}
+.products-main__image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 357 / 240;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.products-main__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.products-main__sub-title {
+  font-family: "DM Serif Text";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2; /* 120% */
+}
+.products-main__sub-title:not(:last-child) {
+  margin-bottom: 16px;
+}
+.products-main__text {
+  line-height: 1.6; /* 160% */
+}
+.products-main__text:not(:last-child) {
+  margin-bottom: 8px;
+}
+.products-main__items {
+  display: flex;
+  justify-content: space-between;
+}
+.products-main__text-link {
+  align-self: center;
+  color: #f55529;
+  font-weight: 800;
+  line-height: 24px; /* 150% */
+}
+.products-main__arrow {
+  color: #f55529;
+  width: 24px;
+  height: 24px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: url("../img/product/02.svg") center no-repeat;
+}
+@media (any-hover: hover) {
+  .products-main__items:hover .products-main__text-link {
+    text-decoration: underline;
+    color: #f7a189;
+  }
+  .products-main__items:hover .products-main__arrow {
+    transform: scale(1.1);
+  }
+  .products-main__column:hover .products-main__image {
+    transform: scale(1.1);
+  }
+}
+/* ---------------------------- */
+/*================Carrings=============*/
+
+.carrings {
+  padding: 125px 0px 80px 0px;
+}
+@media (max-width: 993px) {
+  .carrings {
+    padding: 40px 0px 80px 0px;
+  }
+}
+
+.carrings__container {
+  max-width: 1204px;
+}
+.carrings__block {
+  text-align: center;
+  margin-bottom: 62px;
+}
+@media (max-width: 767px) {
+  .carrings {
+    padding: 0px 0px 40px 0px;
+  }
+  .carrings__block {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 364px) {
+  .carrings__block {
+    margin-bottom: 2px;
+  }
+}
+.carrings__title {
+  color: #291403;
+  font-family: "DM Serif Text";
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1; /* 58px */
+}
+.carrings__title:not(:last-child) {
+  margin-bottom: 27px;
+}
+.carrings__sub-title {
+  color: #818181;
+  text-align: center;
+  font-family: "Cormorant Infant";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4; /* 42px */
+}
+.carrings__body {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.carrings__column {
+  padding: 0 15px;
+  flex: 0 1 25%;
+  margin: 0px 0px 88px 0px;
+}
+@media (max-width: 1040px) {
+  .carrings__column {
+    flex: 0 1 50%;
+  }
+  .carrings__text-block {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 630px) {
+  .carrings__column {
+    flex: 0 1 100%;
+    padding: 0 75px;
+  }
+}
+@media (max-width: 490px) {
+  .carrings__column {
+    flex: 0 1 100%;
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+}
+.carrings__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 270 / 270;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .carrings__link:hover .carrings__img {
+    transform: scale(1.1);
+  }
+
+  .carrings__column:hover .carrings__text-block {
+    text-decoration: underline;
+    transition: all 0.3s;
+  }
+}
+.carrings__link:not(:last-child) {
+  margin-bottom: 17px;
+}
+.carrings__link {
+}
+.carrings__text {
+  font-family: "Cormorant Infant";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4; /* 33.6px */
+}
+.carrings__text:not(:last-child) {
+  margin-bottom: 4px;
+}
+.carrings__price {
+  font-family: "Cormorant Infant";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4; /* 33.6px */
+}
+.carrings__button {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #ff7a49;
+  padding: 12px 42px;
+  color: #fff;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: 1.87; /* 187.5% */
+  transition: color 0.5s, background-color 0.5s, border 0.5s;
+  border-radius: 0 !important;
+  display: block;
+  margin: 0 auto;
+}
+@media (any-hover: hover) {
+  .carrings__button:hover {
+    background-color: #f6f6f6;
+    color: #ff7a49;
+  }
+}
+
+/*===============Diamond============*/
+
+.diamond {
+  background: #0e333d;
+  margin-bottom: 150px;
+}
+.diamond__container {
+  max-width: 1203px;
+}
+.diamond__content {
+}
+.diamond__header {
+}
+.header-diamond {
+}
+.header-diamond__block {
+  padding-top: 94px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+.header-diamond__title {
+  color: #fff;
+  font-family: "DM Serif Text";
+  font-size: 48px;
+  line-height: 1.27; /* 60.96px */
+}
+.header-diamond__title:not(:last-child) {
+  margin-bottom: 23px;
+}
+.header-diamond__sub-title {
+  color: #ebebeb;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.27; /* 25.4px */
+}
+.header-diamond__menu {
+}
+.menu {
+  margin-bottom: 77px;
+  padding: 5px 0;
+}
+@media (max-width: 767px) {
+  .menu {
+    margin: 0px 0px 55px 0px;
+  }
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu__item {
+}
+.menu__item:not(:last-child) {
+  padding: 0 41px 0 0;
+}
+.menu__link {
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 600;
+  line-height: 1.27; /* 22.86px */
+}
+@media (any-hover: hover) {
+  .menu__link:hover {
+    text-decoration: underline;
+  }
+}
+.menu__item:first-child .menu__link {
+  text-decoration: underline;
+}
+.diamond__body {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.diamond__column {
+  padding: 0 15px;
+  flex: 0 0 25%;
+  margin: 0px 0px 88px 0px;
+}
+@media (max-width: 1047px) {
+  .diamond__column {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 690px) {
+  .diamond__column {
+    margin: 0px 0px 58px 0px;
+  }
+}
+
+.diamond__link {
+  width: 100%;
+}
+.diamond__link:not(:last-child) {
+  margin-bottom: 17px;
+}
+.diamond__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 270 / 270;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .diamond__link:hover .diamond__img {
+    transform: scale(1.1);
+  }
+
+  .diamond__column:hover .diamond__block {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 690px) {
+  .diamond__column {
+    flex: 0 0 100%;
+  }
+}
+/*.diamond__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.diamond__column {
+    flex: 0 1 calc(25% - 22.5px);
+    text-align: start;
+}
+@media (max-width: 767.98px){
+    .diamond__column {
+        flex: 0 1 calc(50% - 15px);
+    }
+}
+@media (max-width: 479.98px){
+    .diamond__column {
+        flex: 1 1 auto;
+    }*/
+.diamond__block {
+  color: #fff;
+  font-family: "Cormorant Infant";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4; /* 33.6px */
+}
+.diamond__text:not(:last-child) {
+  margin-bottom: 4px;
+}
+.diamond__price {
+}
+
+/*=============Page__business===========*/
+.business {
+}
+
+.business__content {
+  display: flex;
+  flex-direction: row;
+  background-color: #37393f;
+}
+.business__container {
+  padding: 0 0 0 15px;
+}
+.business__choose {
+  max-width: 625px;
+  padding: 138px 0 138px 0;
+}
+.choose {
+  color: #fff;
+}
+.choose h5 {
+  display: flex;
+  gap: 6px;
+}
+.choose__sub-title {
+  font-weight: 500;
+}
+.choose__sub-title:not(:last-child) {
+  margin-bottom: 13px;
+}
+.choose__sub-title::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  background-color: turquoise;
+  margin-top: 2px;
+}
+.choose__title {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.21; /* 36.3px */
+}
+.choose__title:not(:last-child) {
+  margin-bottom: 13px;
+}
+.choose__text {
+  line-height: 1.47; /* 26.314px */
+}
+.choose__text:not(:last-child) {
+  margin-bottom: 36px;
+}
+.choose__block {
+  margin-bottom: 36px;
+}
+.block {
+  display: flex;
+  gap: 15px;
+}
+.block__clients {
+  background-color: #2e2f34;
+  padding: 27px 30px;
+  display: flex;
+  flex: 1 1 146px;
+  align-items: center;
+  gap: 12px;
+}
+.block__info {
+}
+.block__image {
+}
+.block__img {
+}
+.business__image {
+  flex: 0 1 50%;
+}
+.business__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1278px) {
+  .business__img {
+    display: none;
+  }
+  .business__container {
+    margin: 0 0 0 -15px;
+  }
+  .business__choose {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 135px 144px;
+  }
+  .block__image,
+  .business__image {
+    flex: 0 0 0;
+  }
+}
+@media (max-width: 1088px) {
+  .business__img {
+    display: none;
+  }
+  .business__choose {
+    padding: 135px 95px;
+  }
+}
+@media (max-width: 972px) {
+  .business__img {
+    display: none;
+  }
+  .business__choose {
+    margin: 0 auto;
+    padding: 135px 39px;
+  }
+  .block__image,
+  .business__image {
+    flex: 0 0 0;
+  }
+}
+@media (max-width: 732px) {
+  .business__img {
+    display: none;
+  }
+  .block {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.block__text {
+  line-height: 1.35; /* 21.63px */
+}
+.block__title {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.choose__statistic {
+}
+.statistic {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 37px;
+  row-gap: 23px;
+}
+.statistic__items {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1 1 274px;
+}
+
+.statistic__item span {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+}
+.statistic__star--yellow {
+  color: #ffb342;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.statistic__items img {
+  align-items: center;
+}
+.statistic__star--yellow img {
+  margin-top: 7px;
+}
+.statistic__item a {
+  color: #40ddb6;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: 2px solid #40ddb6;
+}
+@media (any-hover: hover) {
+  .statistic__link:hover {
+    color: #bed8d1;
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+}
+/* 
+Адаптивна (чуйна) верстка - це не про 
+впихування дизайну під ПК у маленьки екрани,
+це про зручність у користуванні та оптимізацію
+*/
+
+/* Хороші практики адаптивної верстки: */
+/* 
+- Дивіться на екран, та відповідайте на питання "Чи зручно цим користуватись?"
+- Для того щоб робити верстку швидко, продумовуйте адаптив ще на ПК
+- Не ховайте від користувача найважливіші елементи
+- Один клік завжди кращий за два
+- Не робіть великі відступи. Зайвий простір тут непотрібен
+- Важливі навігаційні вузли робіть зручнішими (крупнішими), не змушуйте користувача цілитись
+- Оптимізаця простору та завантаження. Ховайте зайве
+- Оптимізовуйте або відмовляйтесь від анімацій
+- Долучайте свій власний досвід користувача, не повторюйте те що не зручно вам самим
+*/
+/* ---------------------------- */
+
+/*
+Полотно - певна ширина макету, 
+завжди має бути на всю ширину екрану.
+*/
+
+/* 
+Обмежуючий контейнер - об'єкт, який обмежений по ширині 
+та містить контент секції (сайту)
+*/
+
+/*[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}*/
+
+/* 
+Медіа-запити - інструмент, який дозволяє 
+вности певні сміни при певних умовах
+*/
+/* Момент зміни стилів при якийсь умові ще називають breakpoint */
+/* Подробиці: 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax
+	https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio 
+*/
+
+/* Анатомія @media: */
+/*
+@media (умова){
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+
+Декілька пристроїв \ варіантів (АБО)
+@media screen, print{
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+
+Декілька умов (ТА)
+@media (умова) and (умова){
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+
+/* Умова - ширина екрану */
+/* Екрани =< 826px */
+/*
+@media (max-width: 826px) {
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+/* Умова - ширина екрану */
+/* Екрани > 826px */
+/*
+@media (min-width: 826px) {
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+/* Мультіумова */
+/* =< 826 та => 450 */
+/*
+@media (min-width: 450px) and (max-width: 826px) {
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+*/
+
+/* Приклад: */
+/*.about {
+}
+.about__container {
+}
+.about__items {
+  display: flex;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.about__column {
+  padding: 0 15px;
+  flex: 1 0 25%;
+}
+.about__item {
+  min-height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #7a956b;
+}
+/* якісний адаптив зображень */
+/*.about__image {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  /* Співвідношення сторін (по макету) */
+/*aspect-ratio: 592 / 363;
+  object-fit: cover; /* contain */
+/* object-position: center; */
+/*}
+.about__image--top {
+  object-position: top;
+}
+
+@media (max-width: 840px) {
+  .about__column {
+    flex: 1 0 50%;
+  }
+}
+@media (max-width: 490px) {
+  .about__column {
+    flex: 1 0 100%;
+  }
+  .about__item {
+    /* margin: 0 -15px; */
+/*}
+}
+/* Mobile First */
+/*@media (min-width: 490px) {
+  .about__item {
+    /* outline: 10px dotted red; */
+/*}
+}
+
+/* якщо пристрій вміє робити наведення, додаємо hover */
+/*@media (any-hover: hover) {
+  a:hover {
+  }
+}
+/* якщо висота більша ніж ширина */
+/*@media (max-aspect-ratio: 3/2) {
+  div {
+  }
+}
+
+/* 
+Примітівна адаптивна сітка
+!Не рекомендується, але легше для застосування\навчання
+*/
+/*
+[class*="__container"] {
+	max-width: 1220px;
+	margin: 0 auto;
+}
+*/
+/* Показуємо контент беспечно для усіх ПК моніторів */
+/*
+@media (max-width: 1250px) {
+	[class*="__container"] {
+		max-width: 960px;
+	}
+}
+*/
+/* Показуємо контент беспечно для усіх планшетів */
+/*
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 740px;
+	}
+}
+*/
+/* Показуємо контент беспечно для усіх великих мобільних */
+/*
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+}
+*/
+/* Стилі для маленьких мобільних */
+/*
+@media (max-width: 479.98px) {
+}
+*/
