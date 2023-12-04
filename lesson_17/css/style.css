@@ -59,8 +59,8 @@ footer {
 .products-main__title {
   font-family: "DM Serif Text";
   font-size: 58px;
-  line-height: 0.58; /* 58px */
   letter-spacing: 0.5px;
+  line-height: 100%;
 }
 .products-main__title:not(:last-child) {
   margin-bottom: 27px;
@@ -74,20 +74,20 @@ footer {
   margin: 0px -24px;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 40px;
 }
 .products-main__column {
   padding: 0px 24px;
-  flex: 1 1 33.333px;
+  flex: 0 1 33.333%;
 }
 .products-main__link {
   width: 100%;
+  overflow: hidden;
 }
 @media (max-width: 1100px) {
-  .products-main__column {
-    padding: 0 20px;
+  .products-main__body {
   }
-  .products-main__column:not(:last-child) {
-    margin: 0px 0px 40px 0px;
+  .products-main__body:not(:last-child) {
   }
   .main {
     padding: 75px 0 80px 0;
@@ -98,7 +98,7 @@ footer {
   .products-main__column {
     flex: 0 1 50%;
   }
-  .products-main__column:nth-child(3) {
+  .products-main__column--third {
     flex: 0 1 100%;
     padding: 0 107px;
   }
@@ -107,26 +107,26 @@ footer {
     height: auto;
     object-fit: cover;
   }
-  .products-main__column:not(:last-child) {
-    margin: 0px 0px 80px 0px;
+}
+@media (max-width: 890px) {
+  .products-main__column--third {
+    padding: 0 80px;
   }
 }
 @media (max-width: 760px) {
   .products-main__column {
     flex: 0 1 100%;
-    padding: 0 40px;
   }
-  .products-main__column:nth-child(3) {
-    flex: 0 1 100%;
-    padding: 0 40px;
+  .products-main__column--third {
+    padding: 0 24px;
   }
-  .products-main__column:not(:last-child) {
-    margin: 0px 0px 80px 0px;
+  .products-main__body {
+    gap: 60px;
   }
 }
 @media (max-width: 613.98px) {
   .products-main__title {
-    line-height: 0.9;
+    line-height: 100%;
   }
   .products-main__top:not(:last-child) {
     margin-bottom: 33px;
@@ -135,14 +135,9 @@ footer {
 @media (max-width: 490px) {
   .products-main__column {
     flex: 0 1 100%;
-    padding: 0 30px;
   }
-  .products-main__column:nth-child(3) {
+  .products-main__column--third {
     flex: 1 1 100%;
-    padding: 0 30px;
-  }
-  .products-main__column:not(:last-child) {
-    margin: 0px 0px 60px 0px;
   }
 }
 .products-main__image {
@@ -174,14 +169,17 @@ footer {
 .products-main__items {
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s;
 }
 .products-main__text-link {
   align-self: center;
   color: #f55529;
   font-weight: 800;
   line-height: 24px; /* 150% */
+  transition: all 0.3s;
 }
 .products-main__arrow {
+  transition: all 0.3s;
   color: #f55529;
   width: 24px;
   height: 24px;
@@ -255,11 +253,12 @@ footer {
   margin: 0 -15px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0px 0px 88px 0px;
+  row-gap: 40px;
 }
 .carrings__column {
   padding: 0 15px;
   flex: 0 1 25%;
-  margin: 0px 0px 88px 0px;
 }
 .carrings__link {
   width: 100%;
@@ -295,7 +294,6 @@ footer {
   .carrings__link:hover .carrings__img {
     transform: scale(1.1);
   }
-
   .carrings__column:hover .carrings__text-block {
     text-decoration: underline;
     transition: all 0.3s;
@@ -346,7 +344,6 @@ footer {
 
 .diamond {
   background: #0e333d;
-  margin-bottom: 150px;
 }
 .diamond__container {
   max-width: 1203px;
@@ -356,6 +353,7 @@ footer {
 .diamond__header {
 }
 .header-diamond {
+  margin-bottom: 77px;
 }
 .header-diamond__block {
   padding-top: 94px;
@@ -381,8 +379,6 @@ footer {
 .header-diamond__menu {
 }
 .menu {
-  margin-bottom: 77px;
-  padding: 5px 0;
 }
 @media (max-width: 767px) {
   .menu {
@@ -393,11 +389,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 41px;
+  overflow-x: auto;
 }
 .menu__item {
 }
-.menu__item:not(:last-child) {
-  padding: 0 41px 0 0;
+.menu__item {
 }
 .menu__link {
   color: #fff;
@@ -446,14 +443,11 @@ footer {
   aspect-ratio: 270 / 270;
   object-fit: cover;
   transition: all 0.3s;
+  border-radius: 5px;
 }
 @media (any-hover: hover) {
   .diamond__link:hover .diamond__img {
     transform: scale(1.1);
-  }
-
-  .diamond__column:hover .diamond__block {
-    text-decoration: underline;
   }
 }
 @media (max-width: 690px) {
@@ -597,7 +591,7 @@ footer {
     display: none;
   }
   .business__choose {
-    padding: 135px 95px;
+    padding: 135px 65px;
   }
 }
 @media (max-width: 972px) {
@@ -606,7 +600,7 @@ footer {
   }
   .business__choose {
     margin: 0 auto;
-    padding: 135px 39px;
+    padding: 135px 35px;
   }
   .block__image,
   .business__image {
@@ -621,6 +615,10 @@ footer {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
+  }
+  .business__choose {
+    margin: 0 auto;
+    padding: 135px 15px;
   }
 }
 .block__text {
