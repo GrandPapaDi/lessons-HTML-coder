@@ -1,0 +1,449 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/*Стилі загальних блоків (компонентів) 
+@import url("common.css");
+
+/* Основні стилі */
+body {
+  font-family: "Inter", sans-serif;
+  color: #0e333d;
+  background-color: #f6f6f6;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Обмежуючий контейнер */
+[class*="__container"] {
+  max-width: 1200px; /* 1170 + 15 + 15 */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f6f6f6;
+  padding: 30px 0;
+}
+/* Header */
+/* Header */
+.header-page {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header-page {
+  border-bottom: 1px solid rgba(131, 131, 131, 0.21);
+  stroke-width: 1px;
+}
+.header-page__container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  min-height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header-page__logo {
+  color: #000;
+  font-family: "Merriweather";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+
+/*=================Menu==============*/
+.menu {
+  flex: 1 1 auto;
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 36px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+}
+.menu__item {
+}
+.menu__link {
+  color: #000;
+  font-family: "Merriweather";
+  font-size: 20px;
+  transition: color 0.3s;
+}
+@media (any-hover: hover) {
+  .menu__item:hover .menu__link {
+    color: #237991;
+    text-decoration-line: underline;
+  }
+}
+.menu__item--active .menu__link {
+  font-weight: 700;
+  color: #000;
+  text-decoration-line: underline;
+}
+.menu__item--parent {
+  position: relative;
+}
+.menu__item--parent .menu__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.menu__item--parent .menu__link::after {
+  content: "";
+  background: url(../img/arrow.svg) 0 0 no-repeat;
+  flex: 0 0 16px;
+  height: 8px;
+  width: 16px;
+  transition: transform 0.3s;
+}
+@media (any-hover: hover) {
+  .menu__item--parent:hover .sub-menu {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+@media (any-hover: hover) {
+  .menu__item--parent:hover .menu__link::after {
+    transform: rotate(180deg);
+  }
+}
+.sub-menu {
+  transition: all 0.3s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 5px;
+  transform: translate(0px, 10%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.sub-menu__list {
+  width: 165px;
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(36, 122, 145, 0.7);
+  box-shadow: 0 0 5px 0px;
+}
+.sub-menu__item {
+}
+.sub-menu__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sub-menu__link {
+  color: #000;
+  font-size: 18px;
+}
+@media (any-hover: hover) {
+  .sub-menu__link:hover {
+    text-decoration: underline;
+  }
+}
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .header-page__container {
+    min-height: 50px;
+  }
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+    padding: 80px 15px 30px 15px;
+    background-color: rgba(36, 122, 145, 0.7);
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 100%;
+    z-index: 2;
+    transition: left 0.3s;
+    background-color: rgba(36, 122, 145, 0.7);
+  }
+  .menu-open .menu__body,
+  .menu-open .menu__body::before {
+    left: 0;
+  }
+  .menu__list {
+    flex-direction: column;
+    text-align: right;
+    row-gap: 20px;
+  }
+  .menu__link {
+    font-size: 28px;
+  }
+  .menu__item--parent .menu__link {
+    display: block;
+  }
+  .menu__item--parent .menu__link::after {
+    display: none;
+  }
+  .sub-menu {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+    transform: translate(0, 0);
+  }
+  .sub-menu__list {
+    width: 100%;
+    border-radius: 0;
+  }
+  .sub-menu__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .sub-menu__link {
+    color: #000;
+    font-size: 24px;
+  }
+
+  .icon-menu {
+    width: 30px;
+    display: block;
+    flex: 0 0 30px;
+    height: 18px;
+    position: relative;
+    z-index: 5;
+  }
+  .icon-menu::before,
+  .icon-menu::after,
+  .icon-menu span {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+    background-color: #000;
+  }
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu span {
+    top: 50%;
+    margin-top: -1px;
+  }
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: 50%;
+    margin-top: -1px;
+  }
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    margin-bottom: -1px;
+    bottom: 50%;
+  }
+}
+
+/*=============Buttons=========*/
+.button {
+  padding: 12px 29px 14px 26px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  background: #0e333d;
+  transition: all 0.3s;
+  font-family: "DM Serif Text";
+}
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: rgba(36, 122, 145, 0.7);
+  }
+}
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=============Jewelry===========*/
+.page__jewelry {
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+.jewelry {
+}
+.jewelry__container {
+  display: flex;
+  gap: 86px;
+  max-width: 1215px;
+}
+.jewelry__body {
+  flex: 1 1 48.691983%; /* 577/1185 */
+}
+
+.jewelry__title {
+  font-family: "DM Serif Text";
+  font-size: 78px;
+  line-height: 127%; /* 99.06px */
+  margin-bottom: 32px;
+}
+.jewelry__text {
+  margin-bottom: 48px;
+  color: #727272;
+  font-size: 22px;
+  line-height: 148%; /* 32.56px */
+}
+.jewelry__buttons {
+  display: flex;
+  gap: 47px;
+  align-items: center;
+}
+
+.jewelry__shop {
+  padding: 10px 44px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.jewelry__link {
+  font-family: "DM Serif Text";
+  font-size: 28px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .jewelry__link:hover {
+    color: rgba(36, 122, 145, 0.7);
+  }
+}
+.jewelry__images {
+  display: flex;
+  min-height: 536px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.jewelry__image-link--left {
+  align-self: flex-end;
+}
+.jewelry__image-link--right {
+  align-self: flex-start;
+}
+.jewelry__image-link {
+  width: 100%;
+  overflow: hidden;
+}
+.jewelry__img {
+  flex: 0 1 245px;
+  max-height: 467px;
+  aspect-ratio: 245 / 467;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .jewelry__image-link:hover .jewelry__img {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 1120px) {
+  .jewelry__title {
+    font-size: 68px;
+    line-height: 100%;
+  }
+  .jewelry__container {
+    gap: 30px;
+  }
+}
+@media (max-width: 1022px) {
+  .jewelry__title {
+    font-size: 58px;
+  }
+}
+@media (max-width: 966px) {
+  .jewelry__container {
+    flex-direction: column;
+  }
+  .jewelry__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .jewelry__title {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 555px) {
+  .jewelry__images {
+    flex-direction: column;
+  }
+}
+@media (max-width: 440px) {
+  .header__logo {
+    font-size: 24px;
+  }
+  .actions-header-page {
+    gap: 10px;
+  }
+}
+@media (max-width: 417px) {
+  .jewelry__buttons {
+    flex-direction: column;
+  }
+  .header-page__container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header-page__buttons,
+  .actions-header-page {
+    align-self: self-end;
+  }
+}
+@media (max-width: 374px) {
+  .header-page__container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header-page__buttons,
+  .actions-header-page {
+    align-self: self-end;
+  }
+}
+.footer__container {
+  color: #727272;
+  font-size: 28px;
+  font-family: "DM Serif Text";
+}
