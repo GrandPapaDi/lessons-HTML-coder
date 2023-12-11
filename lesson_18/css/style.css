@@ -8,6 +8,9 @@
 @import url("common.css");*/
 
 /* Основні стилі */
+.menu-open body {
+  overflow: hidden;
+}
 body {
   font-family: "Inter", sans-serif;
   color: #6d6d6d;
