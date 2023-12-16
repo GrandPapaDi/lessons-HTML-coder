@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Lesson 20 SCSS</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__line line">
+				<div class="line__container">
+					<div class="line__address">
+						<div class="line__item">
+							<a href="#" class="line__link">
+								<img class="line__img" src="img/line/01.svg" alt="Navi">
+							</a>
+							<div class="line__map">24 Olive Street, Prairie, NY 53590</div>
+						</div>
+						<div class="line__item">
+							<a href="#" class="line__link">
+								<img class="line__img" src="img/line/02.svg" alt="Envelop">
+							</a>
+							<div class="line__email">whitecollar@gmail.com</div>
+						</div>
+					</div>
+					<div class="line__hours">
+						<div class="line__item">
+							<a href="#" class="line__link">
+								<img class="line__img" src="img/line/03.svg" alt="Envelop">
+							</a>
+							<div class="line__work">Mon - Fri: 8:00 am - 5:00 pm</div>
+						</div>
+						<div class="line__social social">
+							<a href="https://www.facebook.com/" class="social__item" target="_blank">
+								<img src="img/line/04.svg" class="social__img" alt="Social">
+							</a>
+							<a href="https://www.instagram.com/" class="social__item" target="_blank">
+								<img src="img/line/05.svg" class="social__img" alt="Social">
+							</a>
+							<a href="https://pinterest.com/" class="social__item" target="_blank">
+								<img src="img/line/06.svg" class="social__img" alt="Social">
+							</a>
+							<a href="https://twitter.com/" class="social__item" target="_blank">
+								<img src="img/line/07.svg" class="social__img" alt="Social">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__body">
+					<a href="#" class="header__logo-link">
+						<img src="img/header/logo.svg" alt="Logo" class="header__logo-img">
+					</a>
+					<div class="header__menu menu">
+						<div class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Home</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Home</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Home</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Home</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Home</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Shop</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Shop</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Shop</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Shop</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Shop</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Product</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Blog</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Blog</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Blog</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Blog</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Blog</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Pages</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Pages</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Pages</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Pages</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Pages</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Contact</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Contact</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Contact</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Contact</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Contact</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="header__button button">Get Consulting</a>
+					<div class="header__icon icon">
+						<button class="icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__plan plan">
+				<div class="plan__content">
+					<div class="plan__header">
+						<h4 class="plan__sub-title">Pricing Package</h4>
+						<h1 class="plan__title">Affordable Plans <br> For Customers</h1>
+					</div>
+					<div class="plan__image">
+						<img class="plan__img" src="img/plan/01.webp" alt="Girls">
+					</div>
+				</div>
+			</section>
+			<section class="page__team team">
+				<div class="team__container">
+					<h4 class="team__sub-title">Simple Pricing Option</h4>
+					<h2 class="team__title title">Choose the Right Plan for Your <br>
+						and Your Team</h2>
+					<div class="team__row">
+						<div class="team__column team__column--small">
+							<div class="team__label">Basic</div>
+							<h3 class="team__title title">$7.99<span>/month</span></h3>
+							<div class="team__text">Billed as $96 per year</div>
+							<div class="team__text-members">
+								<p>Unlimited members</p>
+								<p> <span>Unlimited</span> feedback</p>
+								<p>Weekly team Feedback Friday</p>
+								<p>Custom Kudos <span>+9 illustration</span></p>
+								<p>Team feedback history (30 items)</p>
+								<p>Personal feedback</p>
+							</div>
+							<a href="#" class="team__button button">Get Started</a>
+						</div>
+						<div class="team__column team__column--middle">
+							<div class="team__blok">Most Popular</div>
+							<div class="team__label">Advanced</div>
+							<h3 class="team__title title">$9.99<span>/month</span></h3>
+							<div class="team__text">Billed as $199 per year</div>
+							<div class="team__text-members">
+								<p>Unlimited members</p>
+								<p> <span>Unlimited</span> feedback</p>
+								<p>Weekly team Feedback Friday</p>
+								<p>Custom Kudos <span>+9 illustration</span></p>
+								<p>Team feedback history (30 items)</p>
+								<p>Personal feedback history (6 items)</p>
+								<p>Slack integration</p>
+							</div>
+							<a href="#" class="team__button button">Get Started</a>
+						</div>
+						<div class="team__column">
+							<div class="team__label">Basic</div>
+							<h3 class="team__title title">$9.99<span>/month</span></h3>
+							<div class="team__text">Billed as $96 per year</div>
+							<div class="team__text-members">
+								<p>Unlimited members</p>
+								<p> <span>Unlimited</span> feedback</p>
+								<p>Weekly team Feedback Friday</p>
+								<p>Custom Kudos <span>+9 illustration</span></p>
+								<p>Team feedback history (30 items)</p>
+								<p>Personal feedback history (6 items)</p>
+								<p>Slack integration</p>
+							</div>
+							<a href="#" class="team__button button">Get Started</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<div class="footer__head head">
+						<a href="#" class="head__logo">
+							<img class="head__img" src="img/footer/logo.svg" alt="Logo">
+						</a>
+						<div class="head__items">
+							<div class="head__item item">
+								<a href="#" class="item__link">
+									<img class="item__img" src="img/footer/01.svg" alt="Call">
+								</a>
+								<div class="item__body">
+									<div class="item__title">Call Us</div>
+									<a href="tel:+01569896654" class="item__phone">+01 569 896 654</a>
+								</div>
+							</div>
+							<div class="head__item item">
+								<a href="#" class="item__link">
+									<img class="item__img" src="img/footer/02.svg" alt="Call">
+								</a>
+								<div class="item__body">
+									<div class="item__title">Mail Us</div>
+									<a href="mailto:info@Example.com" class="item__email">info@Example.com</a>
+								</div>
+							</div>
+							<div class="head__item item">
+								<a href="#" class="item__link">
+									<img class="item__img" src="img/footer/01.svg" alt="Call">
+								</a>
+								<div class="item__body">
+									<div class="item__title">Call Us</div>
+									<a href="tel:+01569896654" class="item__phone">+01 569 896 654</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__midlle midlle">
+				<div class="midlle__container">
+					<div class="midlle__row">
+						<div class="midlle__column">
+							<div class="midlle__label">Quick Link</div>
+							<div class="midlle__menu menu-midlle">
+								<ul class="menu-midlle__list">
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Home</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link"><span>About Us</span></a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Blog</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Services</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="midlle__column midlle__column--services">
+							<div class="midlle__label">Our Services</div>
+							<div class="midlle__menu menu-midlle">
+								<ul class="menu-midlle__list">
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Financial Consulting</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link"> Business Management</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Consultant & Programs</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Company Management</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Insurance & Finance</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="midlle__column">
+							<div class="midlle__label">Quick Link</div>
+							<div class="midlle__menu menu-midlle">
+								<ul class="menu-midlle__list">
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Home</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">About Us</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Blog</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Services</a>
+									</li>
+									<li class="menu-midlle__item">
+										<a href="#" class="menu-midlle__link">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="midlle__subscribe subscribe">
+							<div class="subscribe__content">
+								<div class="subscribe__body">
+									<h4 class="subscribe__title">Subscribe</h4>
+									<div class="subscribe__text">Join Our Mailing List & to get our news.</div>
+									<form action="#" class="subscribe__form">
+										<input type="email" required placeholder="Your Email" class="subscribe__input" autocomplete="off"
+											name="form[]">
+										<button type="submit" class="subscribe__button button">Subscribe</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<div class="footer__copy">Copyright © <span>WhiteCollar</span> | Designed by <span>VictorFlow</span> Templates
+						- Powered by
+						Webflow
+					</div>
+					<div class="footer__social social">
+						<div class="social__text">Follow :
+							<a href="https://www.facebook.com/" class="social__item" target="_blank">
+								<img src="img/copy/01.svg" class="social__img" alt="Social">
+							</a>
+							<a href="https://www.instagram.com/" class="social__item" target="_blank">
+								<img src="img/copy/02.svg" class="social__img" alt="Social">
+							</a>
+							<a href="https://pinterest.com/" class="social__item" target="_blank">
+								<img src="img/copy/03.svg" class="social__img" alt="Social">
+							</a>
+							<a href="https://twitter.com/" class="social__item" target="_blank">
+								<img src="img/copy/04.svg" class="social__img" alt="Social">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__cont">© 16.12.2023
+			</div>
+		</footer>
+		<script src="js/script.js"></script>
+	</div>
+</body>
+
+</html>
