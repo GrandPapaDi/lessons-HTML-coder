@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* "scope": "scss",
+  "prefix": "fc",
+  "body": [
+                  "@include flexCards( \\$col: ${1:5}, \\$gap: ${2:rem(30)},\\$minWidth: ${3:rem(280)}, \\$flexWrap: ${4:wrap});"
+  ],
+  "description": "адаптивні флекс колонки: кількість, відступ(gap), мінімальна ширина колонок, дозволити перенесення чи ні "
+},*/
+/*//Snipet "Grid Card": {
+        "scope": "scss",
+        "prefix": "gc",
+        "body": [
+                        "@include gridCards(\\$type: ${1:fit}, \\$min: ${2:rem(280)}, \\$max: ${3:1fr}, \\$gap: ${4:rem(30)});"
+
+        ],
+        "description": "адаптивні grid колонки: тип fit - fill,  мінімальна ширина колонок,максимальна ширина колонок, відступ(gap), "
+    },*/
+/*Snipet "Aspect Ratio properties": {
+  "scope": "scss",
+  "prefix": "asp",
+  "body": [
+      "@include img($1, $2, \"${3:center}\", \"${4:cover}\");"
+  ],
+  "description": "Aspect ratio: Width, Height, object-position, object-fit"
+},*/
