@@ -456,12 +456,7 @@ $arrivalFiolet: #8a33fd;*/
 @media (max-width: 898.98px) {
   .footer__row {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
-}
-@media (max-width: 605.98px) {
-  .footer__row {
     text-align: center;
-    padding-bottom: 20px;
   }
 }
 
@@ -517,7 +512,7 @@ $arrivalFiolet: #8a33fd;*/
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 540.98px) {
+@media (max-width: 599.98px) {
   .midlle__blok {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
