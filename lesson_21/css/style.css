@@ -189,7 +189,7 @@ $arrivalFiolet: #8a33fd;*/
         -ms-flex-direction: row;
             flex-direction: row;
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 60px;
   }
 }
 .header__img {
@@ -224,7 +224,7 @@ $arrivalFiolet: #8a33fd;*/
 }
 @media (max-width: 1159.98px) and (max-width: 387.98px) {
   .menu__body {
-    padding: 340px 15px 30px 100px;
+    padding: 280px 15px 30px 100px;
   }
 }
 @media (max-width: 1159.98px) {
@@ -248,7 +248,7 @@ $arrivalFiolet: #8a33fd;*/
 }
 @media (max-width: 1159.98px) and (max-width: 387.98px) {
   .menu__body::before {
-    height: 242px;
+    height: 280px;
   }
 }
 .menu__list {

@@ -20,7 +20,7 @@
       flex-wrap: wrap;
       flex-direction: row;
       padding-top: 15px;
-      padding-bottom: 25px;
+      padding-bottom: 60px;
     }
   }
   &__img {
@@ -51,7 +51,7 @@
         padding: 180px 15px 30px 100px;
       }
       @media (max-width: 387.98px) {
-        padding: 340px 15px 30px 100px;
+        padding: 280px 15px 30px 100px;
       }
 
       &::before {
@@ -68,7 +68,7 @@
           height: 165px;
         }
         @media (max-width: 387.98px) {
-          height: 242px;
+          height: 280px;
         }
       }
     }
