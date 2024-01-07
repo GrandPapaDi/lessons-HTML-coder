@@ -21,6 +21,7 @@
       flex-direction: row;
       padding-top: 15px;
       padding-bottom: 60px;
+      min-height: 280px;
     }
   }
   &__img {
@@ -48,10 +49,7 @@
       overflow: auto;
       transition: left 0.3s ease 0s;
       @media (max-width: 471.98px) {
-        padding: 180px 15px 30px 100px;
-      }
-      @media (max-width: 387.98px) {
-        padding: 280px 15px 30px 100px;
+        padding: 300px 15px 30px 100px;
       }
 
       &::before {
@@ -65,9 +63,6 @@
         z-index: 2;
         transition: left 0.3s ease 0s;
         @media (max-width: 471.98px) {
-          height: 165px;
-        }
-        @media (max-width: 387.98px) {
           height: 280px;
         }
       }
