@@ -1,0 +1,284 @@
+/*=======================Footer===================*/
+/*=======================Footer TOP===================*/
+.footer {
+  background-color: $mainColor;
+  // .footer__content
+  &__content {
+    @include adaptiveValue("padding-top", 86, 46, 0, $maxWidth);
+  }
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: toRem(1) solid #6c6d72;
+  @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
+  @media (max-width: toEm(1088)) {
+    justify-content: end;
+    gap: toRem(60);
+  }
+  @media (max-width: toEm(558.98)) {
+    justify-content: end;
+  }
+  // .top__items
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    @include adaptiveValue("gap", 60, 30, 0, $maxWidth);
+
+    @media (max-width: toEm(845.98)) {
+      justify-content: end;
+      row-gap: toRem(20);
+      gap: toRem(20);
+    }
+    @media (max-width: toEm(558.98)) {
+      justify-content: end;
+      row-gap: toRem(20);
+    }
+  }
+  // .top__logo
+  &__logo {
+    aspect-ratio: 200 / 38;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    // .post__img
+    img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: toRem(10);
+  color: $hellColor;
+  text-transform: capitalize;
+  // .item__link
+  &__link {
+    width: toRem(68);
+    height: toRem(68);
+    flex: 0 0 toRem(68);
+  }
+
+  // .item__img
+  &__img {
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  // .item__title
+  &__title {
+    color: $hellColor;
+    font-family: $fontFamilyLabel;
+    font-size: toRem(20);
+    font-weight: 600;
+    padding-bottom: toRem(3);
+  }
+}
+//=====================midlle
+.midlle {
+  color: $hellColor;
+  // .midlle__container
+  &__container {
+    border-bottom: toRem(1) solid #6c6d72;
+  }
+  // .midlle__row
+  &__row {
+    display: flex;
+    gap: toRem(80);
+    flex-wrap: nowrap;
+    @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
+    @include adaptiveValue("gap", 80, 40, 0, $maxWidth);
+    @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
+    @media (max-width: toEm(1193.98)) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  // .midlle__column
+  &__column {
+    min-width: toRem(140);
+    text-align: left;
+  }
+  // .midlle__column--services
+  &__column--services {
+    flex: 0 1 toRem(198);
+    min-width: toRem(198);
+  }
+  // .midlle__label
+  &__label {
+    padding-bottom: toRem(13);
+    &::before {
+      content: "";
+      display: inline-block;
+      width: toRem(13);
+      height: toRem(13);
+      flex: 0 0 toRem(13);
+      background-color: $bgSecondColor;
+      margin-right: toRem(7);
+    }
+    color: $bgColorHead;
+    font-family: Poppins;
+    font-size: toRem(20);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.menu-midlle {
+  span {
+    color: $bgColorHead;
+  }
+  // .menu-midlle__list
+  &__list {
+    line-height: 220.187%; /* 39.634px */
+  }
+  // .menu-midlle__link
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//================subscribe
+.subscribe {
+  // .subscribe__container
+  &__container {
+    margin: 0 toRem(-15);
+  }
+  // .subscribe__body
+  &__body {
+    color: $hellColor;
+    display: flex;
+    flex: 0 1 auto;
+    @include adaptiveValue("padding-top", 36, 20, 0, $maxWidth);
+    @include adaptiveValue("padding-bottom", 36, 20, 0, $maxWidth);
+    @include adaptiveValue("padding-right", 42, 20, 0, $maxWidth);
+    @include adaptiveValue("padding-left", 42, 20, 0, $maxWidth);
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: toRem(6);
+    background-color: #474950;
+    @media (max-width: toEm(545.98)) {
+    }
+  }
+  // .subscribe__title
+  &__title {
+    font-family: Poppins;
+    font-size: toRem(20);
+    font-weight: 600;
+  }
+  // .subscribe__text
+  &__text {
+    line-height: 220.187%; /* 39.634px */
+    padding-bottom: toRem(23);
+  }
+  // .subscribe__form
+  &__form {
+    display: flex;
+    align-items: center;
+    @media (max-width: $mobileSmall) {
+      flex-wrap: wrap;
+    }
+  }
+  // .subscribe__input
+  &__input {
+    width: 100%;
+    flex: 0 1 auto;
+    @include adaptiveValue("padding-top", 22, 15, 0, $maxWidth);
+    @include adaptiveValue("padding-bottom", 22, 15, 0, $maxWidth);
+    @include adaptiveValue("padding-left", 27, 18, 0, $maxWidth);
+    @include adaptiveValue("padding-right", 27, 18, 0, $maxWidth);
+    @include adaptiveValue("min-height", 65, 55, 0, $maxWidth);
+    background-color: $hellColor;
+    color: $mainColor;
+  }
+  // .subscribe__button
+  &__button {
+    @include adaptiveValue("padding-top", 22, 15, 0, $maxWidth);
+    @include adaptiveValue("padding-bottom", 22, 15, 0, $maxWidth);
+    @include adaptiveValue("padding-left", 27, 15, 0, $maxWidth);
+    @include adaptiveValue("padding-right", 27, 15, 0, $maxWidth);
+    @include adaptiveValue("min-height", 65, 55, 0, $maxWidth);
+    background-color: $bgSecondColor;
+    font-weight: 600;
+    text-transform: capitalize;
+    flex: 0 1 auto;
+    transition: all 0.3s ease 0s;
+    @media (max-width: $mobileSmall) {
+      width: 100%;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $bgColorHover;
+        color: #000;
+      }
+    }
+  }
+}
+//=================bottom
+.bottom {
+  @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 65, 40, 0, $maxWidth);
+  // .footer__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $hellColor;
+    flex-wrap: wrap;
+    @media (max-width: toRem(950.98)) {
+      justify-content: center;
+      gap: toRem(40);
+    }
+  }
+  // .footer__copy
+  &__copy {
+    span {
+      &:not(:last-child) {
+        color: $bgColorHead;
+      }
+      &:last-child {
+        color: $bgSecondColor;
+      }
+      @media (max-width: toEm(747.98)) {
+        line-height: 250%;
+      }
+    }
+  }
+  // .footer__social
+  &__social {
+    line-height: 144.523%; /* 26.014px */
+    display: flex;
+  }
+}
+.social {
+  // .social__text
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: toRem(16);
+    line-height: 1.4; /* 26.014px */
+  }
+  // .social__item
+  &__item {
+    flex: 0 0 toRem(17);
+    width: toRem(17);
+    height: toRem(17);
+  }
+  // .social__img
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}

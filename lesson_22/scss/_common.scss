@@ -1,0 +1,88 @@
+//Шрифти за замовченням
+$fontFamilyMain: "Inter", sans-serif;
+$fontFamilyLabel: "Poppins", sans-serif;
+//Розмір шрифту
+$fontSizeMain: 18px;
+//Колір
+//Колір
+$mainColor: #37393f;
+$secondColor: #81818b;
+$bgColor: rgb(194, 248, 235);
+$bgSecondColor: #6b77e5;
+///////////////////////////////////
+$textColor: #7d7d7d;
+$hellColor: #fff;
+$bgColorHead: #40ddb6;
+$bgColorHell: #f4f4f4;
+$bgColorHover: #a4aae4;
+// Medias
+$tablet: toEm(991.98);
+$mobile: toEm(767.98);
+$mobileSmall: toEm(479.98);
+//-----------------------------------
+.button {
+  color: $hellColor;
+  font-family: "Inter";
+  font-weight: 600;
+  text-transform: capitalize;
+  @include adaptiveValue("padding-top", 20, 15);
+  @include adaptiveValue("padding-left", 35, 16);
+  @include adaptiveValue("padding-bottom", 20, 15);
+  @include adaptiveValue("padding-right", 35, 16);
+  background-color: $bgColor;
+  letter-spacing: toRem(1);
+  transition: background-color 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $bgSecondColor;
+    }
+  }
+}
+.sub-title {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: toRem(12);
+    height: toRem(12);
+    flex: 0 0 toRem(12);
+    background-color: turquoise;
+    margin-right: toRem(7);
+  }
+  font-weight: 600;
+  line-height: 1.46; /* 26.314px */
+}
+.title {
+  font-family: Poppins;
+  font-size: toRem(40);
+  font-weight: 700;
+  line-height: 1.21; /* 48.4px */
+  @include adaptiveValue("font-size", 40, 32, 0, $maxWidth);
+}
+.button {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  align-items: center;
+  background-color: $bgSecondColor;
+  color: $hellColor;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $bgColorHover;
+      color: #000;
+    }
+  }
+}
+.link {
+  color: $bgSecondColor;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $bgColorHover;
+    }
+  }
+}
