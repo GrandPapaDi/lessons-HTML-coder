@@ -1,4 +1,7 @@
-/*========================Header==========================*/
+//=========================header
+//=========================header
+//=========================header
+
 .header {
   // .header__container
   .header {
@@ -301,7 +304,7 @@
       border-radius: toRem(15);
       padding: toRem(15);
 
-      @media (max-width: toEm(1019)) {
+      @media (max-width: $tablet) {
         width: 100%;
         border-radius: 0;
       }
@@ -326,57 +329,56 @@
       }
     }
   }
-
+}
+.icon-menu {
+  display: none;
+  @media (max-width: $tablet) {
+    width: toRem(30);
+    display: block;
+    flex: 0 0 toRem(30);
+    height: toRem(18);
+    position: relative;
+    z-index: 5;
+    &::before,
+    &::after,
+    span {
+      content: "";
+      height: toRem(2);
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
+      background-color: #000;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: 50%;
+      margin-top: toRem(-1);
+    }
+  }
+}
+.menu-open {
   .icon-menu {
-    display: none;
+    span {
+      @media (max-width: $tablet) {
+        transform: scale(0);
+      }
+    }
     @media (max-width: $tablet) {
-      width: toRem(30);
-      display: block;
-      flex: 0 0 toRem(30);
-      height: toRem(18);
-      position: relative;
-      z-index: 5;
-      &::before,
-      &::after,
-      span {
-        content: "";
-        height: toRem(2);
-        width: 100%;
-        position: absolute;
-        left: 0;
-        transition: all 0.3s;
-        background-color: #000;
-      }
       &::before {
-        top: 0;
-      }
-      &::after {
-        bottom: 0;
-      }
-      span {
+        transform: rotate(-45deg);
         top: 50%;
         margin-top: toRem(-1);
       }
-    }
-  }
-  .menu-open {
-    .icon-menu {
-      span {
-        @media (max-width: $tablet) {
-          transform: scale(0);
-        }
-      }
-      @media (max-width: $tablet) {
-        &::before {
-          transform: rotate(-45deg);
-          top: 50%;
-          margin-top: toRem(-1);
-        }
-        &::after {
-          transform: rotate(45deg);
-          margin-bottom: toRem(-1);
-          bottom: 50%;
-        }
+      &::after {
+        transform: rotate(45deg);
+        margin-bottom: toRem(-1);
+        bottom: 50%;
       }
     }
   }
