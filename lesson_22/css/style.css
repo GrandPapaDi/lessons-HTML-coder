@@ -1367,18 +1367,17 @@
     position: relative;
     visibility: visible;
     opacity: 1;
-    padding-top: 0.625rem;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
     font-size: 1.5rem;
     background-color: transparent;
+    padding-top: 1.25rem;
   }
 }
 .header .sub-menu__list {
   width: 10.3125rem;
   border-radius: 0.9375rem;
-  padding: 0.9375rem;
 }
 @media (max-width: 61.99875em) {
   .header .sub-menu__list {
@@ -1388,11 +1387,6 @@
 }
 .header .sub-menu__item:not(:last-child) {
   padding-bottom: 0.9375rem;
-}
-@media (max-width: 61.99875em) {
-  .header .sub-menu__item {
-    padding-bottom: 1.25rem;
-  }
 }
 .header .sub-menu__link {
   color: #37393f;

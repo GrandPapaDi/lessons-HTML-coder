@@ -293,16 +293,16 @@
       position: relative;
       visibility: visible;
       opacity: 1;
-      padding-top: toRem(10);
       transform: translate(0, 0);
       font-size: toRem(24);
       background-color: transparent;
+
+      padding-top: toRem(20);
     }
     // .sub-menu__list
     &__list {
       width: toRem(165);
       border-radius: toRem(15);
-      padding: toRem(15);
 
       @media (max-width: $tablet) {
         width: 100%;
@@ -313,9 +313,6 @@
     &__item {
       &:not(:last-child) {
         padding-bottom: toRem(15);
-      }
-      @media (max-width: $tablet) {
-        padding-bottom: toRem(20);
       }
     }
 
