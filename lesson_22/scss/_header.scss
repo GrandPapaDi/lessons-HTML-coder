@@ -9,8 +9,12 @@
       background-color: $mainColor;
       color: $hellColor;
       font-size: toRem(14);
-      @media (max-width: $mobileSmall) {
+
+      @media (max-width: $mobile) {
         min-height: toRem(100);
+      }
+      @media (max-width: toEm(385.98)) {
+        min-height: toRem(180);
       }
     }
     // .header__button
@@ -156,7 +160,7 @@
         left: 0;
       }
 
-      @media (max-width: toEm(1098)) {
+      @media (max-width: $tablet) {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -171,15 +175,24 @@
           content: "";
           position: fixed;
           width: 100%;
-          height: toRem(71);
+          height: toRem(60);
           top: 0;
           left: 100%;
           z-index: 2;
           transition: left 0.3s;
           background-color: $bgColorHover;
 
+          @media (max-width: toEm(895.98)) {
+            height: toRem(100);
+          }
           @media (max-width: $mobileSmall) {
-            height: toRem(180);
+            height: toRem(111);
+          }
+          @media (max-width: toEm(404.98)) {
+            height: toRem(125);
+          }
+          @media (max-width: toEm(385.98)) {
+            min-height: toRem(180);
           }
         }
       }
@@ -191,7 +204,7 @@
         padding: toRem(170) toRem(15) toRem(30) toRem(15);
       }
       @media (max-width: toEm(385.98)) {
-        padding: toRem(260) toRem(15) toRem(30) toRem(15);
+        padding: toRem(290) toRem(15) toRem(30) toRem(15);
       }
     }
     // .menu__list
@@ -200,7 +213,7 @@
       justify-content: center;
       column-gap: toRem(25);
       flex-wrap: wrap;
-      @media (max-width: toEm(1019)) {
+      @media (max-width: $tablet) {
         flex-direction: column;
         text-align: right;
         row-gap: toRem(20);
@@ -220,7 +233,7 @@
     // .menu__link
     &__link {
       transition: color 0.3s;
-      @media (max-width: toEm(1019)) {
+      @media (max-width: $tablet) {
         font-size: toRem(28);
       }
     }
@@ -239,7 +252,7 @@
           width: toRem(16);
           transition: transform 0.3s;
         }
-        @media (max-width: toEm(1019)) {
+        @media (max-width: $tablet) {
           display: block;
           &::after {
             display: none;
@@ -273,7 +286,7 @@
     color: white;
     background-color: $bgColorHover;
     border-radius: toRem(10);
-    @media (max-width: toEm(1019)) {
+    @media (max-width: $tablet) {
       position: relative;
       visibility: visible;
       opacity: 1;
@@ -298,7 +311,7 @@
       &:not(:last-child) {
         padding-bottom: toRem(15);
       }
-      @media (max-width: toEm(1019)) {
+      @media (max-width: $tablet) {
         padding-bottom: toRem(20);
       }
     }
@@ -316,7 +329,7 @@
 
   .icon-menu {
     display: none;
-    @media (max-width: toEm(1019)) {
+    @media (max-width: $tablet) {
       width: toRem(30);
       display: block;
       flex: 0 0 toRem(30);
@@ -349,11 +362,11 @@
   .menu-open {
     .icon-menu {
       span {
-        @media (max-width: toEm(1019)) {
+        @media (max-width: $tablet) {
           transform: scale(0);
         }
       }
-      @media (max-width: toEm(1019)) {
+      @media (max-width: $tablet) {
         &::before {
           transform: rotate(-45deg);
           top: 50%;
