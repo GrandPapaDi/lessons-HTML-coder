@@ -248,17 +248,7 @@
 }
 @media (max-width: 68em) {
   .top {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
     gap: 3.75rem;
-  }
-}
-@media (max-width: 34.93625em) {
-  .top {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
   }
 }
 .top__items {
@@ -293,18 +283,12 @@
 }
 @media (max-width: 52.87375em) {
   .top__items {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
     row-gap: 1.25rem;
     gap: 1.25rem;
   }
 }
 @media (max-width: 34.93625em) {
   .top__items {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
     row-gap: 1.25rem;
   }
 }
@@ -450,9 +434,6 @@
   .midlle__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 .midlle__column {
@@ -941,7 +922,18 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 2.5rem;
+    row-gap: 1.5625rem;
+  }
+}
+.bottom__copy {
+  line-height: 1.44; /* 26.014px */
+}
+@media (max-width: 29.99875em) {
+  .bottom__copy {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .bottom__copy span:not(:last-child) {
@@ -956,7 +948,7 @@
   }
 }
 .bottom__social {
-  line-height: 144.523%; /* 26.014px */
+  line-height: 1.44; /* 26.014px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,8 +961,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
-  line-height: 1.4; /* 26.014px */
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+}
+@media (max-width: 29.99875em) {
+  .social__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 1.5625rem;
+       -moz-column-gap: 1.5625rem;
+            column-gap: 1.5625rem;
+  }
 }
 .social__item {
   -webkit-box-flex: 0;
@@ -1019,9 +1022,9 @@
             justify-content: center;
   }
 }
-@media (max-width: 24.12375em) {
+@media (max-width: 61.99875em) {
   .header .line__container {
-    gap: 0.9375rem;
+    row-gap: 1.5625rem;
   }
 }
 .header .line__address {
@@ -1036,9 +1039,9 @@
           justify-content: space-between;
   gap: 2.625rem;
 }
-@media (max-width: 31.93625em) {
+@media (max-width: 29.99875em) {
   .header .line__address {
-    gap: 0.9375rem;
+    row-gap: 1.5625rem;
   }
 }
 @media (max-width: 24.12375em) {
@@ -1082,12 +1085,12 @@
           justify-content: space-between;
   gap: 3.125rem;
 }
-@media (max-width: 31.93625em) {
+@media (max-width: 29.99875em) {
   .header .line__hours {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 0.9375rem;
+    row-gap: 1.5625rem;
   }
 }
 @media (max-width: 24.12375em) {
@@ -1103,6 +1106,16 @@
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 29.99875em) {
+  .header .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 1.5625rem;
+       -moz-column-gap: 1.5625rem;
+            column-gap: 1.5625rem;
+  }
 }
 .header .social__item {
   -webkit-box-flex: 0;
@@ -1688,7 +1701,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.875rem;
+}
+@media (min-width: 120em) {
+  .solutions__items {
+    gap: 1.875rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 120em) {
+  @supports (gap: clamp( 0.9375rem , 0.75rem  +  0.9375vw , 1.875rem )) {
+    .solutions__items {
+      gap: clamp( 0.9375rem , 0.75rem  +  0.9375vw , 1.875rem );
+    }
+  }
+  @supports not (gap: clamp( 0.9375rem , 0.75rem  +  0.9375vw , 1.875rem )) {
+    .solutions__items {
+      gap: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 100);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .solutions__items {
+    gap: 0.9375rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .solutions__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .solutions__button--green {
   padding: 1.375rem 1.6875rem;

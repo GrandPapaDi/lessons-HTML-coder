@@ -187,7 +187,10 @@ body {
   // .solutions__items
   &__items {
     display: flex;
-    gap: toRem(30);
+    @include adaptiveValue("gap", 30, 15, 0, $maxWidth);
+    @media (max-width: $mobileSmall) {
+      flex-wrap: wrap;
+    }
   }
   // .solutions__button--green
   &__button--green {
