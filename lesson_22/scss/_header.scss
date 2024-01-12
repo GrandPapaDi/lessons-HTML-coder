@@ -9,6 +9,9 @@
       background-color: $mainColor;
       color: $hellColor;
       font-size: toRem(14);
+      @media (max-width: $mobileSmall) {
+        min-height: toRem(100);
+      }
     }
     // .header__button
     &__button {
@@ -77,7 +80,7 @@
   }
   .social {
     display: flex;
-    gap: toRem(16);
+    column-gap: toRem(16);
     @media (max-width: $mobileSmall) {
       justify-content: center;
       column-gap: toRem(25);
@@ -175,8 +178,8 @@
           transition: left 0.3s;
           background-color: $bgColorHover;
 
-          @media (max-width: toEm(385.98)) {
-            height: toRem(150);
+          @media (max-width: $mobileSmall) {
+            height: toRem(180);
           }
         }
       }
