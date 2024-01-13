@@ -113,7 +113,6 @@ body {
 //=================menu END---------------------------
 //===================Solutions===========================
 .solutions {
-  @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   // .solutions__content
   &__content {
     min-height: 100svh;
@@ -226,12 +225,11 @@ body {
 //---------------------------------------------------
 //===================Plan===========================
 .plan {
-  @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
   @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   // .plan__container
   &__block {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(toRem(290), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(toRem(450), 1fr));
 
     @media (max-width: toEm(639.98)) {
       grid-template-columns: 1fr;
@@ -242,8 +240,8 @@ body {
     display: flex;
     gap: toRem(20);
     padding-left: toRem(15);
-    @include adaptiveValue("padding-top", 151, 15, 0, $maxWidth);
-    @include adaptiveValue("padding-bottom", 151, 15, 0, $maxWidth);
+    @include adaptiveValue("padding-top", 151, 60, 0, $maxWidth);
+    @include adaptiveValue("padding-bottom", 151, 30, 0, $maxWidth);
     @include adaptiveValue("padding-right", 50, 0, 0, $maxWidth);
     background: $bgColorHell;
     justify-content: end;
@@ -313,9 +311,9 @@ body {
   }
 }
 .care {
-  @include adaptiveValue("padding-bottom", 151, 15, 0, $maxWidth);
-  @include adaptiveValue("padding-top", 151, 15, 0, $maxWidth);
-  @include adaptiveValue("padding-left", 70, 10, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 151, 30, 0, $maxWidth);
+  @include adaptiveValue("padding-top", 151, 60, 0, $maxWidth);
+  @include adaptiveValue("padding-left", 70, 15, 0, $maxWidth, 1300);
   padding-right: toRem(15);
 
   &__block {
@@ -329,7 +327,7 @@ body {
   &__text p {
     color: $textColor;
     &:not(:last-child) {
-      padding-bottom: toRem(15);
+      margin-bottom: toRem(15);
     }
   }
   // .care__list
@@ -376,31 +374,30 @@ body {
   &__items {
     display: flex;
     column-gap: toRem(20);
+    @include adaptiveValue("column-gap", 20, 10, 0, $maxWidth);
+    @include adaptiveValue("row-gap", 20, 10, 0, $maxWidth);
 
-    @media (max-width: toEm(1353.98)) {
-      row-gap: toRem(20);
-    }
     @media (max-width: toEm(636.98)) {
       justify-content: center;
     }
     @media (max-width: toEm(457.98)) {
-      column-gap: toRem(5);
       flex-wrap: wrap;
     }
   }
   // .frameworks__item
   &__item {
     display: flex;
-    column-gap: toRem(20);
     border: toRem(1) solid #e3e3e3;
     flex: 0 1 toRem(295);
-    @include adaptiveValue("padding", 37, 15, 0, $maxWidth);
+    @include adaptiveValue("padding", 37, 10, 0, $maxWidth);
+    @include adaptiveValue("column-gap", 20, 15, 0, $maxWidth);
   }
   // .frameworks__title
   &__title {
     font-family: Poppins;
     font-size: toRem(20);
     font-weight: 600;
+    @include adaptiveValue("font-size", 20, 18, 0, $maxWidth);
 
     &:not(:last-child) {
       margin-bottom: toRem(3);
@@ -455,7 +452,7 @@ body {
     text-transform: capitalize;
 
     &:not(:last-child) {
-      padding-bottom: toRem(10);
+      margin-bottom: toRem(10);
     }
   }
   // .provide__title
@@ -464,7 +461,7 @@ body {
     text-transform: capitalize;
 
     &:not(:last-child) {
-      padding-bottom: toRem(40);
+      margin-bottom: toRem(40);
     }
   }
 }
@@ -753,25 +750,27 @@ body {
   &__content {
     flex: 0 1 toRem(545);
   }
+  // .check__sub-title
+  &__sub-title {
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+    }
+  }
+  // .check__title
+  &__title {
+  }
+
   // .check__button--green
   &__button--green {
     background: $bgColorHead;
     padding: toRem(22) toRem(45);
     justify-content: center;
     align-items: center;
-
     color: $hellColor;
     text-align: center;
     font-weight: 600;
     text-transform: capitalize;
     transition: all 0.3s ease 0s;
-
-    /*@media (any-hover: hover) {
-      &:hover {
-        background-color: #35b091;
-        color: #000;
-      }
-    }*/
   }
 }
 .body {

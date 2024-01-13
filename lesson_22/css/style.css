@@ -1587,28 +1587,6 @@ body {
   padding: 0 0.9375rem;
 }
 
-@media (min-width: 120em) {
-  .solutions {
-    padding-bottom: 3.125rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-bottom: clamp( 1.875rem , 1.625rem  +  1.25vw , 3.125rem )) {
-    .solutions {
-      padding-bottom: clamp( 1.875rem , 1.625rem  +  1.25vw , 3.125rem );
-    }
-  }
-  @supports not (padding-bottom: clamp( 1.875rem , 1.625rem  +  1.25vw , 3.125rem )) {
-    .solutions {
-      padding-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 100);
-    }
-  }
-}
-@media (max-width: 20em) {
-  .solutions {
-    padding-bottom: 1.875rem;
-  }
-}
 .solutions__content {
   min-height: 100svh;
   padding: 0 0 0 0.9375rem;
@@ -1804,28 +1782,6 @@ body {
 
 @media (min-width: 120em) {
   .plan {
-    padding-top: 3.125rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-top: clamp( 1.875rem , 1.625rem  +  1.25vw , 3.125rem )) {
-    .plan {
-      padding-top: clamp( 1.875rem , 1.625rem  +  1.25vw , 3.125rem );
-    }
-  }
-  @supports not (padding-top: clamp( 1.875rem , 1.625rem  +  1.25vw , 3.125rem )) {
-    .plan {
-      padding-top: calc(1.875rem + 1.25 * (100vw - 20rem) / 100);
-    }
-  }
-}
-@media (max-width: 20em) {
-  .plan {
-    padding-top: 1.875rem;
-  }
-}
-@media (min-width: 120em) {
-  .plan {
     padding-bottom: 3.125rem;
   }
 }
@@ -1848,7 +1804,7 @@ body {
 }
 .plan__block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18.125rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28.125rem, 1fr));
 }
 @media (max-width: 39.99875em) {
   .plan__block {
@@ -1872,20 +1828,20 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-top: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports (padding-top: clamp( 3.75rem , 2.6125rem  +  5.6875vw , 9.4375rem )) {
     .plan .plan__content {
-      padding-top: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem );
+      padding-top: clamp( 3.75rem , 2.6125rem  +  5.6875vw , 9.4375rem );
     }
   }
-  @supports not (padding-top: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports not (padding-top: clamp( 3.75rem , 2.6125rem  +  5.6875vw , 9.4375rem )) {
     .plan .plan__content {
-      padding-top: calc(0.9375rem + 8.5 * (100vw - 20rem) / 100);
+      padding-top: calc(3.75rem + 5.6875 * (100vw - 20rem) / 100);
     }
   }
 }
 @media (max-width: 20em) {
   .plan .plan__content {
-    padding-top: 0.9375rem;
+    padding-top: 3.75rem;
   }
 }
 @media (min-width: 120em) {
@@ -1894,20 +1850,20 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-bottom: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports (padding-bottom: clamp( 1.875rem , 0.3625rem  +  7.5625vw , 9.4375rem )) {
     .plan .plan__content {
-      padding-bottom: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem );
+      padding-bottom: clamp( 1.875rem , 0.3625rem  +  7.5625vw , 9.4375rem );
     }
   }
-  @supports not (padding-bottom: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports not (padding-bottom: clamp( 1.875rem , 0.3625rem  +  7.5625vw , 9.4375rem )) {
     .plan .plan__content {
-      padding-bottom: calc(0.9375rem + 8.5 * (100vw - 20rem) / 100);
+      padding-bottom: calc(1.875rem + 7.5625 * (100vw - 20rem) / 100);
     }
   }
 }
 @media (max-width: 20em) {
   .plan .plan__content {
-    padding-bottom: 0.9375rem;
+    padding-bottom: 1.875rem;
   }
 }
 @media (min-width: 120em) {
@@ -2029,20 +1985,20 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-bottom: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports (padding-bottom: clamp( 1.875rem , 0.3625rem  +  7.5625vw , 9.4375rem )) {
     .care {
-      padding-bottom: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem );
+      padding-bottom: clamp( 1.875rem , 0.3625rem  +  7.5625vw , 9.4375rem );
     }
   }
-  @supports not (padding-bottom: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports not (padding-bottom: clamp( 1.875rem , 0.3625rem  +  7.5625vw , 9.4375rem )) {
     .care {
-      padding-bottom: calc(0.9375rem + 8.5 * (100vw - 20rem) / 100);
+      padding-bottom: calc(1.875rem + 7.5625 * (100vw - 20rem) / 100);
     }
   }
 }
 @media (max-width: 20em) {
   .care {
-    padding-bottom: 0.9375rem;
+    padding-bottom: 1.875rem;
   }
 }
 @media (min-width: 120em) {
@@ -2051,20 +2007,20 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-top: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports (padding-top: clamp( 3.75rem , 2.6125rem  +  5.6875vw , 9.4375rem )) {
     .care {
-      padding-top: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem );
+      padding-top: clamp( 3.75rem , 2.6125rem  +  5.6875vw , 9.4375rem );
     }
   }
-  @supports not (padding-top: clamp( 0.9375rem , -0.7625rem  +  8.5vw , 9.4375rem )) {
+  @supports not (padding-top: clamp( 3.75rem , 2.6125rem  +  5.6875vw , 9.4375rem )) {
     .care {
-      padding-top: calc(0.9375rem + 8.5 * (100vw - 20rem) / 100);
+      padding-top: calc(3.75rem + 5.6875 * (100vw - 20rem) / 100);
     }
   }
 }
 @media (max-width: 20em) {
   .care {
-    padding-top: 0.9375rem;
+    padding-top: 3.75rem;
   }
 }
 @media (min-width: 120em) {
@@ -2072,21 +2028,21 @@ body {
     padding-left: 4.375rem;
   }
 }
-@media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding-left: clamp( 0.625rem , -0.125rem  +  3.75vw , 4.375rem )) {
+@media (min-width: 81.25em) and (max-width: 120em) {
+  @supports (padding-left: clamp( 0.9375rem , -6.2701612903rem  +  8.8709677419vw , 4.375rem )) {
     .care {
-      padding-left: clamp( 0.625rem , -0.125rem  +  3.75vw , 4.375rem );
+      padding-left: clamp( 0.9375rem , -6.2701612903rem  +  8.8709677419vw , 4.375rem );
     }
   }
-  @supports not (padding-left: clamp( 0.625rem , -0.125rem  +  3.75vw , 4.375rem )) {
+  @supports not (padding-left: clamp( 0.9375rem , -6.2701612903rem  +  8.8709677419vw , 4.375rem )) {
     .care {
-      padding-left: calc(0.625rem + 3.75 * (100vw - 20rem) / 100);
+      padding-left: calc(0.9375rem + 3.4375 * (100vw - 81.25rem) / 38.75);
     }
   }
 }
-@media (max-width: 20em) {
+@media (max-width: 81.25em) {
   .care {
-    padding-left: 0.625rem;
+    padding-left: 0.9375rem;
   }
 }
 .care__block {
@@ -2100,7 +2056,7 @@ body {
   color: #7d7d7d;
 }
 .care__text p:not(:last-child) {
-  padding-bottom: 0.9375rem;
+  margin-bottom: 0.9375rem;
 }
 .care__list {
   display: -webkit-box;
@@ -2180,9 +2136,56 @@ body {
      -moz-column-gap: 1.25rem;
           column-gap: 1.25rem;
 }
-@media (max-width: 84.62375em) {
+@media (min-width: 120em) {
+  .frameworks__items {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 120em) {
+  @supports ((-moz-column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem )) or (column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem ))) {
+    .frameworks__items {
+      -webkit-column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem );
+         -moz-column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem );
+              column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem );
+    }
+  }
+  @supports not ((-moz-column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem )) or (column-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem ))) {
+    .frameworks__items {
+      -webkit-column-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 100);
+         -moz-column-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 100);
+              column-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 100);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .frameworks__items {
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+  }
+}
+@media (min-width: 120em) {
   .frameworks__items {
     row-gap: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 120em) {
+  @supports (row-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem )) {
+    .frameworks__items {
+      row-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem );
+    }
+  }
+  @supports not (row-gap: clamp( 0.625rem , 0.5rem  +  0.625vw , 1.25rem )) {
+    .frameworks__items {
+      row-gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 100);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .frameworks__items {
+    row-gap: 0.625rem;
   }
 }
 @media (max-width: 39.81125em) {
@@ -2194,9 +2197,6 @@ body {
 }
 @media (max-width: 28.62375em) {
   .frameworks__items {
-    -webkit-column-gap: 0.3125rem;
-       -moz-column-gap: 0.3125rem;
-            column-gap: 0.3125rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -2205,9 +2205,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 1.25rem;
-     -moz-column-gap: 1.25rem;
-          column-gap: 1.25rem;
   border: 0.0625rem solid #e3e3e3;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 18.4375rem;
@@ -2219,26 +2216,78 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 120em) {
-  @supports (padding: clamp( 0.9375rem , 0.6625rem  +  1.375vw , 2.3125rem )) {
+  @supports (padding: clamp( 0.625rem , 0.2875rem  +  1.6875vw , 2.3125rem )) {
     .frameworks__item {
-      padding: clamp( 0.9375rem , 0.6625rem  +  1.375vw , 2.3125rem );
+      padding: clamp( 0.625rem , 0.2875rem  +  1.6875vw , 2.3125rem );
     }
   }
-  @supports not (padding: clamp( 0.9375rem , 0.6625rem  +  1.375vw , 2.3125rem )) {
+  @supports not (padding: clamp( 0.625rem , 0.2875rem  +  1.6875vw , 2.3125rem )) {
     .frameworks__item {
-      padding: calc(0.9375rem + 1.375 * (100vw - 20rem) / 100);
+      padding: calc(0.625rem + 1.6875 * (100vw - 20rem) / 100);
     }
   }
 }
 @media (max-width: 20em) {
   .frameworks__item {
-    padding: 0.9375rem;
+    padding: 0.625rem;
+  }
+}
+@media (min-width: 120em) {
+  .frameworks__item {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 120em) {
+  @supports ((-moz-column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem )) or (column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem ))) {
+    .frameworks__item {
+      -webkit-column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem );
+         -moz-column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem );
+              column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem );
+    }
+  }
+  @supports not ((-moz-column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem )) or (column-gap: clamp( 0.9375rem , 0.875rem  +  0.3125vw , 1.25rem ))) {
+    .frameworks__item {
+      -webkit-column-gap: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 100);
+         -moz-column-gap: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 100);
+              column-gap: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 100);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .frameworks__item {
+    -webkit-column-gap: 0.9375rem;
+       -moz-column-gap: 0.9375rem;
+            column-gap: 0.9375rem;
   }
 }
 .frameworks__title {
   font-family: Poppins;
   font-size: 1.25rem;
   font-weight: 600;
+}
+@media (min-width: 120em) {
+  .frameworks__title {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 120em) {
+  @supports (font-size: clamp( 1.125rem , 1.1rem  +  0.125vw , 1.25rem )) {
+    .frameworks__title {
+      font-size: clamp( 1.125rem , 1.1rem  +  0.125vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.125rem , 1.1rem  +  0.125vw , 1.25rem )) {
+    .frameworks__title {
+      font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 100);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .frameworks__title {
+    font-size: 1.125rem;
+  }
 }
 .frameworks__title:not(:last-child) {
   margin-bottom: 0.1875rem;
@@ -2368,14 +2417,14 @@ body {
   text-transform: capitalize;
 }
 .provide__sub-title:not(:last-child) {
-  padding-bottom: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 .provide__title {
   text-align: center;
   text-transform: capitalize;
 }
 .provide__title:not(:last-child) {
-  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .services__items {
@@ -3045,6 +3094,9 @@ body {
       -ms-flex: 0 1 34.0625rem;
           flex: 0 1 34.0625rem;
 }
+.check__sub-title:not(:last-child) {
+  margin-bottom: 1rem;
+}
 .check__button--green {
   background: #40ddb6;
   padding: 1.375rem 2.8125rem;
@@ -3060,12 +3112,6 @@ body {
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  /*@media (any-hover: hover) {
-    &:hover {
-      background-color: #35b091;
-      color: #000;
-    }
-  }*/
 }
 
 .body__items {
