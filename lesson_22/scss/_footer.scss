@@ -14,6 +14,7 @@
   justify-content: space-between;
   border-bottom: toRem(1) solid #6c6d72;
   @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
+
   @media (max-width: toEm(1088)) {
     gap: toRem(60);
   }

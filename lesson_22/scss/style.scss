@@ -113,6 +113,7 @@ body {
 //=================menu END---------------------------
 //===================Solutions===========================
 .solutions {
+  @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   // .solutions__content
   &__content {
     min-height: 100svh;
@@ -124,9 +125,6 @@ body {
 
     @media (min-width: toEm(768)) {
       display: flex;
-    }
-    @media (max-width: toEm(767)) {
-      padding: toRem(15) 0;
     }
   }
   // .solutions__body
@@ -228,7 +226,8 @@ body {
 //---------------------------------------------------
 //===================Plan===========================
 .plan {
-  @include adaptiveValue("padding-bottom", 100, 20, 0, $maxWidth);
+  @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   // .plan__container
   &__block {
     display: grid;
@@ -420,6 +419,8 @@ body {
 //===================Brands END===========================
 
 .brands {
+  @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   // .brands__container
   &__container {
     min-height: 100px;
@@ -443,7 +444,7 @@ body {
 //===================Provide===========================
 
 .provide {
-  @include adaptiveValue("padding-top", 100, 60, 0, $maxWidth);
+  @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
   @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   // .provide__container
   &__container {
@@ -473,17 +474,28 @@ body {
   &__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: toRem(30);
+    @include adaptiveValue("gap", 30, 15, 0, $maxWidth);
+
+    @media (max-width: toEm(1232.98)) {
+      justify-content: space-around;
+    }
+    @media (max-width: toEm(819.98)) {
+      justify-content: flex-start;
+    }
   }
   // .services__item
   &__item {
     display: flex;
-    column-gap: calc(toRem(90) - 17%);
     align-items: center;
     padding: toRem(30);
     background: $bgColorHell;
     flex: 0 1 toRem(385);
     min-width: toRem(290);
+    @include adaptiveValue("column-gap", 90, 30, 0, $maxWidth);
+    @include adaptiveValue("padding", 30, 25, 0, $maxWidth);
+    @include adaptiveValue("padding", 30, 25, 0, $maxWidth);
   }
   &__item--button {
     color: $hellColor;
@@ -517,10 +529,6 @@ body {
     line-height: 1.27; /* 31.75px */
     text-transform: capitalize;
     @include adaptiveValue("font-size", 25, 18, 0, $maxWidth);
-
-    @media (max-width: toEm(394.98)) {
-      font-size: toRem(20);
-    }
   }
   // .services__link
   &__link {
@@ -540,8 +548,8 @@ body {
 //===================Business===========================
 
 .business {
-  @include adaptiveValue("padding-top", 50, 20, 0, $maxWidth);
-  @include adaptiveValue("padding-bottom", 50, 20, 0, $maxWidth);
+  @include adaptiveValue("padding-top", 50, 30, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 50, 30, 0, $maxWidth);
   overflow: hidden;
   @media (min-width: toEm(767)) {
     display: flex;
@@ -727,8 +735,8 @@ body {
 //===================Сheck===========================
 
 .check {
-  @include adaptiveValue("padding-top", 130, 40, 0, $maxWidth);
-  @include adaptiveValue("padding-bottom", 130, 40, 0, $maxWidth);
+  @include adaptiveValue("padding-top", 130, 70, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 140, 70, 0, $maxWidth);
   // .check__container
   &__container {
     display: flex;
@@ -808,10 +816,10 @@ body {
 //===================Testimonial===========================
 
 .testimonial {
-  @include adaptiveValue("padding-bottom", 130, 40, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 130, 70, 0, $maxWidth);
+
   // .testimonial__container
   &__container {
-    @include adaptiveValue("padding-top", 130, 40, 0, $maxWidth);
     border-top: toRem(1) solid #c5c5c5;
     stroke-width: toRem(1);
     display: grid;
@@ -821,11 +829,9 @@ body {
         minmax(toRem(290), 1fr)
       );
     justify-content: space-between;
-
+    @include adaptiveValue("padding-top", 130, 70, 0, $maxWidth);
     @media (max-width: toEm(680.98)) {
       grid-template-columns: 1fr;
-      padding-top: toRem(80);
-      margin-bottom: toRem(75);
     }
   }
   // .testimonial__sub-title
@@ -975,6 +981,7 @@ body {
 /*=======================Rating END===================*/
 //===================Appointment===========================
 .appointment {
+  @include adaptiveValue("padding-top", 130, 70, 0, $maxWidth);
   // .appointment__content
   &__content {
     background-color: $bgSecondColor;
@@ -982,14 +989,15 @@ body {
   // .appointment__items
   &__items {
     display: grid;
-    gap: toRem(53);
-    grid-template-columns: repeat(auto-fill, minmax(toRem(372), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(toRem(320), 1fr));
     justify-content: space-between;
 
-    @include adaptiveValue("padding-top", 123, 40, 0, $maxWidth);
+    @include adaptiveValue("column-gap", 53, 1, 0, $maxWidth);
+    @include adaptiveValue("padding-top", 123, 60, 0, $maxWidth);
     @include adaptiveValue("padding-bottom", 123, 40, 0, $maxWidth);
     @media (max-width: toEm(600.98)) {
       grid-template-columns: repeat(auto-fill, minmax(toRem(290), 1fr));
+      row-gap: toRem(60);
     }
   }
   // .appointment__item
@@ -1018,12 +1026,13 @@ body {
   &__project {
     background: #40ddb6;
     display: flex;
-    padding: 35px;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     align-items: center;
     column-gap: 23px;
+    @include adaptiveValue("padding", 35, 20, 0, $maxWidth);
+    @include adaptiveValue("column-gap", 23, 15, 0, $maxWidth);
 
     &:not(:last-child) {
       margin-bottom: toRem(50);
@@ -1183,6 +1192,7 @@ body {
 //===================Appointment END===========================
 //===================Team===========================
 .team {
+  @include adaptiveValue("padding-bottom", 100, 60, 0, $maxWidth);
   position: relative;
   // .team__image
   &__image {
@@ -1224,7 +1234,7 @@ body {
 //===================Team END===========================
 //===================Posts===========================
 .posts {
-  @include adaptiveValue("padding-top", 150, 40, 0, $maxWidth);
+  @include adaptiveValue("padding-top", 100, 60, 0, $maxWidth);
   @include adaptiveValue("padding-bottom", 75, 40, 0, $maxWidth);
   // .posts__top
   &__top {
@@ -1369,7 +1379,7 @@ body {
 //===================Experience===========================
 .experience {
   @include adaptiveValue("padding-top", 75, 40, 0, $maxWidth);
-  @include adaptiveValue("padding-bottom", 200, 40, 0, $maxWidth);
+  @include adaptiveValue("padding-bottom", 200, 80, 0, $maxWidth);
 
   // .experience__content
   &__content {
