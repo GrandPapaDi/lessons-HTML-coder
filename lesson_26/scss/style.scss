@@ -22,8 +22,10 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 @import "_functions.scss";
 
 body {
-  background-color: rgba(16, 87, 241, 0.575);
   font-size: toRem(22);
+  &.page {
+    background-color: rgba(16, 87, 241, 0.575);
+  }
   &.visible {
     background-color: rgb(16, 87, 241);
   }
