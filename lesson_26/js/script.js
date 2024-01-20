@@ -17,9 +17,16 @@ items.forEach((item) => {
 Дано в css/scss: body прозорий
 При повному завантаженню сторінки додати клас до body який прибирає прозорість.*/
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.body.classList.add("loaded"); // додаю клас "loaded" до body при повному завантаженню сторінки
-});
+//=============================
+//при повному завантаженні сторінки, роблю наступне
+window.onload = function () {
+  const item = document.body; //створюю item
+  //шукаю,чи є page в body
+  if (item.classList.contains("page")) {
+    item.classList.remove("page"); //якщо є "page",видаляю його
+    document.body.classList.add("visible"); //додаю новий клас "visible"
+  }
+};
 /*Задача №3
 Дано в html: header main footer
 При наведенні курсору на header змінювати колір фону у footer.
@@ -44,6 +51,12 @@ header.addEventListener("mouseout", function () {
 Функція має запускатись коли ми доскролюємо до елементу main__item (його видно), і не запускатись повторно.*/
 
 //==================Timer===========================
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
 //функція, що викликається, коли стан елемента змінюється(видимий або ні)
 function observeElementVisibility(entries, observer) {
   entries.forEach((entry) => {
@@ -54,14 +67,14 @@ function observeElementVisibility(entries, observer) {
   });
 }
 
-function startTimer(element) {
-  const startNum = parseInt(element.dataset.start) || 1; // функція для інтервалу
-  const endNum = parseInt(element.dataset.end) || 10;
+function startTimer(item) {
+  const startNum = parseInt(item.dataset.start) || 1; // функція для будови інтервалу
+  const endNum = parseInt(item.dataset.end) || 10;
   let currentNum = startNum;
 
   const interval = setInterval(() => {
     if (currentNum <= endNum) {
-      element.textContent = currentNum;
+      item.textContent = currentNum;
       currentNum++;
     } else {
       clearInterval(interval); // зупиняю інтервал, коли досягнуто максимального числа
@@ -69,9 +82,9 @@ function startTimer(element) {
   }, 1000);
 }
 
-const item = document.querySelector(".main__item"); // вибираю елемент з класом "main__item" і слідкую
-const observer = new IntersectionObserver(observeElementVisibility);
-observer.observe(item);
+const targetElement = document.querySelector(".main__item"); //елемент за яким стежу
+const observer = new IntersectionObserver(observeElementVisibility, options); //спостерігач,який викликає observeElementVisibility
+observer.observe(targetElement);
 
 //==============================================
 

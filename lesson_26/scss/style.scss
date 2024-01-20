@@ -24,7 +24,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 body {
   background-color: rgba(16, 87, 241, 0.575);
   font-size: toRem(22);
-  &.loaded {
+  &.visible {
     background-color: rgb(16, 87, 241);
   }
 }
