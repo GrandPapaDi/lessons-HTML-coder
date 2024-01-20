@@ -57,34 +57,34 @@ const options = {
   rootMargin: "0px",
   threshold: 0.5,
 };
-//функція, що викликається, коли стан елемента змінюється(видимий або ні)
+//функція, що викликається при зміні видимості елемента
 function observeElementVisibility(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      startTimer(entry.target); //перевіряю, чи елемент став видимий
+      startTimer(entry.target); //стартую, якщо елемент став видимий
       observer.unobserve(entry.target); //спостереження припиняю
     }
   });
 }
-
+// функція для будови інтервалу
 function startTimer(item) {
-  const startNum = parseInt(item.dataset.start) || 1; // функція для будови інтервалу
+  const startNum = parseInt(item.dataset.start) || 1;
   const endNum = parseInt(item.dataset.end) || 10;
   let currentNum = startNum;
 
   const interval = setInterval(() => {
     if (currentNum <= endNum) {
-      item.textContent = currentNum;
+      item.textContent = currentNum; //текст - як поточне число
       currentNum++;
     } else {
       clearInterval(interval); // зупиняю інтервал, коли досягнуто максимального числа
     }
-  }, 1000);
+  }, 1000); //затримка 1 секунда
 }
 
 const targetElement = document.querySelector(".main__item"); //елемент за яким стежу
-const observer = new IntersectionObserver(observeElementVisibility, options); //спостерігач,який викликає observeElementVisibility
-observer.observe(targetElement);
+const observer = new IntersectionObserver(observeElementVisibility, options); //спостерігач,який викликає observeElementVisibility та параметрами options
+observer.observe(targetElement); //стежу за видимістю елемента
 
 //==============================================
 
