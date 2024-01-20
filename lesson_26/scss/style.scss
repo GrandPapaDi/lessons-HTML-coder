@@ -1,0 +1,176 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+@import "_fonts.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_functions.scss";
+
+body {
+  background-color: rgba(16, 87, 241, 0.575);
+  font-size: toRem(22);
+  &.loaded {
+    background-color: rgb(16, 87, 241);
+  }
+}
+
+.wrapper {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.wrapper main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: toRem(1270);
+  margin: 0 auto;
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+}
+header,
+footer {
+  text-align: center;
+  padding: toRem(30) 0;
+  text-transform: uppercase;
+  background-color: #f6f6f6;
+  transition: background-color 0.3s ease;
+}
+footer {
+  &.yellow {
+    background-color: yellow;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.main {
+  // .main__container
+  &__container {
+    padding-top: toRem(150);
+  }
+  // .main__text
+  &__text {
+    margin-top: toRem(50);
+    &:not(:last-child) {
+      margin-bottom: toRem(50);
+    }
+  }
+  // .main__item
+  &__item {
+    color: rgb(16, 87, 241);
+    font-size: toRem(45);
+    text-align: center;
+    padding: toRem(25) toRem(45);
+    background-color: #f7cb08;
+  }
+}
+
+.item {
+  color: #f7cb08;
+  font-size: toRem(45);
+  cursor: pointer;
+  line-height: 1.5;
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.active {
+  background-color: rgb(237, 107, 48);
+}
+
+/*==============================================================*/
+/*
+.button {
+  background-color: yellow;
+  color: #1a1818;
+  padding: 15px 25px;
+  font-size: 30px;
+  transition: background-color 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover {
+      color: #fff;
+      background-color: #062d32;
+    }
+  }
+}
+.menu {
+  height: 200px;
+  margin-bottom: 50px;
+  &._active {
+    & .menu__list {
+      display: block;
+    }
+  }
+  &._active {
+    & .menu__button span:first-child {
+      display: none;
+    }
+  }
+  &._active {
+    & .menu__button span:last-child {
+      display: block;
+    }
+  }
+  display: inline-block;
+  // .menu__button
+  &__button span:first-child {
+    display: block;
+  }
+  // .menu__button
+  &__button span:last-child {
+    display: none;
+  }
+  // .menu__list
+  &__list {
+    background: #be32ed;
+    padding: 15px;
+  }
+  &__list li:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+  // .menu__link
+  &__link {
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.link {
+  color: #f7cb08;
+  font-size: toRem(25);
+  text-decoration: underline;
+  margin-bottom: 50px;
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}*/
