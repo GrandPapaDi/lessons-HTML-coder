@@ -109,3 +109,72 @@ let slideUp = (target, duration = 500) => {
 let slideToggle = (target, duration = 500) => {
   target.hidden ? slideDown(target, duration) : slideUp(target, duration);
 };
+
+//swiper===============================================
+const heroSlider = document.querySelector(".hero");
+
+if (heroSlider) {
+  const swiper = new Swiper(".hero", {
+    // Optional parameters
+
+    loop: true,
+    autoHeight: true,
+    speed: 800,
+    parallax: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".hero__pagination",
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".hero__arrow--next",
+      prevEl: ".hero__arrow--prew",
+    },
+  });
+}
+//swiper===============================================
+const newSlider = document.querySelector(".new");
+
+if (newSlider) {
+  const swiper = new Swiper(".new__slider", {
+    // Optional parameters
+
+    loop: true,
+    autoHeight: true,
+    speed: 800,
+    spaceBetween: 38,
+    slidesPerView: 4,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".new__arrow--right",
+      prevEl: ".new__arrow--left",
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      // when window width is >= 480px
+      650: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+      },
+      // when window width is >= 640px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 38,
+      },
+    },
+  });
+}
