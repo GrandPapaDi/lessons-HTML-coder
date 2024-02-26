@@ -277,17 +277,12 @@ body {
   position: fixed;
   top: 2rem;
   left: 0;
-  right: 0;
   width: 100%;
-  z-index: 10;
-  padding: 0 .9375rem 0 .9375rem
+  z-index: 10
 }
 .header__container {
   border-radius: 1.25rem;
   background-color: #fff;
-  -webkit-column-gap: 1.875rem;
-  -moz-column-gap: 1.875rem;
-  column-gap: 1.875rem;
   display: flex;
   min-height: 5.5rem;
   align-items: center;
@@ -535,6 +530,9 @@ body {
 }
 .service__title {
   flex: 1 0 50%
+}
+.service__text p:not(:last-child) {
+  margin-bottom: .9375rem
 }
 .about {
   margin-bottom: .75rem
@@ -842,9 +840,9 @@ body {
     margin-bottom: 8.75rem
   }
   .page__service {
-    margin-top: 8.75rem
+    margin-bottom: 8.75rem
   }
-  .page__service {
+  .page__dienstleistungen {
     margin-bottom: 8.75rem
   }
   .page__vorteile {
@@ -942,9 +940,9 @@ body {
     margin-bottom: 2.5rem
   }
   .page__service {
-    margin-top: 2.5rem
+    margin-bottom: 2.5rem
   }
-  .page__service {
+  .page__dienstleistungen {
     margin-bottom: 2.5rem
   }
   .page__vorteile {
@@ -1549,16 +1547,6 @@ body {
       margin-bottom: calc(2.5rem + 6.25 * (100vw - 20rem)/ 55)
     }
   }
-  @supports (margin-top:clamp(2.5rem ,0.2272727273rem + 11.3636363636vw ,8.75rem)) {
-    .page__service {
-      margin-top: clamp(2.5rem ,.2272727273rem + 11.3636363636vw ,8.75rem)
-    }
-  }
-  @supports not (margin-top:clamp(2.5rem ,0.2272727273rem + 11.3636363636vw ,8.75rem)) {
-    .page__service {
-      margin-top: calc(2.5rem + 6.25 * (100vw - 20rem)/ 55)
-    }
-  }
   @supports (margin-bottom:clamp(2.5rem ,0.2272727273rem + 11.3636363636vw ,8.75rem)) {
     .page__service {
       margin-bottom: clamp(2.5rem ,.2272727273rem + 11.3636363636vw ,8.75rem)
@@ -1566,6 +1554,16 @@ body {
   }
   @supports not (margin-bottom:clamp(2.5rem ,0.2272727273rem + 11.3636363636vw ,8.75rem)) {
     .page__service {
+      margin-bottom: calc(2.5rem + 6.25 * (100vw - 20rem)/ 55)
+    }
+  }
+  @supports (margin-bottom:clamp(2.5rem ,0.2272727273rem + 11.3636363636vw ,8.75rem)) {
+    .page__dienstleistungen {
+      margin-bottom: clamp(2.5rem ,.2272727273rem + 11.3636363636vw ,8.75rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(2.5rem ,0.2272727273rem + 11.3636363636vw ,8.75rem)) {
+    .page__dienstleistungen {
       margin-bottom: calc(2.5rem + 6.25 * (100vw - 20rem)/ 55)
     }
   }

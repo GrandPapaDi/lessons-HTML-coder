@@ -3169,6 +3169,7 @@
     function initSliders() {
         if (document.querySelector(".swiper")) new swiper_core_Swiper(".swiper", {
             modules: [ Navigation ],
+            parallax: true,
             observer: true,
             observeParents: true,
             slidesPerView: 1,
