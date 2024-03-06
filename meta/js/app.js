@@ -233,6 +233,15 @@
     icon.addEventListener("click", (function() {
         document.documentElement.classList.toggle("menu-open");
     }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const showMoreButton = document.querySelector('[data-showmore-button="1000"]');
+        const showMoreText = document.getElementById("showMoreText");
+        const hiddenText = document.getElementById("hiddenText");
+        if (showMoreButton) showMoreButton.addEventListener("click", (function() {
+            showMoreText.style.display = showMoreText.style.display === "none" ? "inline" : "none";
+            hiddenText.style.display = hiddenText.style.display === "none" ? "inline" : "none";
+        }));
+    }));
     function toggleVideo(video, parentEl) {
         if (video.paused) playVideo(video, parentEl); else pauseVideo(video, parentEl);
     }
