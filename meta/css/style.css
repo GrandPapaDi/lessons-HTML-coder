@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500&display=swap);
 @font-face {
@@ -202,7 +203,13 @@ h6 {
   font-size: inherit
 }
 body {
-  background: #010101
+  background: linear-gradient(180deg,#010208 16.39%,#010206 20.51%,#040008 24.79%,#010101 30.46%,#010101 34.11%,#010101 36.21%,#010101 100%)
+}
+.menu-open body {
+  overflow: hidden;
+  touch-action: none;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none
 }
 .lock body {
   overflow: hidden;
@@ -399,8 +406,11 @@ body {
   background-clip: text;
   text-fill-color: transparent
 }
+.title:not(:last-child) {
+  margin-bottom: 1rem
+}
 .text {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5
 }
@@ -861,9 +871,6 @@ body {
   .title {
     font-size: 2.1875rem
   }
-  .text {
-    font-size: 1.375rem
-  }
   .header {
     min-height: 5.625rem
   }
@@ -908,11 +915,20 @@ body {
   .hero__title span {
     font-size: 3.4375rem
   }
+  .hero__text {
+    font-size: 1.375rem
+  }
   .facts__item {
     font-size: 1.125rem
   }
   .facts__item--count {
     font-size: 1.5rem
+  }
+  .more__text {
+    font-size: 1.125rem
+  }
+  .how__text:not(:last-child) {
+    margin-bottom: 5.4375rem
   }
   .how__items {
     gap: 2.375rem
@@ -924,7 +940,10 @@ body {
     font-size: 1rem
   }
   .activity__content:not(:last-child) {
-    margin-bottom: 5.4375rem
+    margin-bottom: 3.4375rem
+  }
+  .activity .activity__text__text {
+    font-size: 1.125rem
   }
   .activity__play-button {
     padding-top: 1.6875rem
@@ -1032,7 +1051,7 @@ body {
     left: -100%;
     transition: left .3s;
     padding: 9.375rem .9375rem 1.875rem .9375rem;
-    background-color: #ad46da;
+    background: linear-gradient(114deg,#5f337c 0,#000 50%,#6a0c9f 100%);
     z-index: 10
   }
   .menu__body::before {
@@ -1120,9 +1139,6 @@ body {
   .title {
     font-size: 1.6875rem
   }
-  .text {
-    font-size: 1.125rem
-  }
   .header {
     min-height: 3.75rem
   }
@@ -1167,11 +1183,20 @@ body {
   .hero__title span {
     font-size: 2.375rem
   }
+  .hero__text {
+    font-size: 1.25rem
+  }
   .facts__item {
     font-size: 1rem
   }
   .facts__item--count {
     font-size: 1.125rem
+  }
+  .more__text {
+    font-size: 1rem
+  }
+  .how__text:not(:last-child) {
+    margin-bottom: 2.9375rem
   }
   .how__items {
     gap: .9375rem
@@ -1184,6 +1209,9 @@ body {
   }
   .activity__content:not(:last-child) {
     margin-bottom: 1.25rem
+  }
+  .activity .activity__text__text {
+    font-size: 1rem
   }
   .activity__play-button {
     padding-top: .75rem
@@ -1254,27 +1282,27 @@ body {
     position: absolute;
     width: 0;
     height: 35%;
-    left: 10%;
+    left: 5%;
     right: 0;
-    top: 30%;
+    top: 18%;
     bottom: 0
   }
   .facts__items--second {
     position: absolute;
     width: 0;
     height: 35%;
-    left: 30%;
+    left: 28%;
     right: 0;
-    top: 15%;
+    top: 6%;
     bottom: 0
   }
   .facts__items--third {
     position: absolute;
     width: 0;
     height: 35%;
-    left: 80%;
+    left: 85%;
     right: 0;
-    top: 15%;
+    top: 7%;
     bottom: 0
   }
 }
@@ -1339,16 +1367,6 @@ body {
   @supports not (font-size:clamp(1.6875rem ,1.5116758242rem + 0.8791208791vw ,2.1875rem)) {
     .title {
       font-size: calc(1.6875rem + .5 * (100vw - 20rem)/ 56.875)
-    }
-  }
-  @supports (font-size:clamp(1.125rem ,1.0370879121rem + 0.4395604396vw ,1.375rem)) {
-    .text {
-      font-size: clamp(1.125rem ,1.0370879121rem + .4395604396vw ,1.375rem)
-    }
-  }
-  @supports not (font-size:clamp(1.125rem ,1.0370879121rem + 0.4395604396vw ,1.375rem)) {
-    .text {
-      font-size: calc(1.125rem + .25 * (100vw - 20rem)/ 56.875)
     }
   }
   @supports (min-height:clamp(3.75rem ,3.0906593407rem + 3.2967032967vw ,5.625rem)) {
@@ -1495,6 +1513,16 @@ body {
       font-size: calc(2.375rem + 1.0625 * (100vw - 20rem)/ 56.875)
     }
   }
+  @supports (font-size:clamp(1.25rem ,1.206043956rem + 0.2197802198vw ,1.375rem)) {
+    .hero__text {
+      font-size: clamp(1.25rem ,1.206043956rem + .2197802198vw ,1.375rem)
+    }
+  }
+  @supports not (font-size:clamp(1.25rem ,1.206043956rem + 0.2197802198vw ,1.375rem)) {
+    .hero__text {
+      font-size: calc(1.25rem + .125 * (100vw - 20rem)/ 56.875)
+    }
+  }
   @supports (font-size:clamp(1rem ,0.956043956rem + 0.2197802198vw ,1.125rem)) {
     .facts__item {
       font-size: clamp(1rem ,.956043956rem + .2197802198vw ,1.125rem)
@@ -1513,6 +1541,26 @@ body {
   @supports not (font-size:clamp(1.125rem ,0.9931318681rem + 0.6593406593vw ,1.5rem)) {
     .facts__item--count {
       font-size: calc(1.125rem + .375 * (100vw - 20rem)/ 56.875)
+    }
+  }
+  @supports (font-size:clamp(1rem ,0.956043956rem + 0.2197802198vw ,1.125rem)) {
+    .more__text {
+      font-size: clamp(1rem ,.956043956rem + .2197802198vw ,1.125rem)
+    }
+  }
+  @supports not (font-size:clamp(1rem ,0.956043956rem + 0.2197802198vw ,1.125rem)) {
+    .more__text {
+      font-size: calc(1rem + .125 * (100vw - 20rem)/ 56.875)
+    }
+  }
+  @supports (margin-bottom:clamp(2.9375rem ,2.0583791209rem + 4.3956043956vw ,5.4375rem)) {
+    .how__text:not(:last-child) {
+      margin-bottom: clamp(2.9375rem ,2.0583791209rem + 4.3956043956vw ,5.4375rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(2.9375rem ,2.0583791209rem + 4.3956043956vw ,5.4375rem)) {
+    .how__text:not(:last-child) {
+      margin-bottom: calc(2.9375rem + 2.5 * (100vw - 20rem)/ 56.875)
     }
   }
   @supports (gap:clamp(0.9375rem ,0.4320054945rem + 2.5274725275vw ,2.375rem)) {
@@ -1545,14 +1593,24 @@ body {
       font-size: calc(.875rem + .125 * (100vw - 20rem)/ 56.875)
     }
   }
-  @supports (margin-bottom:clamp(1.25rem ,-0.2225274725rem + 7.3626373626vw ,5.4375rem)) {
+  @supports (margin-bottom:clamp(1.25rem ,0.4807692308rem + 3.8461538462vw ,3.4375rem)) {
     .activity__content:not(:last-child) {
-      margin-bottom: clamp(1.25rem ,-.2225274725rem + 7.3626373626vw ,5.4375rem)
+      margin-bottom: clamp(1.25rem ,.4807692308rem + 3.8461538462vw ,3.4375rem)
     }
   }
-  @supports not (margin-bottom:clamp(1.25rem ,-0.2225274725rem + 7.3626373626vw ,5.4375rem)) {
+  @supports not (margin-bottom:clamp(1.25rem ,0.4807692308rem + 3.8461538462vw ,3.4375rem)) {
     .activity__content:not(:last-child) {
-      margin-bottom: calc(1.25rem + 4.1875 * (100vw - 20rem)/ 56.875)
+      margin-bottom: calc(1.25rem + 2.1875 * (100vw - 20rem)/ 56.875)
+    }
+  }
+  @supports (font-size:clamp(1rem ,0.956043956rem + 0.2197802198vw ,1.125rem)) {
+    .activity .activity__text__text {
+      font-size: clamp(1rem ,.956043956rem + .2197802198vw ,1.125rem)
+    }
+  }
+  @supports not (font-size:clamp(1rem ,0.956043956rem + 0.2197802198vw ,1.125rem)) {
+    .activity .activity__text__text {
+      font-size: calc(1rem + .125 * (100vw - 20rem)/ 56.875)
     }
   }
   @supports (padding-top:clamp(0.75rem ,0.4203296703rem + 1.6483516484vw ,1.6875rem)) {
