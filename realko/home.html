@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240317131959">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240318100432">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +15,12 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__stroke ">
+			<div id="block" class="header__stroke ">
 				<div class="header__epty"></div>
 				<div class="header__text">Get your dream house in a week.</div>
-				<div class="header__kreuz"><img src="img/header/kreuz.svg" alt=""></div>
+				<button class="header__kreuz">
+					<img id="hideButton" src="img/header/kreuz.svg" alt="Button">
+				</button>
 			</div>
 			<div class="header__container">
 				<img class="header__logo" src="img/header/logo.svg" alt="Image">
@@ -316,7 +318,7 @@
 					</div>
 					<div class="locations__buttons buttons">
 						<button type="button" class="locations__button button button--white">Explore properties</button>
-						<a href="#" class="locations__contact _icon-ar-ch-right">Contact agent</a>
+						<a href="#" class="locations__contact contact _icon-ar-ch-right">Contact agent</a>
 					</div>
 				</div>
 			</section>
@@ -597,12 +599,12 @@
 		</main>
 		<footer class="page__footer footer">
 			<div class="footer__container">
-				<div class="footer__menu menu-footer">
+				<div data-spollers="680,max" data-one-spoller class="footer__menu menu-footer">
 					<div class="footer__logo">
 						<img src="img/header/logo.svg" alt="Image">
 					</div>
-					<div class="menu-footer__block">
-						<h5 class="menu-footer__title">Pages</h5>
+					<details class="menu-footer__block">
+						<summary data-spoller-close class="menu-footer__title">Pages</summary>
 						<ul class="menu-footer__list">
 							<li class="menu-footer__item">
 								<a href="#" class="menu-footer__link">Home</a>
@@ -626,9 +628,9 @@
 								<a href="#" class="menu-footer__link">Properties</a>
 							</li>
 						</ul>
-					</div>
-					<div class="menu-footer__block">
-						<h5 class="menu-footer__title">CMS Pages</h5>
+					</details>
+					<details class="menu-footer__block">
+						<summary data-spoller-close class="menu-footer__title">CMS Pages</summary>
 						<ul class="menu-footer__list">
 							<li class="menu-footer__item">
 								<a href="#" class="menu-footer__link">Property</a>
@@ -646,9 +648,9 @@
 								<a href="#" class="menu-footer__link">Agent Single</a>
 							</li>
 						</ul>
-					</div>
-					<div class="menu-footer__block">
-						<h5 class="menu-footer__title">Utility Pages</h5>
+					</details>
+					<details class="menu-footer__block">
+						<summary data-spoller-close class="menu-footer__title">Utility Pages</summary>
 						<ul class="menu-footer__list">
 							<li class="menu-footer__item">
 								<a href="#" class="menu-footer__link">Style Guide</a>
@@ -669,7 +671,7 @@
 								<a href="#" class="menu-footer__link">Search</a>
 							</li>
 						</ul>
-					</div>
+					</details>
 				</div>
 				<div class="footer__subscribe subscribe">
 					<h5 class="subscribe__title">Subscribe</h5>
@@ -702,7 +704,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240317131959"></script>
+	<script src="js/app.min.js?_v=20240318100432"></script>
 </body>
 
 </html>
