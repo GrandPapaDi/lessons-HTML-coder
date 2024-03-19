@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240318100432">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240319071318">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,17 +58,16 @@
 								</li>
 							</ul>
 						</nav>
-					</div>
-
-					<div class="header__action action-header">
-						<form action="#" class="form__search search-form">
-							<input type="text" class="search-form__input" placeholder="Search">
-							<button class="search-form__button _icon-search"></button>
+						<form action="#" class="menu__search search-menu">
+							<input type="text" class="search-menu__input" placeholder="Search">
+							<button class="search-menu__button _icon-search"></button>
 						</form>
-						<button type="button" class="action-header__cart _icon-cart">Cart</button>
-						<button type="button" class="action-header__button button">Find a property</button>
+						<div class="menu__buttons">
+							<button type="button" class="menu__cart _icon-cart">Cart</button>
+							<button type="button" class="menu__button button">Find a property</button>
+						</div>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
 					</div>
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
@@ -95,7 +94,7 @@
 					</div>
 				</div>
 				<div class="find__image">
-					<picture><source srcset="img/find/01.webp" type="image/webp"><img class="find__img ibg" src="img/find/01.jpg" alt="Image"></picture>
+					<picture><source srcset="img/find/01.webp" type="image/webp"><img class="find__img ibg" src="img/find/01.png" alt="Image"></picture>
 				</div>
 			</section>
 
@@ -211,69 +210,93 @@
 					</div>
 					<div class="area__items">
 						<article class="area__item">
-							<picture><source srcset="img/area/01.webp" type="image/webp"><img class="area__image" src="img/area/01.jpg" alt="Image"></picture>
-							<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
-							<div class="area__price">$ 1,200.00 USD</div>
-							<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
-							<div class="area__plan plan">
-								<div class="plan__item _icon-bathtub">2</div>
-								<div class="plan__item _icon-bed">2</div>
-								<div class="plan__item _icon-square_foot">840 sqft</div>
+							<a href="#" class="area__link">
+								<picture><source srcset="img/area/01.webp" type="image/webp"><img class=" area__image ibg" src="img/area/01.jpg" alt="Image"></picture>
+							</a>
+							<div class="area__wraper">
+								<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
+								<div class="area__price">$ 1,200.00 USD</div>
+								<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
+								<div class="area__plan plan">
+									<div class="plan__item _icon-bathtub">2</div>
+									<div class="plan__item _icon-bed">2</div>
+									<div class="plan__item _icon-square_foot">840 sqft</div>
+								</div>
 							</div>
 						</article>
 						<article class="area__item">
-							<picture><source srcset="img/area/02.webp" type="image/webp"><img class="area__image" src="img/area/02.jpg" alt="Image"></picture>
-							<h4 class="area__sub-title">Tiny home in San Diego</h4>
-							<div class="area__price">$ 740,000.00 USD</div>
-							<div class="area__place _icon-place">2569 El Segundo, San Diego</div>
-							<div class="area__plan plan">
-								<div class="plan__item _icon-bathtub">2</div>
-								<div class="plan__item _icon-bed">2</div>
-								<div class="plan__item _icon-square_foot">840 sqft</div>
+							<a href="#" class="area__link">
+								<picture><source srcset="img/area/02.webp" type="image/webp"><img class=" area__image ibg" src="img/area/02.jpg" alt="Image"></picture>
+							</a>
+							<div class="area__wraper">
+								<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
+								<div class="area__price">$ 1,200.00 USD</div>
+								<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
+								<div class="area__plan plan">
+									<div class="plan__item _icon-bathtub">2</div>
+									<div class="plan__item _icon-bed">2</div>
+									<div class="plan__item _icon-square_foot">840 sqft</div>
+								</div>
 							</div>
 						</article>
 						<article class="area__item">
-							<picture><source srcset="img/area/03.webp" type="image/webp"><img class="area__image" src="img/area/03.jpg" alt="Image"></picture>
-							<h4 class="area__sub-title">Crown house in New York</h4>
-							<div class="area__price">$ 1,200.00 USD</div>
-							<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
-							<div class="area__plan plan">
-								<div class="plan__item _icon-bathtub">2</div>
-								<div class="plan__item _icon-bed">2</div>
-								<div class="plan__item _icon-square_foot">840 sqft</div>
+							<a href="#" class="area__link">
+								<picture><source srcset="img/area/03.webp" type="image/webp"><img class=" area__image ibg" src="img/area/03.jpg" alt="Image"></picture>
+							</a>
+							<div class="area__wraper">
+								<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
+								<div class="area__price">$ 1,200.00 USD</div>
+								<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
+								<div class="area__plan plan">
+									<div class="plan__item _icon-bathtub">2</div>
+									<div class="plan__item _icon-bed">2</div>
+									<div class="plan__item _icon-square_foot">840 sqft</div>
+								</div>
 							</div>
 						</article>
 						<article class="area__item">
-							<picture><source srcset="img/area/04.webp" type="image/webp"><img class="area__image" src="img/area/04.jpg" alt="Image"></picture>
-							<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
-							<div class="area__price">$ 1,200.00 USD</div>
-							<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
-							<div class="area__plan plan">
-								<div class="plan__item _icon-bathtub">2</div>
-								<div class="plan__item _icon-bed">2</div>
-								<div class="plan__item _icon-square_foot">840 sqft</div>
+							<a href="#" class="area__link">
+								<picture><source srcset="img/area/04.webp" type="image/webp"><img class=" area__image ibg" src="img/area/04.jpg" alt="Image"></picture>
+							</a>
+							<div class="area__wraper">
+								<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
+								<div class="area__price">$ 1,200.00 USD</div>
+								<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
+								<div class="area__plan plan">
+									<div class="plan__item _icon-bathtub">2</div>
+									<div class="plan__item _icon-bed">2</div>
+									<div class="plan__item _icon-square_foot">840 sqft</div>
+								</div>
 							</div>
 						</article>
 						<article class="area__item">
-							<picture><source srcset="img/area/05.webp" type="image/webp"><img class="area__image" src="img/area/05.jpg" alt="Image"></picture>
-							<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
-							<div class="area__price">$ 1,200.00 USD</div>
-							<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
-							<div class="area__plan plan">
-								<div class="plan__item _icon-bathtub">2</div>
-								<div class="plan__item _icon-bed">2</div>
-								<div class="plan__item _icon-square_foot">840 sqft</div>
+							<a href="#" class="area__link">
+								<picture><source srcset="img/area/05.webp" type="image/webp"><img class=" area__image ibg" src="img/area/05.jpg" alt="Image"></picture>
+							</a>
+							<div class="area__wraper">
+								<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
+								<div class="area__price">$ 1,200.00 USD</div>
+								<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
+								<div class="area__plan plan">
+									<div class="plan__item _icon-bathtub">2</div>
+									<div class="plan__item _icon-bed">2</div>
+									<div class="plan__item _icon-square_foot">840 sqft</div>
+								</div>
 							</div>
 						</article>
 						<article class="area__item">
-							<picture><source srcset="img/area/06.webp" type="image/webp"><img class="area__image" src="img/area/06.jpg" alt="Image"></picture>
-							<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
-							<div class="area__price">$ 1,200.00 USD</div>
-							<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
-							<div class="area__plan plan">
-								<div class="plan__item _icon-bathtub">2</div>
-								<div class="plan__item _icon-bed">2</div>
-								<div class="plan__item _icon-square_foot">840 sqft</div>
+							<a href="#" class="area__link">
+								<picture><source srcset="img/area/06.webp" type="image/webp"><img class=" area__image ibg" src="img/area/06.jpg" alt="Image"></picture>
+							</a>
+							<div class="area__wraper">
+								<h4 class="area__sub-title">Cozy studio in Los Angeles</h4>
+								<div class="area__price">$ 1,200.00 USD</div>
+								<div class="area__place _icon-place">2263 Southlea, Los Angeles</div>
+								<div class="area__plan plan">
+									<div class="plan__item _icon-bathtub">2</div>
+									<div class="plan__item _icon-bed">2</div>
+									<div class="plan__item _icon-square_foot">840 sqft</div>
+								</div>
 							</div>
 						</article>
 					</div>
@@ -293,23 +316,23 @@
 					<div class="locations__items">
 						<div class="locations__item">
 							<h5 class="locations__sub-title">San Francisco, CA</h5>
-							<a href="#" class="locations__contact _icon-ar-ch-right">Contact agent</a>
+							<a href="#" class="locations__contact contact _icon-ar-ch-right">Contact agent</a>
 						</div>
 						<div class="locations__item">
 							<h5 class="locations__sub-title">San Francisco, CA</h5>
-							<a href="#" class="locations__contact _icon-ar-ch-right">Contact agent</a>
+							<a href="#" class="locations__contact contact _icon-ar-ch-right">Contact agent</a>
 						</div>
 						<div class="locations__item">
 							<h5 class="locations__sub-title">San Francisco, CA</h5>
-							<a href="#" class="locations__contact _icon-ar-ch-right">Contact agent</a>
+							<a href="#" class="locations__contact contact _icon-ar-ch-right">Contact agent</a>
 						</div>
 						<div class="locations__item">
 							<h5 class="locations__sub-title">San Francisco, CA</h5>
-							<a href="#" class="locations__contact _icon-ar-ch-right">Contact agent</a>
+							<a href="#" class="locations__contact contact _icon-ar-ch-right">Contact agent</a>
 						</div>
 						<div class="locations__item">
 							<h5 class="locations__sub-title">San Francisco, CA</h5>
-							<a href="#" class="locations__contact _icon-ar-ch-right">Contact agent</a>
+							<a href="#" class="locations__contact contact _icon-ar-ch-right">Contact agent</a>
 						</div>
 						<div class="locations__item">
 							<h5 class="locations__sub-title">San Francisco, CA</h5>
@@ -361,9 +384,17 @@
 								<p class="slide-review__text">"
 									Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi
 									lacus, nec molestie libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."
+									Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi
+									lacus, nec molestie
+									Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi
+									lacus, nec molestie
 								</p>
 								<div class="slide-review__items">
-									<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.jpg" alt="Image"></picture>
+
+									<div class="slide-review__image">
+										<picture><source srcset="img/reviews/01.webp" type="image/webp"><img class="slide-review__img ibg" src="img/reviews/01.jpg" alt="Image"></picture>
+									</div>
+
 									<div class="slide-review__item">
 										<h6 class="slide-review__title">Michael Webb</h6>
 										<div class="slide-review__client">Customer</div>
@@ -383,7 +414,9 @@
 									pretium iaculis ultricies. Aenean in leo vitae tortor."
 								</p>
 								<div class="slide-review__items">
-									<picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.jpg" alt="Image"></picture>
+									<div class="slide-review__image">
+										<picture><source srcset="img/reviews/02.webp" type="image/webp"><img class="slide-review__img ibg" src="img/reviews/02.jpg" alt="Image"></picture>
+									</div>
 									<div class="slide-review__item">
 										<h6 class="slide-review__title">Amber Keene</h6>
 										<div class="slide-review__client">Customer</div>
@@ -403,7 +436,9 @@
 									placerat, lorem a sodales ullamcorper, eros nibh laoreet nisl."
 								</p>
 								<div class="slide-review__items">
-									<picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.jpg" alt="Image"></picture>
+									<div class="slide-review__image">
+										<picture><source srcset="img/reviews/03.webp" type="image/webp"><img class="slide-review__img ibg" src="img/reviews/03.jpg" alt="Image"></picture>
+									</div>
 									<div class="slide-review__item">
 										<h6 class="slide-review__title">Sarah Tarleton</h6>
 										<div class="slide-review__client">Customer</div>
@@ -421,9 +456,15 @@
 								<p class="slide-review__text">"
 									Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi
 									lacus, nec molestie libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."
+									Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi
+									lacus, nec molestie
+									Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi
+									lacus, nec molestiea quam."
 								</p>
 								<div class="slide-review__items">
-									<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.jpg" alt="Image"></picture>
+									<div class="slide-review__image">
+										<picture><source srcset="img/reviews/02.webp" type="image/webp"><img class="slide-review__img ibg" src="img/reviews/02.jpg" alt="Image"></picture>
+									</div>
 									<div class="slide-review__item">
 										<h6 class="slide-review__title">Michael Webb</h6>
 										<div class="slide-review__client">Customer</div>
@@ -443,7 +484,9 @@
 									pretium iaculis ultricies. Aenean in leo vitae tortor."
 								</p>
 								<div class="slide-review__items">
-									<picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.jpg" alt="Image"></picture>
+									<div class="slide-review__image">
+										<picture><source srcset="img/reviews/01.webp" type="image/webp"><img class="slide-review__img ibg" src="img/reviews/01.jpg" alt="Image"></picture>
+									</div>
 									<div class="slide-review__item">
 										<h6 class="slide-review__title">Amber Keene</h6>
 										<div class="slide-review__client">Customer</div>
@@ -463,7 +506,9 @@
 									placerat, lorem a sodales ullamcorper, eros nibh laoreet nisl."
 								</p>
 								<div class="slide-review__items">
-									<picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.jpg" alt="Image"></picture>
+									<div class="slide-review__image">
+										<picture><source srcset="img/reviews/03.webp" type="image/webp"><img class="slide-review__img ibg" src="img/reviews/03.jpg" alt="Image"></picture>
+									</div>
 									<div class="slide-review__item">
 										<h6 class="slide-review__title">Sarah Tarleton</h6>
 										<div class="slide-review__client">Customer</div>
@@ -704,7 +749,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240318100432"></script>
+	<script src="js/app.min.js?_v=20240319071318"></script>
 </body>
 
 </html>

@@ -3877,6 +3877,29 @@
         }));
         if (localStorage.getItem("blockHidden") !== "true") block.style.display = "block";
     }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const searchInput = document.querySelector(".search-menu__input");
+        let defaultMaxWidth = window.getComputedStyle(searchInput).getPropertyValue("max-width");
+        let expandedWidth = "200px";
+        if (window.matchMedia("(max-width: 380px)").matches) {
+            defaultMaxWidth = "64px";
+            expandedWidth = "135px";
+        }
+        searchInput.addEventListener("focus", (function() {
+            searchInput.style.maxWidth = expandedWidth;
+        }));
+        searchInput.addEventListener("blur", (function() {
+            searchInput.style.maxWidth = defaultMaxWidth;
+        }));
+        window.addEventListener("resize", (function() {
+            defaultMaxWidth = window.getComputedStyle(searchInput).getPropertyValue("max-width");
+            if (window.matchMedia("(max-width: 380px)").matches) {
+                defaultMaxWidth = "64px";
+                expandedWidth = "135px";
+            } else expandedWidth = "200px";
+            searchInput.style.maxWidth = defaultMaxWidth;
+        }));
+    }));
     class ScrollWatcher {
         constructor(props) {
             let defaultConfig = {
