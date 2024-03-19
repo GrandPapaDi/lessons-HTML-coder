@@ -858,6 +858,9 @@ body {
 .locations {
   background-color: #f5f5f2
 }
+.locations__title:not(:last-child) {
+  margin-bottom: 1.5625rem
+}
 .locations__text {
   text-align: center
 }
@@ -1293,7 +1296,7 @@ body {
     margin-bottom: 5rem
   }
   .locations__text:not(:last-child) {
-    padding-bottom: 5rem
+    margin-bottom: 5rem
   }
   .locations__items {
     padding-bottom: 5rem
@@ -1505,7 +1508,7 @@ body {
     margin-bottom: 1.25rem
   }
   .locations__text:not(:last-child) {
-    padding-bottom: 2.5rem
+    margin-bottom: 2.5rem
   }
   .locations__items {
     padding-bottom: 2.5rem
@@ -2017,14 +2020,14 @@ body {
       margin-bottom: calc(1.25rem + 3.75 * (100vw - 20rem)/ 61.875)
     }
   }
-  @supports (padding-bottom:clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)) {
+  @supports (margin-bottom:clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)) {
     .locations__text:not(:last-child) {
-      padding-bottom: clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)
+      margin-bottom: clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)
     }
   }
-  @supports not (padding-bottom:clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)) {
+  @supports not (margin-bottom:clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)) {
     .locations__text:not(:last-child) {
-      padding-bottom: calc(2.5rem + 2.5 * (100vw - 20rem)/ 61.875)
+      margin-bottom: calc(2.5rem + 2.5 * (100vw - 20rem)/ 61.875)
     }
   }
   @supports (padding-bottom:clamp(2.5rem ,1.6919191919rem + 4.0404040404vw ,5rem)) {
