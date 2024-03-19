@@ -3869,13 +3869,13 @@
         initSliders();
     }));
     document.addEventListener("DOMContentLoaded", (function() {
-        const block = document.getElementById("block");
+        const stroke = document.getElementById("stroke");
         const hideButton = document.getElementById("hideButton");
         hideButton.addEventListener("click", (function() {
-            block.style.display = "none";
-            localStorage.setItem("blockHidden", "true");
+            stroke.style.display = "none";
+            localStorage.setItem("strokeHidden", "true");
         }));
-        if (localStorage.getItem("blockHidden") !== "true") block.style.display = "block";
+        if (localStorage.getItem("strokeHidden") !== "true") stroke.style.display = "stroke";
     }));
     document.addEventListener("DOMContentLoaded", (function() {
         const searchInput = document.querySelector(".search-menu__input");
