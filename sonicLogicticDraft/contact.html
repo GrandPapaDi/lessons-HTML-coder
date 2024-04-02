@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240402113407">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="page__header header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="home.html" class="header__logo">
+						<img class="header__logo" src="img/header/logo.svg" alt="Image">
+					</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="about.html" class="menu__link">About</a>
+							</li>
+							<li class="menu__item  menu__item--parent">
+								<a href="shippers.html" class="menu__link">Shippers</a>
+								<div class="sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a href="shippers.html" class="sub-menu__link">Shippers</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="shippers.html" class="sub-menu__link">Shippers</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="shippers.html" class="sub-menu__link">Shippers</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="shippers.html" class="sub-menu__link">Shippers</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item menu__item--parent">
+								<a href="carriers.html" class="menu__link">Carriers</a>
+								<div class="sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a href="carriers.html" class="sub-menu__link">Carriers</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="carriers.html" class="sub-menu__link">Carriers</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="carriers.html" class="sub-menu__link">Carriers</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="carriers.html" class="sub-menu__link">Carriers</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__activ">
+					<a href="#" class="header__log">Log in</a>
+					<button class="header__button button">Get a quote</button>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<aside class="contact__block">
+
+						<div class="contact__top">
+							<h5 class="contact__title">Let’s Start</h5>
+							<p class="contact__text">We’ love to hear from you. Give us a call and see how we can solve your
+								logistical
+								challenges.
+							</p>
+							<div class="contact__item">
+								<a href="#"><img src="img/contact/email.svg" alt="Image"></a>
+								<div class="contact__info">
+									<a href="#" class="contact__link">
+										<h6 class="contact__title-sub">Email us</h6>
+									</a>
+									<p>Let us know how we can help.</p>
+									<a href="mailto:support@sonic-logistics.com" class="contact__email">support@sonic-logistics.com</a>
+								</div>
+							</div>
+
+							<div class="contact__item">
+								<a href="#"><img src="img/contact/phone.svg" alt="Image"></a>
+								<div class="contact__info">
+									<a href="#" class="contact__link">
+										<h6 class="contact__title-sub">Call Us</h6>
+									</a>
+									<p>Available 24 hours a day, 7 days a week.</p>
+									<a href="#" class="contact__phone">(469) 545-4687</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="contact__social">
+							<a href="#" target="_blank" class="contact__icon _icon-x"></a>
+							<a href="#" target="_blank" class="contact__icon _icon-in"></a>
+							<a href="#" target="_blank" class="contact__icon _icon-git"></a>
+							<a href="#" target="_blank" class="contact__icon _icon-victory"></a>
+							<a href="#" target="_blank" class="contact__icon _icon-ball"></a>
+						</div>
+
+					</aside>
+
+					<form class="contact__form form" action="files/sendmail/sendmail.php" method="POST">
+						<h3 class="form__title title">Get a Quote</h3>
+						<p class="form__text">Or give us a call. We’re available 24/7.</p>
+
+						<div class="form__items">
+							<div class="form__item">
+								<label class="form__label" for="first-name">First Name</label>
+								<input class="form__input" type="text" name="first-name" id="first-name" required placeholder="First Name">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="last-name">Last Name</label>
+								<input class="form__input" type="text" name="last-name" id="last-name" required placeholder="Last Name">
+							</div>
+						</div>
+
+						<div class="form__item">
+							<label class="form__label form__label--email" for="email">Email</label>
+							<input class="form__input form__input--email" type="email" name="email-address" placeholder="you@company.com" id="email" required>
+						</div>
+
+						<div class="form__item">
+							<label class="form__label form__label--phone" for="phone-name">Phone</label>
+							<div class="form__phone-wrapper">
+								<div class="form__combined">
+									<select class="form__phone-input" name="operator" id="phone-operator" required>
+										<option value="United States" disabled selected>US</option>
+										<option value="United Kingdom">UK</option>
+										<option value="Japan">JP</option>
+										<option value="Australia">AU</option>
+										<option value="South Africa">ZA</option>
+									</select>
+									<input class="form__input form__input--number" id="phone-number" autocomplete="on" name="phone" type="tel" placeholder="+1 (555) 000-0000" required>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__item">
+							<label class="form__label" for="message">Message</label>
+							<textarea class="form__input form__input--textarea" id="message" name="message" placeholder="Leave us a message..."></textarea>
+						</div>
+
+						<h6 class="form__label">Services</h6>
+
+
+						<div class="form__checkbox checkbox">
+							<div class="checkbox__items">
+								<div class="checkbox__form">
+									<input class="checkbox__input" id="website" type="checkbox" name="website design" value="Website design">
+									<label class="checkbox__label" for="website">Website design</label>
+								</div>
+								<div class="checkbox__form">
+									<input class="checkbox__input" id="UX design" type="checkbox" name="UX design" value="UX design">
+									<label class="checkbox__label" for="UX design">UX design</label>
+								</div>
+								<div class="checkbox__form">
+									<input class="checkbox__input" id="research" type="checkbox" name="research" value="User research">
+									<label class="checkbox__label" for="research">User research</label>
+								</div>
+							</div>
+							<div class="checkbox__items">
+								<div class="checkbox__form">
+									<input class="checkbox__input" id="content creation" type="checkbox" name="Content creation" value="Content creation">
+									<label class="checkbox__label" for="content creation">Content creation</label>
+								</div>
+								<div class="checkbox__form">
+									<input class="checkbox__input" id="strategy & consulting" type="checkbox" name="Strategy & consulting" value="Strategy & consulting">
+									<label class="checkbox__label" for="strategy & consulting">Strategy & consulting</label>
+								</div>
+								<div class="checkbox__form">
+									<input class="checkbox__input" id="other" type="checkbox" name="Other" value="Other">
+									<label class="checkbox__label" for="other">Other</label>
+								</div>
+							</div>
+						</div>
+						<button class="form__button button" type="submit">Get started</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20240402113407"></script>
+</body>
+
+</html>
