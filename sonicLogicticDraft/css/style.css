@@ -1356,6 +1356,9 @@ textarea:hover {
   }
 }
 @media (min-width:75em) {
+  main {
+    margin-bottom: 6rem
+  }
   .top__text {
     margin-bottom: 6rem
   }
@@ -1492,7 +1495,7 @@ textarea:hover {
   .page__promise {
     margin-bottom: 6rem
   }
-  .page__contact {
+  .page__shippers {
     margin-bottom: 6rem
   }
   .page__plan {
@@ -1526,6 +1529,9 @@ textarea:hover {
   }
 }
 @media (max-width:20em) {
+  main {
+    margin-bottom: 2.875rem
+  }
   .top__text {
     margin-bottom: 3.75rem
   }
@@ -1668,8 +1674,8 @@ textarea:hover {
   .page__promise {
     margin-bottom: 3.125rem
   }
-  .page__contact {
-    margin-bottom: 3.125rem
+  .page__shippers {
+    margin-bottom: 2.875rem
   }
   .page__plan {
     margin-bottom: 3.125rem
@@ -1827,7 +1833,7 @@ textarea:hover {
     margin-bottom: 1.25rem
   }
   .shippers__buttons {
-    margin-bottom: 1.25rem
+    margin-bottom: 2.5rem
   }
   .contact__block {
     margin: 0 -.9375rem 0 -.9375rem
@@ -1877,6 +1883,16 @@ textarea:hover {
   }
 }
 @media (min-width:20em) and (max-width:75em) {
+  @supports (margin-bottom:clamp(2.875rem ,1.7386363636rem + 5.6818181818vw ,6rem)) {
+    main {
+      margin-bottom: clamp(2.875rem ,1.7386363636rem + 5.6818181818vw ,6rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(2.875rem ,1.7386363636rem + 5.6818181818vw ,6rem)) {
+    main {
+      margin-bottom: calc(2.875rem + 3.125 * (100vw - 20rem)/ 55)
+    }
+  }
   @supports (margin-bottom:clamp(3.75rem ,2.9318181818rem + 4.0909090909vw ,6rem)) {
     .top__text {
       margin-bottom: clamp(3.75rem ,2.9318181818rem + 4.0909090909vw ,6rem)
@@ -2305,14 +2321,14 @@ textarea:hover {
       margin-bottom: calc(3.125rem + 2.875 * (100vw - 20rem)/ 55)
     }
   }
-  @supports (margin-bottom:clamp(3.125rem ,2.0795454545rem + 5.2272727273vw ,6rem)) {
-    .page__contact {
-      margin-bottom: clamp(3.125rem ,2.0795454545rem + 5.2272727273vw ,6rem)
+  @supports (margin-bottom:clamp(2.875rem ,1.7386363636rem + 5.6818181818vw ,6rem)) {
+    .page__shippers {
+      margin-bottom: clamp(2.875rem ,1.7386363636rem + 5.6818181818vw ,6rem)
     }
   }
-  @supports not (margin-bottom:clamp(3.125rem ,2.0795454545rem + 5.2272727273vw ,6rem)) {
-    .page__contact {
-      margin-bottom: calc(3.125rem + 2.875 * (100vw - 20rem)/ 55)
+  @supports not (margin-bottom:clamp(2.875rem ,1.7386363636rem + 5.6818181818vw ,6rem)) {
+    .page__shippers {
+      margin-bottom: calc(2.875rem + 3.125 * (100vw - 20rem)/ 55)
     }
   }
   @supports (margin-bottom:clamp(3.125rem ,2.0795454545rem + 5.2272727273vw ,6rem)) {
