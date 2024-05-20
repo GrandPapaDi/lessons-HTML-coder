@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240520184746">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="terminMachen" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__info">
+							<div class="popup__text">Online-Datensatz</div>
+							<div class="popup__telefon">061 - 970 - 5800</div>
+						</div>
+						<button data-close type="button" class="popup__close">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+							</svg>
+						</button>
+					</div>
+					<p></p>
+					<form class="popup__form form">
+						<p>Wählen Sie, wo Sie anfangen möchten?</p>
+						<div class="form__block">
+							<div class="form__option">
+								<input name="appointment_type" value="termin" type="radio" class="form__input-radio" id="termin">
+								<label class="form__label-radio" for="termin">Arzt Termin</label>
+							</div>
+							<div class="form__option">
+								<input name="appointment_type" value="aufzeichnung" type="radio" class="form__input-radio" id="aufzeichnung">
+								<label class="form__label-radio" for="aufzeichnung">Aufzeichnung für den Dienst</label>
+							</div>
+						</div>
+
+						<div class="form__item">
+							<select class="form__select" name="doctor" id="dropdown">
+								<option disabled selected value>Выберите врача</option>
+								<option value="">Herr Müller</option>
+								<option value="">Frau Müller</option>
+								<option value="">Herr Müller</option>
+								<option value="">Frau Müller</option>
+							</select>
+						</div>
+						<div class="form__item">
+							<select class="form__select" name="zahnmedizin" id="dropdown">
+								<option disabled selected value>Wählen Sie einen Service</option>
+								<option value="">Zahnimplantate</option>
+								<option value="">Orthodoxe Dienste</option>
+								<option value="">Notfallversorgung</option>
+								<option value="">Mundhöhlenchirurgie</option>
+								<option value="">Screening</option>
+								<option value="">Kosmetische</option>
+								<option value="">Notfallversorgung</option>
+								<option value="">Kinderzahnmedizin</option>
+							</select>
+						</div>
+						<div class="form__item">
+							<input lang="en" type="date" id="date" name="date">
+						</div>
+						<div class="form__item">
+							<input lang="en" type="time" id="time" name="time">
+						</div>
+						<button class="button _icon-ch-right">Einen Termin machen</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="callback" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__text text-popup">Online-Datensatz</div>
+						<button data-close type="button" class="popup__close">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+							</svg>
+						</button>
+					</div>
+					<p></p>
+					<form class="popup__form input-block">
+
+						<div class="input-block__item">
+							<label class="input-block__label" for="first-name">Name</label>
+							<input class="input-block__input" placeholder="Schtefan" type="text" name="first-name" id="first-name" required>
+						</div>
+						<div class="input-block__item">
+							<label class="input-block__label" for="first-name">Telefonnummer</label>
+							<input class="input-block__input" placeholder="+49" type="text" name="first-name" id="first-name" required>
+						</div>
+
+						<button class="popup__button button _icon-ch-right">Einen Termin machen</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<a href="home.html" class="top-header__logo"><img src="img/icons/lo_go.svg" alt=""></a>
+					<div data-da=".menu__body,1098,1" class="top-header__body-top">
+						<div class="top-header__location location">
+							<i class="location__icon icon _icon-location"></i>
+							<div class="location__items">
+								<div class="location__town">Ober-Bearbach</div>
+								<div class="location__street">Hummergasse 5</div>
+							</div>
+						</div>
+						<div class="top-header__time time">
+							<i class="time__icon icon _icon-whatch"></i>
+							<div class="time__body">
+								<div class="time__items">
+									<div class="time__day"><span>Mo-Fr</span> 9:00-20:00</div>
+									<div class="time__hollyday"><span>Sa</span> 10:00-16:00</div>
+								</div>
+								<div class="time__work">Zeitplan</div>
+							</div>
+						</div>
+						<div class="top-header__call call">
+							<i class="call__icon icon _icon-call"></i>
+							<div class="call__body">
+								<div class="call__number">061 - 970 - 5800</div>
+								<p class="call__info">Runde-Schloss heiße Linie</p>
+							</div>
+						</div>
+						<button data-popup="#callback" data-da=".social-menu,1098,5" class="top-header__button button button--call-back">Rückruf</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__body body-header">
+				<div class="body-header__container">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="über.html" class="menu__link">Über uns</a></li>
+								<li class="menu__item"><a href="dienstleistungen.html" class="menu__link">Dienstleistungen</a></li>
+								<li class="menu__item"><a href="price.html" class="menu__link">Preis</a></li>
+								<li class="menu__item"><a href="stock.html" class="menu__link">Aktionen</a></li>
+								<li class="menu__item"><a href="faq.html" class="menu__link">faq</a></li>
+								<li class="menu__item"><a href="review.html" class="menu__link">Bewertungen</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Kontakte</a></li>
+							</ul>
+						</nav>
+						<div data-da=".menu__body,1098,2" class="menu__social social-menu">
+							<div class="social-menu__social social">
+								<a href="https://twitter.com/" target="_blank" class="social__icon _icon-x"></a>
+								<a href="https://www.linkedin.com/" target="_blank" class="social__icon _icon-dribbble"></a>
+								<a href="https://www.whatsapp.com/" target="_blank" class="social__icon _icon-whatsapp"></a>
+								<a href="mailto:support@sonic-logistics.com" target="_blank" class="social__icon _icon-letter"></a>
+								<a href="https://dribbble.com/" target="_blank" class="social__icon _icon-call"></a>
+							</div>
+						</div>
+						<button data-da=".top-header__container,1098,1" type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<div class="hero__label">In unserer Klinik erwartet Sie</div>
+						<h1 class="hero__title">Qualität & Professionalität</h1>
+						<div class="hero__column">
+							<div class="hero__items">
+								<i class="hero__icon _icon-tooth1"></i>
+								<div class="hero__item">
+									<div class="hero__sub-title">Vorsorge</div>
+									<p class="hero__text">Es wird helfen, Beschwerden zu vermeiden Und teure Behandlung.</p>
+								</div>
+							</div>
+							<div class="hero__items">
+								<i class="hero__icon _icon-jaw1"></i>
+								<div class="hero__item">
+									<div class="hero__sub-title">Komplexe Dienste</div>
+									<p class="hero__text">Eine breite Palette von Dienstleistungen, einschließlich Versiegelung und
+										Kieferorthopädie.</p>
+								</div>
+
+							</div>
+						</div>
+						<button data-popup="#terminMachen" class="hero__button button _icon-ch-right">Einen Termin machen</button>
+					</div>
+					<div data-da=".hero__body,590,3" class="hero__buttons">
+						<button data-popup="#callback" class="button button--call _icon-call"></button>
+						<button data-popup="#terminMachen" class="button-stom _icon-stom"><span>Einen Termin machen</span></button>
+					</div>
+					<div class="hero__image">
+						<img src="img/main/herom.webp" alt="Image hero" class="hero__imgm ibg">
+						<img src="img/main/hero.webp" alt="Image hero" class="hero__img ibg">
+					</div>
+				</div>
+			</section>
+
+
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="services__top">
+						<div class="services__image">
+							<img class="services__img ibg" src="img/services/01.webp" alt="Image">
+						</div>
+						<div class="services__citation citation">
+							<p class="services__quote quote _icon-quotes-up _icona-quotes-bottom">Ich mag es, wenn meine Mutter
+								lächelt.
+								Mir gefällt es besonders, wenn ich sie zum Lächeln bringe <br>
+							</p>
+							<p class="services__author author">- Adrian Trigiani</p>
+						</div>
+					</div>
+
+					<div data-showmore class="services__bottom bottom">
+						<div data-showmore-content="300" class="bottom__content">
+							<div class="bottom__block">
+								<h2 data-da=".bottom,1017,0" class="bottom__title title">Dienste</h2>
+								<button data-da=".bottom,1017" hidden data-showmore-button type="button" class="bottom__more button _icon-ch-right"><span>Alles
+										sehen</span><span>Verstecken</span></button>
+							</div>
+							<div class="bottom__item">
+								<img class="bottom__img ibg" src="img/services/02.webp" alt="Image">
+								<div class="bottom__wrapper">
+									<p>Ray Bilder und Diagnostik</p>
+									<i class="bottom__icon _icon-tooth3"></i>
+								</div>
+							</div>
+							<div class="bottom__item">
+								<img class="bottom__img ibg" src="img/services/03.webp" alt="Image">
+								<div class="bottom__wrapper">
+									<p>Siegel und Restaurierung</p>
+									<i class="bottom__icon _icon-ortoped"></i>
+								</div>
+							</div>
+							<div class="bottom__item">
+								<img class="bottom__img ibg" src="img/services/02.webp" alt="Image">
+								<div class="bottom__wrapper">
+									<p>Orthodoxe Dienste</p>
+									<i class="bottom__icon _icon-tooth3"></i>
+								</div>
+							</div>
+							<div class="bottom__item">
+								<img class="bottom__img ibg" src="img/services/03.webp" alt="Image">
+								<div class="bottom__wrapper">
+									<p>Zahnersatz</p>
+									<i class="bottom__icon _icon-ortoped"></i>
+								</div>
+							</div>
+							<div class="bottom__item">
+								<img class="bottom__img ibg" src="img/services/02.webp" alt="Image">
+								<div class="bottom__wrapper">
+									<p>Mundhöhlenchirurgie</p>
+									<i class="bottom__icon _icon-tooth3"></i>
+								</div>
+							</div>
+							<div class="bottom__item">
+								<img class="bottom__img ibg" src="img/services/03.webp" alt="Image">
+								<div class="bottom__wrapper">
+									<p>Screening</p>
+									<i class="bottom__icon _icon-ortoped"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="pages__team team">
+				<div class="team__container">
+					<div class="team__content">
+						<h2 class="team__title title">Team</h2>
+						<div class="team__image">
+							<img class="team__img ibg" src="img/team/01.webp" alt="Image">
+						</div>
+						<div class="team__citation citation">
+							<p class="team__author author">Michal Shmulke</p>
+							<p class="team__position">Der Gründer der Klinik</p>
+							<p class="team__quote quote _icon-quotes-up _icona-quotes-bottom">Ich mag es, wenn meine Mutter lächelt.
+								Mir gefällt es besonders, wenn ich sie zum Lächeln bringe <br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="slider-team__container">
+				<!-- Оболонка слайдера -->
+				<div class="slider-team swiper">
+					<!-- Частина слайдера, що рухається -->
+					<div class="slider-team__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/03.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/02.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/04.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/05.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/02.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/03.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/05.webp" alt="Image">
+						</div>
+						<div class="slider-team__slide swiper-slide">
+							<ul class="slider-team__social social">
+								<li class="social__item"><a class="social__link _icon-x" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-whatsapp" href="#"></a></li>
+								<li class="social__item"><a class="social__link _icon-letter" href="mailto:youremail@email.com"></a>
+								</li>
+							</ul>
+							<div class="slider-team__block">
+								<p class="slider-team__name">Alena Zaitseva</p>
+								<p class="slider-team__position">Kieferhopisch</p>
+							</div>
+							<img class="slider-team__img ibg" src="img/team/04.webp" alt="Image">
+						</div>
+					</div>
+					<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+					<div class="swiper__buttons">
+						<button type="button" class="swiper-button-prev _icon-arrow-left"></button>
+						<button type="button" class="swiper-button-next _icon-arrow-right"></button>
+					</div>
+				</div>
+			</div>
+
+
+			<section class="page__application application">
+				<div class="application__container">
+					<h2 class="application__title title">Anwendung ausfüllen und <span> Holen Sie <br> sich einen Rabatt
+							-10% </span> ersten Besuch</h2>
+					<div data-da=".application__container,666.98,3" class="application__image">
+						<img class="application__img ibg" src="img/application/01.webp" alt="Image">
+					</div>
+					<form class="application__form">
+						<div class="application__block">
+							<label for="first name" class="application__label">Name</label>
+							<input id="first name" autocomplete="off" type="text" placeholder="Herr Müller" class="application__input">
+						</div>
+						<div class="application__block">
+							<label for="telefonnummer" class="application__label">Telefonnummer</label>
+							<input id="telefonnummer" autocomplete="off" type="text" placeholder="+49" class="application__input">
+						</div>
+						<div class="application__block">
+							<label for="email" class="application__label">E-mail</label>
+							<input id="email" autocomplete="off" type="text" placeholder="yours@gmail.com" class="application__input">
+						</div>
+						<button type="submit" class="application__button button _icon-ch-right">Schicken</button>
+					</form>
+				</div>
+			</section>
+
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+
+					<h2 class="reviews__title title">Reviews</h2>
+					<!-- Оболонка слайдера -->
+					<div class="reviews__slider swiper slider-reviews">
+						<!-- Частина слайдера, що рухається -->
+						<div class="slider-reviews__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="slider-reviews__slide swiper-slide">
+								<div class="slider-reviews__box">
+									<img class="slider-reviews__img" src="img/reviews/01.webp" alt="Image">
+									<div class="slider-reviews__item">
+										<div class="slider-reviews__name">Barbarra</div>
+										<div class="slider-reviews__date">24.01.2023</div>
+									</div>
+								</div>
+								<p class="slider-reviews__text">
+									Ich bin seit vielen Jahren Patient, und der Serviceniveau in dieser Zahnklinik ist nicht
+									Es hat gleich.Das Personal ist nicht nur professionell, sondern auch aufrichtig fürsorglich.Von
+									gewöhnlich Inspektionen zu komplexeren Verfahren, sie übertroffen meine Erwartungen ausnahmslos. "
+								</p>
+
+							</div>
+							<div class="slider-reviews__slide swiper-slide">
+								<div class="slider-reviews__items">
+									<div class="slider-reviews__box">
+										<img class="slider-reviews__img" src="img/reviews/02.webp" alt="Image">
+										<div class="slider-reviews__item">
+											<div class="slider-reviews__name">Barbarra</div>
+											<div class="slider-reviews__date">24.01.2023</div>
+										</div>
+									</div>
+									<p class="slider-reviews__text">
+										Ich bin seit vielen Jahren Patient, und der Serviceniveau in dieser Zahnklinik ist nicht
+										Es hat gleich.Das Personal ist nicht nur professionell, sondern auch aufrichtig fürsorglich.Von
+										gewöhnlich Inspektionen zu komplexeren Verfahren, sie übertroffen meine Erwartungen ausnahmslos. "
+									</p>
+								</div>
+							</div>
+							<div class="slider-reviews__slide swiper-slide">
+								<div class="slider-reviews__items">
+									<div class="slider-reviews__box">
+										<img class="slider-reviews__img" src="img/reviews/03.webp" alt="Image">
+										<div class="slider-reviews__item">
+											<div class="slider-reviews__name">Barbarra</div>
+											<div class="slider-reviews__date">24.01.2023</div>
+										</div>
+									</div>
+									<p class="slider-reviews__text">
+										Ich bin seit vielen Jahren Patient, und der Serviceniveau in dieser Zahnklinik ist nicht
+										Es hat gleich.Das Personal ist nicht nur professionell, sondern auch aufrichtig fürsorglich.Von
+										gewöhnlich Inspektionen zu komplexeren Verfahren, sie übertroffen meine Erwartungen ausnahmslos. "
+									</p>
+								</div>
+							</div>
+							<div class="slider-reviews__slide swiper-slide">
+								<div class="slider-reviews__items">
+									<div class="slider-reviews__box">
+										<img class="slider-reviews__img" src="img/reviews/02.webp" alt="Image">
+										<div class="slider-reviews__item">
+											<div class="slider-reviews__name">Barbarra</div>
+											<div class="slider-reviews__date">24.01.2023</div>
+										</div>
+									</div>
+									<p class="slider-reviews__text">
+										Ich bin seit vielen Jahren Patient, und der Serviceniveau in dieser Zahnklinik ist nicht
+										Es hat gleich.Das Personal ist nicht nur professionell, sondern auch aufrichtig fürsorglich.Von
+										gewöhnlich Inspektionen zu komplexeren Verfahren, sie übertroffen meine Erwartungen ausnahmslos. "
+									</p>
+								</div>
+							</div>
+							<div class="slider-reviews__slide swiper-slide">
+								<div class="slider-reviews__items">
+									<div class="slider-reviews__box">
+										<img class="slider-reviews__img" src="img/reviews/01.webp" alt="Image">
+										<div class="slider-reviews__item">
+											<div class="slider-reviews__name">Barbarra</div>
+											<div class="slider-reviews__date">24.01.2023</div>
+										</div>
+									</div>
+									<p class="slider-reviews__text">
+										Ich bin seit vielen Jahren Patient, und der Serviceniveau in dieser Zahnklinik ist nicht
+										Es hat gleich.Das Personal ist nicht nur professionell, sondern auch aufrichtig fürsorglich.Von
+										gewöhnlich Inspektionen zu komplexeren Verfahren, sie übertroffen meine Erwartungen ausnahmslos. "
+									</p>
+								</div>
+							</div>
+							<div class="slider-reviews__slide swiper-slide">
+								<div class="slider-reviews__items">
+									<div class="slider-reviews__box">
+										<img class="slider-reviews__img" src="img/reviews/02.webp" alt="Image">
+										<div class="slider-reviews__item">
+											<div class="slider-reviews__name">Barbarra</div>
+											<div class="slider-reviews__date">24.01.2023</div>
+										</div>
+									</div>
+									<p class="slider-reviews__text">
+										Ich bin seit vielen Jahren Patient, und der Serviceniveau in dieser Zahnklinik ist nicht
+										Es hat gleich.Das Personal ist nicht nur professionell, sondern auch aufrichtig fürsorglich.Von
+										gewöhnlich Inspektionen zu komplexeren Verfahren, sie übertroffen meine Erwartungen ausnahmslos. "
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+					<div class="swiper__buttons slider-reviews-buttons">
+						<button type="button" class="slider-reviews__button-prev _icon-arrow-left"></button>
+						<button type="button" class="slider-reviews__button-next _icon-arrow-right"></button>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="page__price price">
+				<img class="price__image ibg" src="img/price/01.webp" alt="Image">
+				<img class="price__img ibg" src="img/price/02.webp" alt="Image">
+				<div class="price__container">
+					<div class="price__items">
+						<div class="price__title title">Kosten für Dienstleistungen heraus</div>
+						<button type="submit" class="price__button button _icon-ch-right">Alles sehen</button>
+					</div>
+
+				</div>
+			</section>
+
+
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__top">
+						<h2 class="questions__title title">FAQ</h2>
+						<div class="questions__answer">Wir werden die interessierten Fragen beantworten</div>
+					</div>
+					<div class="questions__block">
+						<div class="questions__acquaintance">
+							<video class="questions__video ibg" src="files/01.mp4" controls poster="img/questions/01.webp"></video>
+							<button type="button" class="questions__play-button _icon-play"></button>
+							<div class="questions__item">
+								<div class="questions__know">Bekanntschaft mit Klinik</div>
+								<div class="questions__image">
+									<img class="questions__icon ibg" src="img/icons/logo-small.svg" alt="Image">
+								</div>
+							</div>
+						</div>
+
+						<div class="questions__content">
+							<div data-spollers class="spollers">
+								<details class="spollers__item">
+									<summary class="spollers__title">Wie oft sollte ich den Zahnarzt zur Inspektion besuchen?</summary>
+									<div class="spollers__body">Es wird normalerweise empfohlen, sich einer zahnärztlichen Inspektion zu
+										unterziehen
+										Sechs Monate zur Prävention.Die individuellen Bedürfnisse können jedoch variieren und Ihre
+										Der Zahnarzt wird individuelle Empfehlungen geben.</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Was sind verschiedene Optionen die Zahlung von Zahnverfahren?
+									</summary>
+									<div class="spollers__body">Es wird normalerweise empfohlen, sich einer zahnärztlichen Inspektion zu
+										unterziehen
+										Sechs Monate zur Prävention.Die individuellen Bedürfnisse können jedoch variieren und Ihre
+										Der Zahnarzt wird individuelle Empfehlungen geben.</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Gibt es Alternativen zu traditionellen Zahnspangen für die
+										kieferorthopädische Behandlung?</summary>
+									<div class="spollers__body">Es wird normalerweise empfohlen, sich einer zahnärztlichen Inspektion zu
+										unterziehen
+										Sechs Monate zur Prävention.Die individuellen Bedürfnisse können jedoch variieren und Ihre
+										Der Zahnarzt wird individuelle Empfehlungen geben.</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Wie kann ich mit der Empfindlichkeit der Zähne umgehen und sind
+										Behandlungsmethoden verfügbar?</summary>
+									<div class="spollers__body">Es wird normalerweise empfohlen, sich einer zahnärztlichen Inspektion zu
+										unterziehen
+										Sechs Monate zur Prävention.Die individuellen Bedürfnisse können jedoch variieren und Ihre
+										Der Zahnarzt wird individuelle Empfehlungen geben.</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Bieten Sie dringende Zahndienste an?</summary>
+									<div class="spollers__body">Es wird normalerweise empfohlen, sich einer zahnärztlichen Inspektion zu
+										unterziehen
+										Sechs Monate zur Prävention.Die individuellen Bedürfnisse können jedoch variieren und Ihre
+										Der Zahnarzt wird individuelle Empfehlungen geben.</div>
+								</details>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<h2 class="contacts__title title">Kontakte</h2>
+					<div class="contacts__items">
+						<div class="contacts__item">
+							<div class="contacts__location location">
+								<i class="location__icon icon _icon-location"></i>
+								<div class="location__items">
+									<div class="location__town">Ober-Bearbach</div>
+									<div class="location__street">Hummergasse 5</div>
+								</div>
+							</div>
+							<div class="contacts__time time">
+								<i class="time__icon icon _icon-whatch"></i>
+								<div class="time__body">
+									<div class="time__items">
+										<div class="time__day"><span>Mo-Fr</span> 9:00-20:00</div>
+										<div class="time__hollyday"><span>Sa</span> 10:00-16:00</div>
+									</div>
+									<div class="time__work">Zeitplan</div>
+								</div>
+							</div>
+							<div class="contacts__call call">
+								<i class="call__icon icon _icon-call"></i>
+								<div class="call__body">
+									<div class="call__number">061 - 970 - 5800</div>
+									<p class="call__info">Runde-Schloss heiße Linie</p>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__block">
+							<div class="contacts__social social-menu">
+								<div class="social-menu__social social">
+									<a href="https://twitter.com/" target="_blank" class="social__icon _icon-x"></a>
+									<a href="https://www.linkedin.com/" target="_blank" class="social__icon _icon-dribbble"></a>
+									<a href="https://www.whatsapp.com/" target="_blank" class="social__icon _icon-whatsapp"></a>
+									<a href="mailto:support@sonic-logistics.com" target="_blank" class="social__icon _icon-letter"></a>
+									<a href="https://dribbble.com/" target="_blank" class="social__icon _icon-call"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="map" class="map"></div>
+			</section>
+
+
+			<section class="page__notifications notifications">
+				<div class="notifications__container">
+					<h2 class="notifications__title title">Abonnieren Sie Empfangsaktionen <span>Benachrichtigungen</span></h2>
+					<form class="notifications__form">
+						<div class="notifications__block">
+							<label for="first name" class="notifications__label">Name</label>
+							<input id="first name" autocomplete="off" type="text" placeholder="Herr Müller" class="notifications__input">
+						</div>
+						<div class="notifications__block">
+							<label for="telefonnummer" class="notifications__label">Telefonnummer</label>
+							<input id="telefonnummer" autocomplete="off" type="text" placeholder="+49" class="application__input">
+						</div>
+						<div class="notifications__block">
+							<label for="email" class="notifications__label">E-mail</label>
+							<input id="email" autocomplete="off" type="text" placeholder="yours@gmail.com" class="application__input">
+						</div>
+						<button type="submit" class="notifications__button button _icon-ch-right">Schicken</button>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<a href="home.html" class="footer__logo">
+						<img src="img/icons/lo_go.svg" alt="logo">
+					</a>
+					<div class="footer__menu menu-footer">
+						<div class="menu-footer__block">
+							<div class="menu-footer__items">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="über.html" class="menu__link">Über uns</a></li>
+									<li class="menu-footer__item"><a href="dienstleistungen.html" class="menu__link">Dienstleistungen</a></li>
+									<li class="menu-footer__item"><a href="price.html" class="menu__link">Preis</a></li>
+								</ul>
+							</div>
+							<div class="menu-footer__items">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="stock.html" class="menu-footer__link">Aktionen</a></li>
+									<li class="menu-footer__item"><a href="faq.html" class="menu-footer__link">FAQ</a></li>
+									<li class="menu-footer__item"><a href="review.html" class="menu-footer__link">Bewertungen</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-footer__block">
+							<div class="menu-footer__items">
+								<div class="menu-footer__label">Arbeitsmodus</div>
+								<div class="menu-footer__time _icon-whatch">ПН-ПТ 9:00 - 18:00</div>
+							</div>
+							<div class="menu-footer__items">
+								<div class="menu-footer__label">Kontakte</div>
+								<div class="menu-footer__location _icon-location">Ober-Bearbach Hummergasse 5</div>
+								<div class="menu-footer__telefon _icon-call1">061 - 970 - 5800</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__rights">2023 Dental Hub Alle Rechte vorbehalten</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240520184746"></script>
+</body>
+
+</html>

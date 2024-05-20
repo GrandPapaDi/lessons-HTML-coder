@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240520184746">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="terminMachen" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__info">
+							<div class="popup__text">Online-Datensatz</div>
+							<div class="popup__telefon">061 - 970 - 5800</div>
+						</div>
+						<button data-close type="button" class="popup__close">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+							</svg>
+						</button>
+					</div>
+					<p></p>
+					<form class="popup__form form">
+						<p>Wählen Sie, wo Sie anfangen möchten?</p>
+						<div class="form__block">
+							<div class="form__option">
+								<input name="appointment_type" value="termin" type="radio" class="form__input-radio" id="termin">
+								<label class="form__label-radio" for="termin">Arzt Termin</label>
+							</div>
+							<div class="form__option">
+								<input name="appointment_type" value="aufzeichnung" type="radio" class="form__input-radio" id="aufzeichnung">
+								<label class="form__label-radio" for="aufzeichnung">Aufzeichnung für den Dienst</label>
+							</div>
+						</div>
+
+						<div class="form__item">
+							<select class="form__select" name="doctor" id="dropdown">
+								<option disabled selected value>Выберите врача</option>
+								<option value="">Herr Müller</option>
+								<option value="">Frau Müller</option>
+								<option value="">Herr Müller</option>
+								<option value="">Frau Müller</option>
+							</select>
+						</div>
+						<div class="form__item">
+							<select class="form__select" name="zahnmedizin" id="dropdown">
+								<option disabled selected value>Wählen Sie einen Service</option>
+								<option value="">Zahnimplantate</option>
+								<option value="">Orthodoxe Dienste</option>
+								<option value="">Notfallversorgung</option>
+								<option value="">Mundhöhlenchirurgie</option>
+								<option value="">Screening</option>
+								<option value="">Kosmetische</option>
+								<option value="">Notfallversorgung</option>
+								<option value="">Kinderzahnmedizin</option>
+							</select>
+						</div>
+						<div class="form__item">
+							<input lang="en" type="date" id="date" name="date">
+						</div>
+						<div class="form__item">
+							<input lang="en" type="time" id="time" name="time">
+						</div>
+						<button class="button _icon-ch-right">Einen Termin machen</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="callback" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__text text-popup">Online-Datensatz</div>
+						<button data-close type="button" class="popup__close">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+							</svg>
+						</button>
+					</div>
+					<p></p>
+					<form class="popup__form input-block">
+
+						<div class="input-block__item">
+							<label class="input-block__label" for="first-name">Name</label>
+							<input class="input-block__input" placeholder="Schtefan" type="text" name="first-name" id="first-name" required>
+						</div>
+						<div class="input-block__item">
+							<label class="input-block__label" for="first-name">Telefonnummer</label>
+							<input class="input-block__input" placeholder="+49" type="text" name="first-name" id="first-name" required>
+						</div>
+
+						<button class="popup__button button _icon-ch-right">Einen Termin machen</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<a href="home.html" class="top-header__logo"><img src="img/icons/lo_go.svg" alt=""></a>
+					<div data-da=".menu__body,1098,1" class="top-header__body-top">
+						<div class="top-header__location location">
+							<i class="location__icon icon _icon-location"></i>
+							<div class="location__items">
+								<div class="location__town">Ober-Bearbach</div>
+								<div class="location__street">Hummergasse 5</div>
+							</div>
+						</div>
+						<div class="top-header__time time">
+							<i class="time__icon icon _icon-whatch"></i>
+							<div class="time__body">
+								<div class="time__items">
+									<div class="time__day"><span>Mo-Fr</span> 9:00-20:00</div>
+									<div class="time__hollyday"><span>Sa</span> 10:00-16:00</div>
+								</div>
+								<div class="time__work">Zeitplan</div>
+							</div>
+						</div>
+						<div class="top-header__call call">
+							<i class="call__icon icon _icon-call"></i>
+							<div class="call__body">
+								<div class="call__number">061 - 970 - 5800</div>
+								<p class="call__info">Runde-Schloss heiße Linie</p>
+							</div>
+						</div>
+						<button data-popup="#callback" data-da=".social-menu,1098,5" class="top-header__button button button--call-back">Rückruf</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__body body-header">
+				<div class="body-header__container">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="über.html" class="menu__link">Über uns</a></li>
+								<li class="menu__item"><a href="dienstleistungen.html" class="menu__link">Dienstleistungen</a></li>
+								<li class="menu__item"><a href="price.html" class="menu__link">Preis</a></li>
+								<li class="menu__item"><a href="stock.html" class="menu__link">Aktionen</a></li>
+								<li class="menu__item"><a href="faq.html" class="menu__link">faq</a></li>
+								<li class="menu__item"><a href="review.html" class="menu__link">Bewertungen</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Kontakte</a></li>
+							</ul>
+						</nav>
+						<div data-da=".menu__body,1098,2" class="menu__social social-menu">
+							<div class="social-menu__social social">
+								<a href="https://twitter.com/" target="_blank" class="social__icon _icon-x"></a>
+								<a href="https://www.linkedin.com/" target="_blank" class="social__icon _icon-dribbble"></a>
+								<a href="https://www.whatsapp.com/" target="_blank" class="social__icon _icon-whatsapp"></a>
+								<a href="mailto:support@sonic-logistics.com" target="_blank" class="social__icon _icon-letter"></a>
+								<a href="https://dribbble.com/" target="_blank" class="social__icon _icon-call"></a>
+							</div>
+						</div>
+						<button data-da=".top-header__container,1098,1" type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="page__stock stock">
+				<div class="stock__container">
+					<h1 class="stock__title title">Stock</h1>
+					<div class="top-stock__items">
+						<article class="top-stock__item top-stock__item--green">
+							<div class="top-stock__body">
+								<div class="top-stock__label top-stock__label--green">von 01.12.23 am 05.12.23</div>
+								<h4 class="top-stock__title top-stock__title--green"><span>-30%</span> für die Verbundrestaurierung</h4>
+								<p class="top-stock__text">Wiederherstellung der anatomischen Form des Zahns unter Verwendung einer
+									Versiegelung Material.Die Hauptfunktion der Verbundrestauration ist die Wiederherstellung eines
+									beliebigen beschädigten Zahns.
+								</p>
+							</div>
+							<img class="top-stock__image _ibg" src="img/stock/01.webp" alt="Image">
+							<img class="top-stock__imgm _ibg" src="img/stock/11.webp" alt="Image">
+						</article>
+						<article class="top-stock__item top-stock__item--grey">
+							<div class="top-stock__body">
+								<h4 class="top-stock__title top-stock__title--green"><span>-10%</span> zum Aufweichen von Zahn</h4>
+								<p class="top-stock__text top-stock__text--grey">Wiederherstellung der anatomischen Form des Zahns mit
+									Versiegelungsmaterial.
+								</p>
+								<div class="top-stock__label top-stock__label--grey">von 01.12.23 am 05.12.23</div>
+							</div>
+							<img class="top-stock__img _ibg top-stock__img--grey" src="img/stock/02.webp" alt="Image">
+						</article>
+						<article class="top-stock__item">
+							<div class="top-stock__body">
+								<h4 class="top-stock__title">-10% Für die Füllung</h4>
+								<p class="top-stock__text top-stock__text--margin">Stifteversiegelung Mit einem Rabatt von 10% nur bis
+									01.12.23
+								</p>
+								<div class="top-stock__label">von 01.12.23 am 05.12.23</div>
+							</div>
+							<img class="top-stock__img _ibg" src="img/stock/03.webp" alt="Image">
+						</article>
+						<article class="top-stock__item">
+							<div class="top-stock__body">
+								<h4 class="top-stock__title">-10% Für die Füllung</h4>
+								<p class="top-stock__text top-stock__text--margin">Stifteversiegelung Mit einem Rabatt von 10% nur bis
+									01.12.23
+								</p>
+								<div class="top-stock__label">von 01.12.23 am 05.12.23</div>
+							</div>
+							<img class="top-stock__img _ibg" src="img/stock/04.webp" alt="Image">
+						</article>
+						<article class="top-stock__item">
+							<div class="top-stock__body">
+								<h4 class="top-stock__title">-10% Für die Füllung</h4>
+								<p class="top-stock__text top-stock__text--margin">Stifteversiegelung Mit einem Rabatt von 10% nur bis
+									01.12.23
+								</p>
+								<div class="top-stock__label">von 01.12.23 am 05.12.23</div>
+							</div>
+							<img class="top-stock__img _ibg" src="img/stock/05.webp" alt="Image">
+						</article>
+						<article class="top-stock__item">
+							<div class="top-stock__body">
+								<h4 class="top-stock__title">-10% Für die Füllung</h4>
+								<p class="top-stock__text top-stock__text--margin">Stifteversiegelung Mit einem Rabatt von 10% nur bis
+									01.12.23
+								</p>
+								<div class="top-stock__label">von 01.12.23 am 05.12.23</div>
+							</div>
+							<img class="top-stock__img _ibg" src="img/stock/06.webp" alt="Image">
+						</article>
+					</div>
+
+			</section>
+
+			<section class="page__application application">
+				<div class="application__container">
+					<h2 class="application__title title">Abonnieren Sie Empfangsaktionen <span> Benachrichtigungen </span></h2>
+					<div data-da=".application__container,666.98,3" class="application__image">
+						<img class="application__img ibg" src="img/application/01.webp" alt="Image">
+					</div>
+					<form class="application__form">
+						<div class="application__block">
+							<label for="first name" class="application__label">Name</label>
+							<input id="first name" autocomplete="off" type="text" placeholder="Herr Müller" class="application__input">
+						</div>
+						<div class="application__block">
+							<label for="telefonnummer" class="application__label">Telefonnummer</label>
+							<input id="telefonnummer" autocomplete="off" type="text" placeholder="+49" class="application__input">
+						</div>
+						<div class="application__block">
+							<label for="email" class="application__label">E-mail</label>
+							<input id="email" autocomplete="off" type="text" placeholder="yours@gmail.com" class="application__input">
+						</div>
+						<button type="submit" class="application__button button _icon-ch-right">Schicken</button>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<a href="home.html" class="footer__logo">
+						<img src="img/icons/lo_go.svg" alt="logo">
+					</a>
+					<div class="footer__menu menu-footer">
+						<div class="menu-footer__block">
+							<div class="menu-footer__items">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="über.html" class="menu__link">Über uns</a></li>
+									<li class="menu-footer__item"><a href="dienstleistungen.html" class="menu__link">Dienstleistungen</a></li>
+									<li class="menu-footer__item"><a href="price.html" class="menu__link">Preis</a></li>
+								</ul>
+							</div>
+							<div class="menu-footer__items">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="stock.html" class="menu-footer__link">Aktionen</a></li>
+									<li class="menu-footer__item"><a href="faq.html" class="menu-footer__link">FAQ</a></li>
+									<li class="menu-footer__item"><a href="review.html" class="menu-footer__link">Bewertungen</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-footer__block">
+							<div class="menu-footer__items">
+								<div class="menu-footer__label">Arbeitsmodus</div>
+								<div class="menu-footer__time _icon-whatch">ПН-ПТ 9:00 - 18:00</div>
+							</div>
+							<div class="menu-footer__items">
+								<div class="menu-footer__label">Kontakte</div>
+								<div class="menu-footer__location _icon-location">Ober-Bearbach Hummergasse 5</div>
+								<div class="menu-footer__telefon _icon-call1">061 - 970 - 5800</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__rights">2023 Dental Hub Alle Rechte vorbehalten</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240520184746"></script>
+</body>
+
+</html>
