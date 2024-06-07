@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Delivery</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240607074944">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="callback" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__body">
+						<div class="popup__text text-popup">Zlatoust Messer</div>
+						<button data-close type="button" class="popup__close">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+							</svg>
+						</button>
+					</div>
+					<p></p>
+					<form class="popup__form input-block">
+
+						<div class="input-block__item">
+							<label class="input-block__label" for="first-name">Name</label>
+							<input class="input-block__input" placeholder="Schtefan" type="text" name="first-name" id="first-name" required>
+						</div>
+						<div class="input-block__item">
+							<label class="input-block__label" for="second-name">Telefonnummer</label>
+							<input class="input-block__input" placeholder="+49" type="text" name="second-name" id="second-name" required>
+						</div>
+
+						<button class="popup__button button _icon-ch-right">Rückruf</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<nav class="top-header__menu menu-top-header">
+						<ul data-da=".menu__body,991.98" class="menu-top-header__list">
+							<li class="menu-top-header__item menu-top-header__item--catalog"><a href="#" class="menu-top-header__link menu-top-header__link--catalog _icon-arrow-bottom">Katalog</a></li>
+							<li class="menu-top-header__item"><a href="about.html" class="menu-top-header__link">Über uns</a></li>
+							<li class="menu-top-header__item"><a href="delivery.html" class="menu-top-header__link">Lieferbedingungen</a>
+							</li>
+							<li class="menu-top-header__item"><a href="news.html" class="menu-top-header__link">Nachricht</a></li>
+							<li class="menu-top-header__item"><a href="contanct.html" class="menu-top-header__link">Kontakte</a></li>
+						</ul>
+					</nav>
+					<a href="#" class="top-header__user _icon-user"><span>Persönliches Büro</span></a>
+					<nav hidden class="menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<div class="menu__body"></div>
+					</nav>
+				</div>
+			</div>
+			<div class="header__body body-header">
+				<div class="body-header__container">
+					<a href="home.html" class="body-header__logo"></a>
+					<div data-da=".catalog-header__container,479.98,1" class="body-header__search">
+						<form action="#" class="search-header">
+							<button type="submit" class="search-header__button _icon-search"></button>
+							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Suchen" class="search-header__input">
+						</form>
+					</div>
+					<div class="body-header__actions actions-header">
+						<a href="#" class="actions-header__location _icon-location"><span>Darmstadt</span></a>
+						<div data-da=".top-header__container,991.98,1" class="actions-header__phones phones-header spollers">
+							<div data-spollers="480,min" class="spollers">
+								<details class="spollers__item">
+									<summary data-spoller-close class="spollers__title">
+										<a href="tel:88887774967" class="phones-header__phone phones-header__phone--title"><span>8-888-777-49-67</span></a>
+									</summary>
+									<div class="spollers__body">
+										<ul class="phones-header__list">
+											<li><a href="tel:8-888-777-49-61" class="phones-header__phone">8-888-777-49-61</a></li>
+											<li><a href="tel:8-888-777-49-62" class="phones-header__phone">8-888-777-49-62</a></li>
+										</ul>
+									</div>
+								</details>
+							</div>
+
+							<button data-popup="#callback" class="phones-header__callback">Fordern Sie Anruf an</button>
+						</div>
+						<a href="#" data-da=".top-header__container,991.98,3" class="actions-header__favorite _icon-favorite"></a>
+						<a href="#" data-da=".top-header__container,991.98,4" class="actions-header__cart cart-header">
+							<i class="cart-header__icon _icon-cart"> <span>2</span></i>
+							<div class="cart-header__body">
+								<div class="cart-header__summ">3 €</div>
+								<a href="#" class="cart-header__link">Bestellung</a>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__catalog catalog-header">
+				<div class="catalog-header__container">
+					<nav class="catalog-header__menu menu-catalog">
+						<button type="button" class="menu-catalog__back _icon-back">zurück</button>
+						<ul class="menu-catalog__list">
+							<li class="menu-catalog__item"><button data-parent="1" class="menu-catalog__link">Messerkatalog</button></li>
+							<li class="menu-catalog__item"><button data-parent="2" class="menu-catalog__link">Klingenwaffen</button>
+							</li>
+							<li class="menu-catalog__item"><button data-parent="3" class="menu-catalog__link">Souvenirprodukte</button>
+							</li>
+							<li class="menu-catalog__item"><button data-parent="4" class="menu-catalog__link">Armytek Laternen</button>
+							</li>
+							<li class="menu-catalog__item"><button data-parent="5" class="menu-catalog__link">Kompatible Waren</button>
+							</li>
+						</ul>
+						<div class="menu-catalog__sub-menu sub-menu-catalog">
+							<button type="button" class="sub-menu-catalog__back _icon-back">zurück</button>
+							<div class="sub-menu-catalog__container">
+								<div hidden data-submenu="1" class="sub-menu-catalog__block">
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Kategorie Messer</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Produktion von Messern</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Messer auf Markenstahl</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Schärfen und Poliermesser</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Messerworkshop</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer schneiden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Touristenmesser</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer jagen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pinocchio-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer aus Damaskus</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Taktisch Termine</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer werfen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Machete und Kukri</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind Küche</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Luft</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zick-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zzossos Messer</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Raboards Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Punsmiths Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Sergey
+												Baranova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Andrei Umerova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind golden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Style-M</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Waffenkammer</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser
+												40x102S2m</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser 95x18</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser 100x13m</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser
+												110x18m-sh</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">EI-107 Stahlmesser</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser 50x14mf</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser AUS-8</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser K340</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stahlmesser M390</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">EP-766 Stahlmesser</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pasta Goi</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Diamantnudeln</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bars ​​für Schärfung</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stationen</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messerklingen</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Ernte für Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Für Messer gießen</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Materialien für
+												Griffe</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messergriffe Pflege</a>
+										</li>
+									</ul>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+								</div>
+								<div hidden data-submenu="2" class="sub-menu-catalog__block">
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Kategorie Messer</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Produktion von Messern</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Schärfen und Poliermesser</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer schneiden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Touristenmesser</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer jagen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pinocchio-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer aus Damaskus</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Taktisch Termine</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer werfen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Machete und Kukri</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind Küche</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Luft</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zick-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zzossos Messer</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Raboards Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Punsmiths Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Sergey
+												Baranova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Andrei Umerova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind golden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Style-M</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Waffenkammer</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pasta Goi</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Diamantnudeln</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bars ​​für Schärfung</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stationen</a>
+										</li>
+									</ul>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+								</div>
+								<div hidden data-submenu="3" class="sub-menu-catalog__block">
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Kategorie Messer</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Produktion von Messern</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Schärfen und Poliermesser</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Messerworkshop</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer schneiden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Touristenmesser</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer jagen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pinocchio-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer aus Damaskus</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Taktisch Termine</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer werfen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Machete und Kukri</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind Küche</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Luft</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zick-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zzossos Messer</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Raboards Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Punsmiths Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Sergey
+												Baranova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Andrei Umerova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind golden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Style-M</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Waffenkammer</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pasta Goi</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Diamantnudeln</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bars ​​für Schärfung</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stationen</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pasta Goi</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Diamantnudeln</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bars ​​für Schärfung</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Stationen</a>
+										</li>
+									</ul>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+								</div>
+								<div hidden data-submenu="4" class="sub-menu-catalog__block">
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Kategorie Messer</a>
+									</div>
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Produktion von Messern</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer schneiden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Touristenmesser</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer jagen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pinocchio-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer aus Damaskus</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Taktisch Termine</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer werfen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Machete und Kukri</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind Küche</a>
+										</li>
+									</ul>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Luft</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zick-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zzossos Messer</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Raboards Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Punsmiths Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Sergey
+												Baranova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Andrei Umerova</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind golden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Style-M</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Waffenkammer</a>
+										</li>
+									</ul>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+								</div>
+								<div hidden data-submenu="5" class="sub-menu-catalog__block">
+									<div class="sub-menu-catalog__category">
+										<a href="#" class="sub-menu-catalog__link-category">Kompatible Waren</a>
+									</div>
+									<ul class="sub-menu-catalog__list">
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer schneiden</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Touristenmesser</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer jagen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Pinocchio-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer aus Damaskus</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Taktisch Termine</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer werfen</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Machete und Kukri</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer sind Küche</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Messer Luft</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zick-Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Zzossos Messer</a></li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Raboards Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Punsmiths Messer</a>
+										</li>
+										<li class="sub-menu-catalog__item"><a href="#" class="sub-menu-catalog__link">Bulat Sergey
+												Baranova</a>
+										</li>
+									</ul>
+									<div class="sub-menu-catalog__footer">
+										<a href="#" class="sub-menu-catalog__all">Alles sehen</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+		</header>
+		<main class="page page_about">
+
+			<section class="page__delivery delivery">
+				<div class="delivery__container">
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">heim</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Zahlungs-und Lieferbedingungen</a>
+							</li>
+						</ul>
+					</nav>
+					<h1 class="delivery__title title">Zahlungs-und Lieferbedingungen</h1>
+					<div class="delivery__block">
+						<div class="delivery__step step">
+							<img class="step__line ibg" src="img/delivery/line.svg" alt="Image">
+							<div class="step__items">
+								<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+									<g filter="url(#filter0_d_70_756)">
+										<circle cx="37" cy="33" r="17" fill="#E8AA31" />
+									</g>
+									<circle cx="37" cy="33" r="10" fill="#141414" />
+									<defs>
+										<filter id="filter0_d_70_756" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="4" />
+											<feGaussianBlur stdDeviation="10" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0.908333 0 0 0 0 0.665127 0 0 0 0 0.193021 0 0 0 0.3 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_70_756" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_70_756" result="shape" />
+										</filter>
+									</defs>
+								</svg>
+								<div class="step__item">Schritt 1</div>
+								<div class="step__text">Sie können einen für Sie geeigneten auswählen Zahlungs- und Liefermethode</div>
+							</div>
+							<div class="step__items">
+								<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+									<g filter="url(#filter0_d_70_756)">
+										<circle cx="37" cy="33" r="17" fill="#E8AA31" />
+									</g>
+									<circle cx="37" cy="33" r="10" fill="#141414" />
+									<defs>
+										<filter id="filter0_d_70_756" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="4" />
+											<feGaussianBlur stdDeviation="10" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0.908333 0 0 0 0 0.665127 0 0 0 0 0.193021 0 0 0 0.3 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_70_756" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_70_756" result="shape" />
+										</filter>
+									</defs>
+								</svg>
+								<div class="step__item">Schritt 2</div>
+								<div class="step__text">Nach dem Aufgeben einer Bestellung sind Sie mit Ihnen verbunden Telefonmanager
+									für 24-48 Stunden</div>
+							</div>
+						</div>
+						<div class="delivery__text text">
+							<p>
+								In unserem Online -Shop wird Bestellungen ohne Vorauszahlung (Bargeld bei Lieferung) überliefert
+								Territorien Deutschlands.Die Zahlung erfolgt in Ihrer Post nach Erhalt des Pakets.Lieferung bestellen
+								In Deutschland dauert ohne Vorauszahlung mit Bargeld bei der Lieferung im Durchschnitt 10 bis 14 Tage.
+							</p>
+							<p>
+								<span>Seien Sie aufmerksam!</span> Bei der Lieferung von Waren bei der Lieferung berechnet die deutsche
+								<span>zusätzlichdie Bestellung 5-7%</span>
+								die Bestellung 5-7% der Kosten für die Bewertung des Pakets für die Umsetzung der Geldübertragung.Diese
+								Kommission ist
+								das Postamt Deutschlands für Service "Bargeld für die Lieferung und Übertragung von Geldern".Daher ist
+								es
+								oft viel profitabler zu
+								bestellen Produkt zur Vorauszahlung.Weitere Informationen zu allen Vor- und Nachteilen der auferlegten
+								Zahlung
+								finden Sie hier.Du Sie können <span>die Bestellung in Deutschland in 3-7 Tagen</span> viel schneller
+								erhalten, wenn Sie die Lieferung der EMS selbst auswählen. <span>Die Lieferung einer EMS -Mail ist auch
+									ohne Vorauszahlung möglich.</span>
+							</p>
+						</div>
+						<div class="delivery__attention">
+							<span>Achtung:</span> Das Senden von Parzellen über 1.000 Euro durch Bargeld für die Lieferung wird nur
+							durch
+							Vorauszahlung durchgeführt!
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__methods methods">
+				<div class="methods__container">
+					<h2 class="methods__title title">Wir haben auch andere Zahlungsmethoden:</h2>
+					<div class="methods__payment payment-methods">
+						<div class="payment-methods__items">
+							<a class="payment-methods__link" href="#"><img src="img/delivery/01.svg" alt="Image"></a>
+							<div class="payment-methods__item">
+								<h3 class="payment-methods__sub-title">Quittung auf jeder Bank</h3>
+								<p>
+									Für diese Zahlungsmethode müssen Sie in der Spalte <span>"Zahlungsmethode" - "Bargeld bei jeder
+										Bank"
+										auswählen.</span>
+								</p>
+								<p>
+									Nach dem Aufgeben der Bestellung wird der Manager Sie in den <span>ersten 24 Stunden</span>
+									kontaktieren, um die Details zu klären und Sie zu senden Von e-mail, eine Quittung.Sie müssen dafür
+									drucken und bezahlen.
+								</p>
+								<p>
+									<span class="payment-methods__span">Aufmerksamkeit!</span> Die Zahlungszeit für bis zu 5 Tage, wenn
+									die
+									Zahlung in diesem Zeitraum
+									nicht erhält,
+									wird die Bestellung storniert automatisch.
+								</p>
+							</div>
+						</div>
+						<div class="payment-methods__items">
+							<a class="payment-methods__link payment-methods__link--padding" href="#"><img src="img/delivery/02.svg" alt="Image"></a>
+							<div class="payment-methods__item">
+								<h3 class="payment-methods__sub-title">Zahlung für nicht -cash -Zahlungen</h3>
+								<p>
+									Wenn Sie die Bestellung als <span>Yur bezahlen möchten</span>.Eine Person, dann müssen Sie in der
+									<span>"Zahlungsmethode" eine "Nicht -Cash -Berechnung" auswählen</span>
+									"Zahlungsmethode" eine "Nicht -Cash -Berechnung" auswählen.Alle unsere Zahlungsdaten für die Zahlung
+									sind auf der Website angegeben.Mit der Bestellung senden wir alle Buchhaltungsdokumente, die Sie benö
+									<tigen class=""> </tigen>
+								</p>
+								<p>
+									<span class="payment-methods__span">Aufmerksamkeit!</span> Nicht bestätigte Bestellungen werden nicht
+									gesendet. Seien Sie also vorsichtig, wenn Sie Ihre Telefonnummer angeben.
+								</p>
+								<p>
+									Besondere Aufmerksamkeit!In Ermangelung von Waren auf Lager oder bei der Auswahl einer nicht
+									standardmäßigen Messerkonfiguration werden die Waren am Arbeitsplatz speziell für Sie
+									bestellt.Gleichzeitig kann die Produktionsperiode der Waren auf 30 Tage steigen. In diesem Fall müssen
+									Sie garantiert eine Bestellung erhalten, um eine 100% ige Vorauszahlung der Bestellung vorzunehmen.
+								<p>
+									Die Lieferung von Bestellungen außerhalb Deutschlands ist möglich.Das Senden nach Östereich und
+									Niederlands wird durchgeführt.Lieferbedingungen müssen von unseren Managern geklärt werden.
+								</p>
+								<p>
+									Für juristische Unternehmen und einzelne Unternehmer wird die Zahlung einer nicht zahlreichen Zahlung
+									mit der Berichterstattung von Dokumenten bereitgestellt.Sie können bei der Bildung einer Bestellung
+									ein Konto zur Zahlung erhalten.Die ursprünglichen Berichtsdokumente werden zusammen mit der Bestellung
+									im Paket gesendet.
+								</p>
+							</div>
+						</div>
+						<div class="payment-methods__items">
+							<a class="payment-methods__link" href="#"><img src="img/delivery/03.svg" alt="Image"></a>
+							<div class="payment-methods__item">
+								<h3 class="payment-methods__sub-title">Zahlung nach Eingang per Post</h3>
+								<p>KABELJAU</p>
+							</div>
+						</div>
+						<div class="payment-methods__items">
+							<a class="payment-methods__link" href="#"><img src="img/delivery/04.svg" alt="Image"></a>
+							<div class="payment-methods__item">
+								<h3 class="payment-methods__sub-title">Elektronisches Geld</h3>
+								<p>PayPal, Webmoney und andere</p>
+							</div>
+						</div>
+					</div>
+					<div data-tabs="992" class="methods__info product-info">
+						<nav data-tabs-titles class="product-info__navigation">
+							<button type="button" class="product-info__title _tab-active">Arbeitsbedingungen mit Niederlands</button>
+							<button type="button" class="product-info__title">Arbeitsbedingungen mit Östereich</button>
+						</nav>
+						<div data-tabs-body class="product-info__content">
+							<div class="product-info__body">
+								<div class="product-info__items">
+									<div class="product-info__item product-info__item--method">
+										In der Richtung "Niederlands" wendet die Aktion "Kostenlose Lieferung" nicht an.
+									</div>
+									<div class="product-info__item product-info__item--method">
+										In Niederlands schicken wir Pakete mit Bargeld auf Lieferung bis zu 5000
+										reiben.00 Kopecks, sofern die Messer verfügbar sind.In Ermangelung von Waren auf Lager oder wann
+										Die Wahl einer nicht standardmäßigen Messerkonfiguration, die Waren werden bei der Arbeit speziell
+										für Sie bestellt.Bei
+										Diese Herstellung von Waren kann auf 30 Tage steigen und in diesem Fall garantieren
+										Erhalten Sie eine Bestellung, es ist notwendig, eine 100% ige Vorauszahlung der Bestellung
+										vorzunehmen.Lieferkosten müssen geklärt werden
+										Unsere Manager.
+
+									</div>
+									<div class="product-info__item product-info__item--method"> In der Richtung "Niederlands" wendet die
+										Aktion "Kostenlose
+										Lieferung" nicht an. nicht an.
+									</div>
+								</div>
+							</div>
+							<div class="product-info__body">
+								<div class="product-info__items">
+									<div class="product-info__item product-info__item--method">In der Richtung "Östereich" wendet die
+										Aktion "Kostenlose Lieferung" nicht an.
+									</div>
+									<div class="product-info__item product-info__item--method">In Östereich schicken wir Pakete mit
+										Bargeld auf Lieferung bis zu
+										5000
+										reiben.00 Kopecks, sofern die Messer verfügbar sind.In Ermangelung von Waren auf Lager oder wann
+										Die Wahl einer nicht standardmäßigen Messerkonfiguration, die Waren werden bei der Arbeit speziell
+										für Sie bestellt.Bei
+										Diese Herstellung von Waren kann auf 30 Tage steigen und in diesem Fall garantieren
+										Erhalten Sie eine Bestellung, es ist notwendig, eine 100% ige Vorauszahlung der Bestellung
+										vorzunehmen.Lieferkosten müssen geklärt werden
+										у наших менеджеров.</div>
+									<div class="product-info__item product-info__item--method"> In der Richtung "Östereich" wendet
+										die Aktion "Kostenlose Lieferung" nicht an.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="methods__attention">
+						<span class="methods__span methods__span--orange">Achtung: </span> Es ist auch möglich, an <span class="methods__span">Frankreich und Spanien</span> zu
+						senden, und die
+						Bedingungen mit
+						Managern zu überprüfen.
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<footer class="footer">
+			<section class="footer__text text-footer">
+				<div class="text-footer__container">
+					<h1 class="text-footer__title">Zlatoust Messer Online -Shop "Zlatmax"</h1>
+					<div class="text-footer__text">
+						Unser Online -Shop Zlatmax bietet Ihnen Messer von sehr hoher Qualität aus der Stadt der Gunsmiths - Chrysostom.
+						Zlatoust -Messer sind bei den Verbrauchern sowohl auf dem russischen Markt als auch im Ausland bekannt und
+						beliebt: Messer
+						Jagd, Haushalt, Touristen, Angeln, Falten und Werfen.Zlatoust Messer ist ein perfekter Freund und
+						Genossen im Alltag und in extremen Situationen.Die Garantie von bis zu 10 gilt für viele Produkte
+						Jahre sind eine der Hauptindikatoren der Qualität.Für Sie auf unserer Website "Zlatmax" wurde ein riesiges
+						Sortiment vorgeschlagen
+						Zlatoust Messer.Unsere Manager helfen Ihnen bei der Entscheidung und wählen Sie das beste Zlatoust -Messer.
+						Konzentrieren sich auf Ihre Wünsche.
+					</div>
+				</div>
+			</section>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__row">
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">Information</summary>
+									<div class="spollers-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Zlatoust Messer</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Messerstahl</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="about.html" class="menu-footer__link">Über uns</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Zahlungsbedingungen und Lieferung</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Politik Privatsphäre</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">UNTERSTÜTZUNG</summary>
+									<div class="spollers-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="contanct.html" class="menu-footer__link">Kontaktinformationen</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Kaufrendite</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Kartenstelle</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">ZUSÄTZLICH</summary>
+									<div class="spollers-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Geschenkgutscheine</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Partner</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Rabatt Waren</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">PERSÖNLICHES BÜRO</summary>
+									<div class="spollers-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Persönliches Büro</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Geschichte der Bestellungen</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Meine Lesezeichen</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="news.html" class="menu-footer__link">Nachrichten Newsletter</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+					<div class="body-footer__row">
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">Kontakte</summary>
+									<div class="spollers-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="tel:01627774967" class="menu-footer__link _icon-footer-phone">(162) 777-49-67</a>
+												</li>
+												<li class="menu-footer__item _icon-footer-clock">
+													<div>
+														<p>Mon-Fr</p>
+														<p> 7:00 - 16:00</p>
+													</div>
+												</li>
+												<li class="menu-footer__item _icon-footer-location">
+													<div>
+														<p>Darmstadt,</p>
+														<p>Str.Sixegan, 13</p>
+														<p>Büro "6b"</p>
+													</div>
+												</li>
+												<li class="menu-footer__item">
+													<a href="mailto:info@zlatmax.de" class="menu-footer__link _icon-footer-email">info@zlatmax.de</a>
+												</li>
+
+											</ul>
+										</nav>
+										<ul class="social-footer">
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/footer/facebook.svg" alt="Image">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/footer/viber.svg" alt="Image">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/footer/telegram.svg" alt="Image">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/footer/whatsapp.svg" alt="Image">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">NÜTZLICHE LINKS</summary>
+									<div class="spollers-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">Zahlungs- und Liefermethoden</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">Unsere Garantie</summary>
+									<div class="spollers-item-footer__body">
+										<div href="#" class="spollers-item-footer__text">Unglücklich mit ihrem Kauf?Sie können es während dessen
+											zurückgeben 30 Tage ab dem Datum des Empfangs gemäß <a href="#">unseren Regeln</a>
+										</div>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="768" class="item-footer__spollers spollers-item-footer">
+								<details class="spollers-item-footer__item">
+									<summary class="spollers-item-footer__title">NEWSLETTER</summary>
+									<form action="" class="spollers-item-footer__body footer-subscribe">
+										<label for="subscribe-input" class="footer-subscribe__label">Abonnieren Sie jetzt!</label>
+										<div class="footer-subscribe__line">
+											<input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Error" data-required="email" placeholder="info@zlatmax.de" class="footer-subscribe__input">
+											<button class="footer-subscribe__button _icon-arrow-bottom" type="submit"></button>
+										</div>
+									</form>
+								</details>
+							</div>
+						</div>
+					</div>
+					<div class="body-footer__bottom">
+						<div class="body-footer__rules">
+							Alle auf der Website veröffentlichten Materialien sind Referenz in der Natur und nicht
+							Öffentliches Angebot durch die Legung.Beim Kopieren von Materialien hyperlink auf www.zlatmax.de
+							Obligatorisch!
+						</div>
+						<div class="body-footer__copy">Zlatoust Messer www.zlatmax.de ©</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240607074944"></script>
+</body>
+
+</html>
