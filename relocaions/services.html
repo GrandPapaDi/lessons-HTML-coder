@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240615192136">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="thank" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__text">
+						<h4>Thank You!
+							Your request is being reviewed</h4>
+						<p>One of our team members will get in touch with you soon</p>
+					</div>
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="home.html" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="about.html" class="menu__link">AbouT us</a>
+							</li>
+							<li class="menu__item menu__item--parent">
+								<a href="services.html" class="menu__link">Services</a>
+								<div class="sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a href="investment.html" class="sub-menu__link">Investments opportunities</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="business.html" class="sub-menu__link">Business relocation</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="family.html" class="sub-menu__link">Family relocation</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="investment.html" class="menu__link">Invest in cyprus</a>
+							</li>
+							<li class="menu__item">
+								<a href="migration.html" class="menu__link">migration</a>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__link">Contuct us</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+				<a href="#" data-popup="#thank" class="header__button button">Get in touch</a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="page__service service">
+				<div class="service__container">
+					<h2 class="service__title title">Our Services</h2>
+					<div class="service__items">
+						<article class="service__item">
+							<a href="family.html" class="service__link">
+								<img class="service__img ibg" src="img/services/01.webp" alt="Image">
+							</a>
+							<div class="service__box">
+								<h3 class="service__sub-title">Family <br> Relocation</h3>
+								<p>
+									With strategic planning, we simplify the moving process so you and your family can feel safe and
+									confident.
+								</p>
+								<a href="family.html" class="service__button button">Find Out More</a>
+							</div>
+						</article>
+						<article class="service__item">
+							<a href="business.html" class="service__link">
+								<img class="service__img ibg" src="img/services/02.webp" alt="Image">
+							</a>
+							<div class="service__box">
+								<h3 class="service__sub-title">Business <br> Relocation</h3>
+								<p>
+									We handle the responsibility of moving your business to Cyprus, so you can focus on your business
+									goals.
+								</p>
+								<a href="business.html" class="service__button button">Find Out More</a>
+							</div>
+						</article>
+						<article class="service__item">
+							<a href="investment.html" class="service__link">
+								<img class="service__img ibg" src="img/services/03.webp" alt="Image">
+							</a>
+							<div class="service__box">
+								<h3 class="service__sub-title">Investment <br> plans</h3>
+								<p>
+									Discover the opportunity to further enhance your business ambitions, by choosing the optimal
+									investment plan.
+								</p>
+								<a href="investment.html" class="service__button button">Find Out More</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="page__footer footer">
+			<div class="footer__container">
+				<div class="footer__item">© 2022 PAM Consulting. All rights reserved</div>
+				<div class="footer__item">Disclaimer</div>
+				<div class="footer__item">Privacy poilcy</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240615192136"></script>
+</body>
+
+</html>

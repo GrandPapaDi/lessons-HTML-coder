@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240615192136">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="thank" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__text">
+						<h4>Thank You!
+							Your request is being reviewed</h4>
+						<p>One of our team members will get in touch with you soon</p>
+					</div>
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="home.html" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="about.html" class="menu__link">AbouT us</a>
+							</li>
+							<li class="menu__item menu__item--parent">
+								<a href="services.html" class="menu__link">Services</a>
+								<div class="sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a href="investment.html" class="sub-menu__link">Investments opportunities</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="business.html" class="sub-menu__link">Business relocation</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="family.html" class="sub-menu__link">Family relocation</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="investment.html" class="menu__link">Invest in cyprus</a>
+							</li>
+							<li class="menu__item">
+								<a href="migration.html" class="menu__link">migration</a>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__link">Contuct us</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+				<a href="#" data-popup="#thank" class="header__button button">Get in touch</a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<h2 class="contact__title title">Contact Us</h2>
+					<div class="contact__info">
+						<a class="contact__link" href="#">
+							<img class="contact__img" src="img/icon/phone.svg" alt="Image">
+						</a>
+						<a href="#" class="contact__number">+357 9056759</a>
+					</div>
+					<div class="contact__info">
+						<a class="contact__link" href="#">
+							<img class="contact__img" src="img/icon/letter.svg" alt="Image">
+						</a>
+						<a class="contact__mail" href="mailto:contact@pamrelocation.com">contact@pamrelocation.com</a>
+					</div>
+
+					<div class="contact__form form">
+						<h3 class="form__sub-title">send inquiry</h3>
+						<!-- додаємо форму -->
+						<form class="form__block" id="some-form" enctype="multipart/form-data" method="GET" action="#">
+							<!-- додаємо тіло форми де будуть всі поля -->
+							<div class="form__body">
+
+								<!-- додаємо один за одним поля в обгортці,
+                не робимо жодних додатковик конструкцій по типу два поля в одній обгортці з класами row чи line -->
+								<div class="form__item">
+									<input class="form__input input" autocomplete="on" name="name" data-error="Помилка" placeholder="Your Name" type="text">
+								</div>
+
+								<div class="form__item">
+									<input class="form__input input" name="mail" placeholder="Email Address" type="email">
+								</div>
+
+								<div class="form__item">
+									<input class="form__input input" autocomplete="off" name="phone" placeholder="Phone Number" type="tel">
+								</div>
+
+								<div class="form__item">
+									<input class="form__input input" name="mail" placeholder="Subject" type="email">
+								</div>
+
+								<!-- додаємо модифікатор для textarea чи окремий клас щоб стилізувати його  -->
+								<div class="form__item form__item--textarea">
+									<textarea class="form__textarea" name="Your message" placeholder="Your message"></textarea>
+								</div>
+
+							</div>
+
+							<div class="form__checkbox checkbox">
+								<input id="c_1" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">By clicking “Submit button” you
+										accept our Terms & Conditions and have read our Privacy Policy and Disclaimer</span></label>
+							</div>
+
+
+							<!-- кнопку виносимо поза form__body щоб потім не писати зайвого коду для стилізації -->
+							<button form="some-form" type="submit" class="form__button button">submit</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="page__footer footer">
+			<div class="footer__container">
+				<div class="footer__item">© 2022 PAM Consulting. All rights reserved</div>
+				<div class="footer__item">Disclaimer</div>
+				<div class="footer__item">Privacy poilcy</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240615192136"></script>
+</body>
+
+</html>
