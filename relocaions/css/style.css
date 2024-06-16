@@ -1118,7 +1118,8 @@ p {
 .who p {
   line-height: 1.5;
   letter-spacing: .03125rem;
-  color: #fff
+  color: #fff;
+  text-align: left
 }
 .who p:not(:last-child) {
   margin-bottom: 1.25rem
@@ -2904,9 +2905,6 @@ button.swiper-pagination-bullet {
     font-size: 1.25rem;
     position: relative;
     margin-top: 1.25rem
-  }
-  .who p {
-    text-align: left
   }
   .how__list a {
     justify-content: center
