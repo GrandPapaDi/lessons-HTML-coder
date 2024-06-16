@@ -924,6 +924,7 @@ p {
   line-height: 1.12
 }
 .slide-hero__sub-title {
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.6
 }
@@ -956,6 +957,7 @@ p {
   margin-right: .625rem
 }
 .cities__sub-title {
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.6
 }
@@ -2235,17 +2237,11 @@ button.swiper-pagination-bullet {
   .slide-hero__title {
     font-size: 2.25rem
   }
-  .slide-hero__sub-title {
-    font-size: 1.25rem
-  }
   .slide-hero__sub-title:not(:last-child) {
     margin-bottom: 1.5rem
   }
   .slide-hero__text:not(:last-child) {
     margin-bottom: 1.5rem
-  }
-  .cities__sub-title {
-    font-size: 1.25rem
   }
   .cities__city {
     font-size: 1.25rem
@@ -2639,17 +2635,11 @@ button.swiper-pagination-bullet {
   .slide-hero__title {
     font-size: 1.5rem
   }
-  .slide-hero__sub-title {
-    font-size: 1.125rem
-  }
   .slide-hero__sub-title:not(:last-child) {
     margin-bottom: .875rem
   }
   .slide-hero__text:not(:last-child) {
     margin-bottom: .875rem
-  }
-  .cities__sub-title {
-    font-size: 1.125rem
   }
   .cities__city {
     font-size: 1.125rem
@@ -3016,12 +3006,10 @@ button.swiper-pagination-bullet {
   .slide-hero__body::after {
     content: "";
     position: absolute;
-    margin-left: -.9375rem;
-    margin-right: -.9375rem;
-    width: 120%;
+    width: 115%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: -6%;
     background-color: #000;
     opacity: .4
   }
@@ -3541,16 +3529,6 @@ button.swiper-pagination-bullet {
       font-size: calc(1.5rem + .75 * (100vw - 20rem)/ 55.625)
     }
   }
-  @supports (font-size:clamp(1.125rem ,1.0800561798rem + 0.2247191011vw ,1.25rem)) {
-    .slide-hero__sub-title {
-      font-size: clamp(1.125rem ,1.0800561798rem + .2247191011vw ,1.25rem)
-    }
-  }
-  @supports not (font-size:clamp(1.125rem ,1.0800561798rem + 0.2247191011vw ,1.25rem)) {
-    .slide-hero__sub-title {
-      font-size: calc(1.125rem + .125 * (100vw - 20rem)/ 55.625)
-    }
-  }
   @supports (margin-bottom:clamp(0.875rem ,0.6502808989rem + 1.1235955056vw ,1.5rem)) {
     .slide-hero__sub-title:not(:last-child) {
       margin-bottom: clamp(.875rem ,.6502808989rem + 1.1235955056vw ,1.5rem)
@@ -3569,16 +3547,6 @@ button.swiper-pagination-bullet {
   @supports not (margin-bottom:clamp(0.875rem ,0.6502808989rem + 1.1235955056vw ,1.5rem)) {
     .slide-hero__text:not(:last-child) {
       margin-bottom: calc(.875rem + .625 * (100vw - 20rem)/ 55.625)
-    }
-  }
-  @supports (font-size:clamp(1.125rem ,1.0800561798rem + 0.2247191011vw ,1.25rem)) {
-    .cities__sub-title {
-      font-size: clamp(1.125rem ,1.0800561798rem + .2247191011vw ,1.25rem)
-    }
-  }
-  @supports not (font-size:clamp(1.125rem ,1.0800561798rem + 0.2247191011vw ,1.25rem)) {
-    .cities__sub-title {
-      font-size: calc(1.125rem + .125 * (100vw - 20rem)/ 55.625)
     }
   }
   @supports (font-size:clamp(1.125rem ,1.0800561798rem + 0.2247191011vw ,1.25rem)) {
